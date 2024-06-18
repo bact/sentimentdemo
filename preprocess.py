@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC0-1.0
+
 from newmm_tokenizer.tokenizer import word_tokenize
 from th_preprocessor.preprocess import preprocess
 

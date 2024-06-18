@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC0-1.0
+
 fasttext==0.9.3
 newmm-tokenizer==0.2.2
 numpy==1.26.4
