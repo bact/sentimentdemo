@@ -15,6 +15,97 @@
             "spdxId": "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1",
             "creationInfo": "_:creationinfo",
             "name": "Arthit Suriyawongkul"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File1-",
+            "creationInfo": "_:creationinfo",
+            "name": "data",
+            "software_fileKind": "directory"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File2-",
+            "creationInfo": "_:creationinfo",
+            "name": "techdocs",
+            "software_fileKind": "directory"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File3-",
+            "creationInfo": "_:creationinfo",
+            "name": "LICENSE",
+            "software_fileKind": "file"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File4-",
+            "creationInfo": "_:creationinfo",
+            "name": "model.bin",
+            "software_fileKind": "file"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File5-",
+            "creationInfo": "_:creationinfo",
+            "name": "predict.py",
+            "software_fileKind": "file"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File6-",
+            "creationInfo": "_:creationinfo",
+            "name": "preprocess.py",
+            "software_fileKind": "file"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File7-",
+            "creationInfo": "_:creationinfo",
+            "name": "README.md",
+            "software_fileKind": "file"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File8-",
+            "creationInfo": "_:creationinfo",
+            "name": "requirements.txt",
+            "software_fileKind": "file"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File9-",
+            "creationInfo": "_:creationinfo",
+            "name": "sbom.spdx3.json",
+            "software_fileKind": "file"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File10-",
+            "creationInfo": "_:creationinfo",
+            "name": "train.py",
+            "software_fileKind": "file"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File11-",
+            "creationInfo": "_:creationinfo",
+            "name": "train.txt",
+            "software_fileKind": "file"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File12-",
+            "creationInfo": "_:creationinfo",
+            "name": "dataprepare.md",
+            "software_fileKind": "file"
+        },
+        {
+            "type": "software_File",
+            "spdxId": "https://spdx.org/spdxdocs/File13-",
+            "creationInfo": "_:creationinfo",
+            "name": "instructions.md",
+            "software_fileKind": "file"
         }
     ]
 }

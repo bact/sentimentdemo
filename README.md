@@ -12,24 +12,25 @@ The main content of this repository is the software bill of materials at
 Other files are given to complete the illustration.
 
 ```text
-├── LICENSE              License information
-├── README.md            This README file
-├── data
-│   └── train.txt        Training data (label, text)
-├── techdocs             Technical documentation
-│   ├── dataprepare.md   Data prepration
-│   └── instructions.md  Instruction for use
-├── model.bin            A sentiment analysis model
-├── predict.py           A script to predict a label of a text
-├── preprocess.py        A script to prepare training data
-├── requirements.txt     List of required Python libraries
-├── sbom.spdx3.json      Software bill of materials, in SPDX 3 format
-└── train.py             A script to build a model
+├── LICENSE               License information
+├── README.md             This README file
+├── data                  Data
+│   └── train.txt         Training data (label, text)
+├── model.bin             A sentiment analysis model
+├── predict.py            A script to predict a label of a text
+├── preprocess.py         A script to prepare training data
+├── requirements.txt      List of required Python libraries
+├── sbom.spdx3.json       Software bill of materials, in SPDX 3 format
+├── techdocs              Technical documentation
+│   ├── dataprepare.md    Data prepration
+│   └── instructions.md   Instruction for use
+└── train.py              A script to build a model
 ```
 
 ## Usage
 
-See [instruction for use](./techdocs/instructions.md) for how to use the application.
+See [instruction for use](./techdocs/instructions.md) for how to use the
+application.
 
 ## Data preparation
 
