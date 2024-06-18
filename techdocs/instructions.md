@@ -1,5 +1,10 @@
 # Instruction for use
 
+This application is designed to predict the sentiment of text.
+
+It was trained on Thai microblogging social media data and may have limitations
+in predicting text from other genres or languages.
+
 ## Predict a label of a text
 
 ```shell
