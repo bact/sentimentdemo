@@ -1,0 +1,20 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.0",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1"
+            ],
+            "created": "2024-06-18T06:34:00Z"
+        },
+        {
+            "type": "Person",
+            "spdxId": "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1",
+            "creationInfo": "_:creationinfo",
+            "name": "Arthit Suriyawongkul"
+        }
+    ]
+}
