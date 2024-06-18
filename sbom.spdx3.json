@@ -2,110 +2,182 @@
     "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
     "@graph": [
         {
-            "type": "CreationInfo",
             "@id": "_:creationinfo",
-            "specVersion": "3.0.0",
+            "created": "2024-06-18T06:34:00Z",
             "createdBy": [
                 "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1"
             ],
-            "created": "2024-06-18T06:34:00Z"
+            "specVersion": "3.0.0",
+            "type": "CreationInfo"
         },
         {
-            "type": "Person",
-            "spdxId": "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1",
             "creationInfo": "_:creationinfo",
-            "name": "Arthit Suriyawongkul"
+            "name": "Arthit Suriyawongkul",
+            "spdxId": "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1",
+            "type": "Person"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File1-",
             "creationInfo": "_:creationinfo",
             "name": "data",
-            "software_fileKind": "directory"
+            "software_fileKind": "directory",
+            "spdxId": "https://spdx.org/spdxdocs/File1-0126db11-b59b-4514-8c0b-75b88597b08a",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File2-",
             "creationInfo": "_:creationinfo",
             "name": "techdocs",
-            "software_fileKind": "directory"
+            "software_fileKind": "directory",
+            "spdxId": "https://spdx.org/spdxdocs/File2-02dc2086-309f-46d3-b3e5-37ca2d152570",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File3-",
             "creationInfo": "_:creationinfo",
             "name": "LICENSE",
-            "software_fileKind": "file"
+            "software_fileKind": "file",
+            "spdxId": "https://spdx.org/spdxdocs/File3-032e68ce-8218-4493-a59d-13949d36d489",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File4-",
             "creationInfo": "_:creationinfo",
             "name": "model.bin",
-            "software_fileKind": "file"
+            "software_fileKind": "file",
+            "software_primaryPurpose": "model",
+            "spdxId": "https://spdx.org/spdxdocs/File4-04530429-8a33-4ec7-8b91-5a7fbae73db7",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File5-",
             "creationInfo": "_:creationinfo",
             "name": "predict.py",
-            "software_fileKind": "file"
+            "software_additionalPurpose": [
+                "source"
+            ],
+            "software_fileKind": "file",
+            "software_primaryPurpose": "executable",
+            "spdxId": "https://spdx.org/spdxdocs/File5-05981e1e-37af-4b10-8893-f920e5710c8c",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File6-",
             "creationInfo": "_:creationinfo",
             "name": "preprocess.py",
-            "software_fileKind": "file"
+            "software_additionalPurpose": [
+                "source"
+            ],
+            "software_fileKind": "file",
+            "software_primaryPurpose": "executable",
+            "spdxId": "https://spdx.org/spdxdocs/File6-062a2290-4d42-40bc-929d-df6c11980dd9",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File7-",
             "creationInfo": "_:creationinfo",
             "name": "README.md",
-            "software_fileKind": "file"
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File7-070a7d60-9d99-496e-89b1-0d79002f5cc5",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File8-",
             "creationInfo": "_:creationinfo",
             "name": "requirements.txt",
-            "software_fileKind": "file"
+            "software_fileKind": "file",
+            "software_primaryPurpose": "manifest",
+            "spdxId": "https://spdx.org/spdxdocs/File8-0843064e-d205-418e-9a97-b196a4272b70",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File9-",
             "creationInfo": "_:creationinfo",
             "name": "sbom.spdx3.json",
-            "software_fileKind": "file"
+            "software_fileKind": "file",
+            "software_primaryPurpose": "manifest",
+            "spdxId": "https://spdx.org/spdxdocs/File9-09ca0842-5198-477c-8e2d-1696b5cd87c9",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File10-",
             "creationInfo": "_:creationinfo",
             "name": "train.py",
-            "software_fileKind": "file"
+            "software_additionalPurpose": [
+                "source"
+            ],
+            "software_fileKind": "file",
+            "software_primaryPurpose": "executable",
+            "spdxId": "https://spdx.org/spdxdocs/File10-10856935-576c-47e0-9c8f-491693e83e80",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File11-",
             "creationInfo": "_:creationinfo",
             "name": "train.txt",
-            "software_fileKind": "file"
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "spdxId": "https://spdx.org/spdxdocs/File11-11cd41bc-9b8d-407e-900e-292dba0c6f66",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File12-",
             "creationInfo": "_:creationinfo",
             "name": "dataprepare.md",
-            "software_fileKind": "file"
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File12-12587b02-c9cd-433a-92c8-8ee5c09492b1",
+            "type": "software_File"
         },
         {
-            "type": "software_File",
-            "spdxId": "https://spdx.org/spdxdocs/File13-",
             "creationInfo": "_:creationinfo",
             "name": "instructions.md",
-            "software_fileKind": "file"
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File13-1334ef34-93fd-47c8-b379-bd2f56cca997",
+            "type": "software_File"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "dataset_anonymizationMethodUsed": [
+                "Email addresses, social media account mentions, and phone numbers were detected using common pattern matching and replaced with placeholders."
+            ],
+            "dataset_datasetSize": 35027,
+            "dataset_datasetType": [
+                "text"
+            ],
+            "name": "Training data",
+            "spdxId": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
+            "type": "dataset_DatasetPackage"
+        },
+        {
+            "ai_domain": [
+                "sentiment analysis",
+                "natural language processing",
+                "market research"
+            ],
+            "ai_informationAboutApplication": "",
+            "ai_informationAboutTraining": "",
+            "creationInfo": "_:creationinfo",
+            "name": "Sentiment Demo",
+            "software_primaryPurpose": "model",
+            "spdxId": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "type": "ai_AIPackage"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
+            "relationshipType": "contains",
+            "to": [
+                "https://spdx.org/spdxdocs/File1-0126db11-b59b-4514-8c0b-75b88597b08a",
+                "https://spdx.org/spdxdocs/File11-11cd41bc-9b8d-407e-900e-292dba0c6f66"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "relationshipType": "contains",
+            "to": [
+                "https://spdx.org/spdxdocs/File2-02dc2086-309f-46d3-b3e5-37ca2d152570",
+                "https://spdx.org/spdxdocs/File3-032e68ce-8218-4493-a59d-13949d36d489",
+                "https://spdx.org/spdxdocs/File4-04530429-8a33-4ec7-8b91-5a7fbae73db7",
+                "https://spdx.org/spdxdocs/File5-05981e1e-37af-4b10-8893-f920e5710c8c",
+                "https://spdx.org/spdxdocs/File6-062a2290-4d42-40bc-929d-df6c11980dd9",
+                "https://spdx.org/spdxdocs/File10-10856935-576c-47e0-9c8f-491693e83e80",
+                "https://spdx.org/spdxdocs/File12-12587b02-c9cd-433a-92c8-8ee5c09492b1",
+                "https://spdx.org/spdxdocs/File13-1334ef34-93fd-47c8-b379-bd2f56cca997"
+            ],
+            "type": "Relationship"
         }
     ]
 }
