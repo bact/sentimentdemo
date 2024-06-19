@@ -19,11 +19,11 @@ Other files are given to complete the illustration.
 │   ├── neu.txt           Samples for label "neu" (neutral)
 │   ├── pos.txt           Samples for label "pos" (positive)
 │   └── q.txt             Samples for label "q" (question)
+├── bom.spdx3.json        Software bill of materials, in SPDX 3 format
 ├── model.bin             A sentiment analysis model
 ├── predict.py            A script to predict a label of a text
 ├── preprocess.py         A script to prepare training data
 ├── requirements.txt      List of required Python libraries
-├── sbom.spdx3.json       Software bill of materials, in SPDX 3 format
 ├── techdocs              Technical documentation
 │   ├── dataprepare.md    Data prepration
 │   └── instructions.md   Instruction for use
