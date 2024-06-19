@@ -9,7 +9,7 @@ Will be submitted to [spdx/spdx-examples](https://github.com/spdx/spdx-examples)
 ## Content
 
 The main content of this repository is the software bill of materials at
-[sbom.spdx3.json](./sbom.spdx3.json).
+[bom.spdx3.json](./bom.spdx3.json).
 Other files are given to complete the illustration.
 
 ```text
