@@ -22,7 +22,7 @@ def main():
     training_data += get_training_lines("data/pos.txt", "pos")
     training_data += get_training_lines("data/q.txt", "q")
 
-    with open("data/train.txt", "w") as file:
+    with open("train.txt", "w") as file:
         for line in training_data:
             file.write(f"{line}\n")
 

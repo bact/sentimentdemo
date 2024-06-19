@@ -14,8 +14,11 @@ Other files are given to complete the illustration.
 ```text
 ├── LICENSE               License information
 ├── README.md             This README file
-├── data                  Data
-│   └── train.txt         Training data (label, text)
+├── data                  Data before preprocessed
+│   ├── neg.txt           Samples for label "neg" (negative)
+│   ├── neu.txt           Samples for label "neu" (neutral)
+│   ├── pos.txt           Samples for label "pos" (positive)
+│   └── q.txt             Samples for label "q" (question)
 ├── model.bin             A sentiment analysis model
 ├── predict.py            A script to predict a label of a text
 ├── preprocess.py         A script to prepare training data
@@ -24,7 +27,8 @@ Other files are given to complete the illustration.
 ├── techdocs              Technical documentation
 │   ├── dataprepare.md    Data prepration
 │   └── instructions.md   Instruction for use
-└── train.py              A script to build a model
+├── train.py              A script to build a model
+└── train.txt             Training data (label, tokenized text)
 ```
 
 ## Usage

@@ -19,7 +19,7 @@ def main():
     text = " ".join(word_tokenize(text))
     text = preprocess(text)
     labels, probabilities = model.predict(text)
-    print(f"Label: {labels[0]}, Probability: {probabilities[0]}")
+    print(f"Label: {labels[0][9:]}, Probability: {probabilities[0]:.4f}")
 
 
 if __name__ == "__main__":
