@@ -208,10 +208,7 @@
                 "https://spdx.org/spdxdocs/File5-05981e1e-37af-4b10-8893-f920e5710c8c",
                 "https://spdx.org/spdxdocs/File6-062a2290-4d42-40bc-929d-df6c11980dd9",
                 "https://spdx.org/spdxdocs/File7-070a7d60-9d99-496e-89b1-0d79002f5cc5",
-                "https://spdx.org/spdxdocs/File9-09ca0842-5198-477c-8e2d-1696b5cd87c9",
-                "https://spdx.org/spdxdocs/File10-10856935-576c-47e0-9c8f-491693e83e80",
-                "https://spdx.org/spdxdocs/File16-16681b24-e0e1-4707-8a1a-6c8e4ba2d2db",
-                "https://spdx.org/spdxdocs/File17-17e0ca61-e938-4048-b5d8-18ec725fa4cc"
+                "https://spdx.org/spdxdocs/File10-10856935-576c-47e0-9c8f-491693e83e80"
             ],
             "type": "Relationship"
         },
@@ -232,11 +229,12 @@
             "creationInfo": "_:creationinfo",
             "from": "https://spdx.org/spdxdocs/File7-070a7d60-9d99-496e-89b1-0d79002f5cc5",
             "relationshipType": "generates",
+            "scope": "build",
             "spdxId": "https://spdx.org/spdxdocs/Relationship/generates1-01bd0839-cb33-4446-9cae-b01c9148d221",
             "to": [
                 "https://spdx.org/spdxdocs/File11-11cd41bc-9b8d-407e-900e-292dba0c6f66"
             ],
-            "type": "Relationship"
+            "type": "LifecycleScopedRelationship"
         },
         {
             "creationInfo": "_:creationinfo",
@@ -245,6 +243,36 @@
             "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDataFile2-2fec70f0-8900-470b-b7fa-cd7b5c513491",
             "to": [
                 "https://spdx.org/spdxdocs/File5-05981e1e-37af-4b10-8893-f920e5710c8c"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/File10-10856935-576c-47e0-9c8f-491693e83e80",
+            "relationshipType": "generates",
+            "scope": "build",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/generates2-02ec04c7-b248-4472-b017-da7c04145ec2",
+            "to": [
+                "https://spdx.org/spdxdocs/File5-05981e1e-37af-4b10-8893-f920e5710c8c"
+            ],
+            "type": "LifecycleScopedRelationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "relationshipType": "hasDependencyManifest",
+            "to": [
+                "https://spdx.org/spdxdocs/File9-09ca0842-5198-477c-8e2d-1696b5cd87c9"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "relationshipType": "hasDocumentation",
+            "to": [
+                "https://spdx.org/spdxdocs/File16-16681b24-e0e1-4707-8a1a-6c8e4ba2d2db",
+                "https://spdx.org/spdxdocs/File17-17e0ca61-e938-4048-b5d8-18ec725fa4cc"
             ],
             "type": "Relationship"
         },
