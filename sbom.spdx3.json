@@ -178,6 +178,53 @@
                 "https://spdx.org/spdxdocs/File13-1334ef34-93fd-47c8-b379-bd2f56cca997"
             ],
             "type": "Relationship"
-        }
+        },
+        {
+            "type": "Relationship",
+            "relationshipType": "hasDeclaredLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense1-d1741c4c-4c18-459a-b9f9-e24f018e39f1",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "relationshipType": "hasConcludedLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense1-c18ca8f8-32f1-4682-a136-51c32a5d555a",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "relationshipType": "hasDeclaredLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense2-d2656830-3744-4970-baf6-62586d30f5eb",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ]
+        },
+        {
+            "type": "Relationship",
+            "relationshipType": "hasConcludedLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense2-c231b750-fe86-4d12-9308-89142e760517",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ]
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "CC-BY-4.0",
+            "simplelicensing_licenseListVersion": "3.24.0"
+          }
     ]
 }
