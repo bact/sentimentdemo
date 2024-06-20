@@ -1,6 +1,6 @@
 # sentimentdemo
 
-A simple text classification application, published mainly as an artifact for
+A simple text classification application, published solely as an artifact for
 the purpose of demonstrating a software bill of materials.
 Will be submitted to [spdx/spdx-examples](https://github.com/spdx/spdx-examples) repo.
 
