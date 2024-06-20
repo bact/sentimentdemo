@@ -345,6 +345,7 @@
             "type": "Relationship"
         },
         {
+            "comment": "This meant to be a workaround for the lack of the ListedLicense (from SPDX Licenses List) in SPDX 3.0 ontology. Once the ListedLicense instance for CC-BY-4.0 is available, this element should be removed. See: https://github.com/spdx/LicenseListPublisher/issues/183",
             "creationInfo": "_:creationinfo",
             "simplelicensing_licenseExpression": "CC-BY-4.0",
             "simplelicensing_licenseListVersion": "3.24.0",
