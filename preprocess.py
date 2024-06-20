@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 from newmm_tokenizer.tokenizer import word_tokenize
-from th_preprocessor.preprocess import preprocess
+from th_preprocessor.preprocess import preprocess, remove_dup_spaces, remove_stopwords
 
 
 def get_training_lines(file_path, label):
@@ -9,8 +9,8 @@ def get_training_lines(file_path, label):
     with open(file_path, "r") as file:
         for line in file:
             line = preprocess(line)
-            line = " ".join(word_tokenize(line))
-            line = preprocess(line)
+            line = " ".join(remove_stopwords(word_tokenize(line)))
+            line = remove_dup_spaces(line)
             training_lines.append(f"__label__{label} {line}")
     return training_lines
 

@@ -18,12 +18,39 @@
         },
         {
             "creationInfo": "_:creationinfo",
+            "profileConformance": [
+                "ai",
+                "core",
+                "dataset"
+            ],
+            "rootElement": [
+                "https://spdx.org/spdxdocs/Sbom1-b1b4ff24-5ada-4c22-a9c9-7bd7121978ff"
+            ],
+            "spdxId": "https://spdx.org/spdxdocs/SpdxDocument1-d1edd8cb-935e-46f2-bd5b-43f5f554a097",
+            "type": "SpdxDocument"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "rootElement": [
+                "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481"
+            ],
+            "software_sbomType": [
+                "build",
+                "runtime"
+            ],
+            "spdxId": "https://spdx.org/spdxdocs/Sbom1-b1b4ff24-5ada-4c22-a9c9-7bd7121978ff",
+            "type": "software_Sbom"
+        },
+        {
+            "comment": "Dataset to be used as a training data for the sentiment analysis model.",
+            "creationInfo": "_:creationinfo",
             "name": "data",
             "software_fileKind": "directory",
             "spdxId": "https://spdx.org/spdxdocs/File1-0126db11-b59b-4514-8c0b-75b88597b08a",
             "type": "software_File"
         },
         {
+            "comment": "Technical documentation for the software package.",
             "creationInfo": "_:creationinfo",
             "name": "techdocs",
             "software_fileKind": "directory",
@@ -31,6 +58,7 @@
             "type": "software_File"
         },
         {
+            "comment": "License file for the content of this repository, but not include the content of the dataset.",
             "creationInfo": "_:creationinfo",
             "name": "LICENSE",
             "software_fileKind": "file",
@@ -38,6 +66,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Software bill of materials in SPDX 3.0 format.",
             "creationInfo": "_:creationinfo",
             "name": "bom.spdx3.json",
             "software_fileKind": "file",
@@ -46,6 +75,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Sentiment analysis model.",
             "creationInfo": "_:creationinfo",
             "name": "model.bin",
             "software_fileKind": "file",
@@ -54,6 +84,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Sentiment prediction script.",
             "creationInfo": "_:creationinfo",
             "name": "predict.py",
             "software_additionalPurpose": [
@@ -65,6 +96,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Preprocessing script.",
             "creationInfo": "_:creationinfo",
             "name": "preprocess.py",
             "software_additionalPurpose": [
@@ -84,6 +116,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Python package requirements.",
             "creationInfo": "_:creationinfo",
             "name": "requirements.txt",
             "software_fileKind": "file",
@@ -92,6 +125,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Training script.",
             "creationInfo": "_:creationinfo",
             "name": "train.py",
             "software_additionalPurpose": [
@@ -103,6 +137,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Training data after preprocessing by preprocess.py.",
             "creationInfo": "_:creationinfo",
             "name": "train.txt",
             "software_fileKind": "file",
@@ -111,6 +146,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Negative sentiment training data.",
             "creationInfo": "_:creationinfo",
             "name": "neg.txt",
             "software_fileKind": "file",
@@ -119,6 +155,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Neutral sentiment training data.",
             "creationInfo": "_:creationinfo",
             "name": "neu.txt",
             "software_fileKind": "file",
@@ -127,6 +164,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Positive sentiment training data.",
             "creationInfo": "_:creationinfo",
             "name": "pos.txt",
             "software_fileKind": "file",
@@ -135,6 +173,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Questioning expression training data.",
             "creationInfo": "_:creationinfo",
             "name": "q.txt",
             "software_fileKind": "file",
@@ -143,6 +182,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Training data prepration documentation.",
             "creationInfo": "_:creationinfo",
             "name": "dataprepare.md",
             "software_fileKind": "file",
@@ -151,6 +191,7 @@
             "type": "software_File"
         },
         {
+            "comment": "Instructions for use.",
             "creationInfo": "_:creationinfo",
             "name": "instructions.md",
             "software_fileKind": "file",
@@ -159,11 +200,12 @@
             "type": "software_File"
         },
         {
+            "comment": "120 samples from the full original dataset.",
             "creationInfo": "_:creationinfo",
             "dataset_anonymizationMethodUsed": [
                 "Email addresses, social media account mentions, and phone numbers were detected using common pattern matching and replaced with placeholders."
             ],
-            "dataset_datasetSize": 35027,
+            "dataset_datasetSize": 22498,
             "dataset_datasetType": [
                 "text"
             ],

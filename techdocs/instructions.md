@@ -32,7 +32,7 @@ Then run this commmand:
 python preprocess.py
 ```
 
-The training data will be preprocessed and saved as `data/train.txt`.
+The training data will be preprocessed and saved as `train.txt`.
 
 Then run this command:
 

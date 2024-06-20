@@ -4,7 +4,7 @@ import sys
 
 import fasttext
 from newmm_tokenizer.tokenizer import word_tokenize
-from th_preprocessor.preprocess import preprocess
+from th_preprocessor.preprocess import preprocess, remove_dup_spaces, remove_stopwords
 
 model = fasttext.load_model("model.bin")
 
@@ -16,8 +16,9 @@ def main():
 
     text = sys.argv[1]
     text = preprocess(text)
-    text = " ".join(word_tokenize(text))
-    text = preprocess(text)
+    text = " ".join(remove_stopwords(word_tokenize(text)))
+    text = remove_dup_spaces(text)
+
     labels, probabilities = model.predict(text)
     print(f"Label: {labels[0][9:]}, Probability: {probabilities[0]:.4f}")
 
