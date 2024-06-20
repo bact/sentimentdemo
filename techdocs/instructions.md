@@ -20,6 +20,11 @@ Possible labels are:
 - `pos` - positive
 - `q` - question
 
+```shell
+$ python predict.py กินข้าวกัน
+Label: pos, Probability: 0.2620
+```
+
 ## Train a new model
 
 Prepare the `data/` directory with four text files: `neg.txt` for negative
@@ -32,7 +37,8 @@ Then run this commmand:
 python preprocess.py
 ```
 
-The training data will be preprocessed and saved as `train.txt`.
+The training data will be [preprocessed](./dataprepare.md) and saved as
+`train.txt`.
 
 Then run this command:
 

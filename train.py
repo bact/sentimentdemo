@@ -5,7 +5,7 @@ import fasttext
 
 def main():
     model = fasttext.train_supervised("train.txt")
-    model.quantize(input="train.txt", qnorm=True, retrain=True, cutoff=1000)
+    model.quantize(input="train.txt", qnorm=True, retrain=True, cutoff=256)
     model.save_model("model.bin")
 
 
