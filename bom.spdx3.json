@@ -203,7 +203,7 @@
             "comment": "120 samples from the full original dataset.",
             "creationInfo": "_:creationinfo",
             "dataset_anonymizationMethodUsed": [
-                "Email addresses, social media account mentions, and phone numbers were detected using common pattern matching and replaced with placeholders."
+                "Social media account mentions and phone numbers were detected using common pattern matching and replaced with placeholders."
             ],
             "dataset_datasetSize": 22498,
             "dataset_datasetType": [
@@ -214,13 +214,39 @@
             "type": "dataset_DatasetPackage"
         },
         {
+            "ai_autonomyType": "yes",
             "ai_domain": [
                 "sentiment analysis",
-                "natural language processing",
-                "market research"
+                "natural language processing"
             ],
+            "ai_energyConsumption": {
+                "ai_inferenceEnergyConsumption": [
+                    {
+                        "ai_energyQuantity": "42.42",
+                        "ai_energyUnit": "kilowattHour",
+                        "type": "ai_EnergyConsumptionDescription"
+                    }
+                ],
+                "ai_trainingEnergyConsumption": [
+                    {
+                        "ai_energyQuantity": "424.2",
+                        "ai_energyUnit": "kilowattHour",
+                        "type": "ai_EnergyConsumptionDescription"
+                    }
+                ],
+                "type": "ai_EnergyConsumption"
+            },
             "ai_informationAboutApplication": "Text sentiment analysis.",
-            "ai_informationAboutTraining": "From 100 samples of social media text.",
+            "ai_informationAboutTraining": "From 120 samples of social media text.",
+            "ai_metric": [],
+            "ai_modelDataPreprocessing": [
+                "See: techdocs/dataprepare.md"
+            ],
+            "ai_typeOfModel": [
+                "classification",
+                "superivsed"
+            ],
+            "ai_useSensitivePersonalInformation": "no",
             "creationInfo": "_:creationinfo",
             "name": "Sentiment Demo",
             "software_primaryPurpose": "model",
