@@ -1,0 +1,31 @@
+autotuneDuration -> 7200
+autotuneMetric -> f1
+autotuneModelSize -> 500K
+autotunePredictions -> 1
+autotuneValidationFile -> valid.txt
+bucket -> 3036115
+cutoff -> 19701
+dim -> 26
+dsub -> 2
+epoch -> 100
+input -> train.txt
+label -> __label__
+loss -> loss_name.softmax
+lr -> 0.3401067214368905
+lrUpdateRate -> 100
+maxn -> 6
+minCount -> 1
+minCountLabel -> 0
+minn -> 3
+model -> model_name.supervised
+neg -> 5
+output -> 
+pretrainedVectors -> 
+qnorm -> True
+qout -> False
+retrain -> True
+saveOutput -> False
+seed -> 0
+t -> 0.0001
+wordNgrams -> 2
+ws -> 5

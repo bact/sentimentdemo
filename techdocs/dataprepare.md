@@ -15,8 +15,8 @@ personal identifiable information removed or masked.
 
 ## Preparation of training data
 
-From each file, 30 samples are randomly selected. This results in a total of
-120 samples across the four labels.
+From each file, 100 samples are randomly selected. This results in a total of
+400 samples across the four labels.
 
 Messages undergo the following normlaization treatments:
 

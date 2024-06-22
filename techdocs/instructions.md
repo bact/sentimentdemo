@@ -5,6 +5,19 @@ This application is designed to predict the sentiment of text.
 It was trained on Thai microblogging social media data and may have limitations
 in predicting text from other genres or languages.
 
+## Prerequisites
+
+Install the required dependencies.
+
+- `fasttext==0.9.3` - For text classification model training and prediction.
+- `newmm-tokenizer==0.2.2` - For Thai text tokenization.
+- `numpy==1.26.4` - For all multidimensional arrays computations. Note that NumPy version 2 and later will not work.
+- `th-simple-preprocessor==0.10.1` - For Thai text preprocessing.
+
+```shell
+pip install -r requirements.txt
+```
+
 ## Predict a label of a text
 
 ```shell
@@ -34,11 +47,11 @@ examples, `neu.txt` for neutral examples, `pos.txt` for positive examples, and
 Then run this commmand:
 
 ```shell
-python preprocess.py
+python preprocess.py data/train/ train.txt
 ```
 
-The training data will be [preprocessed](./dataprepare.md) and saved as
-`train.txt`.
+The training data in `data/train/` directory will be
+[preprocessed](./dataprepare.md) and saved as `train.txt`.
 
 Then run this command:
 

@@ -15,11 +15,6 @@ Other files are given to complete the illustration.
 ```text
 ├── LICENSE               License information
 ├── README.md             This README file
-├── data                  Data before preprocessed
-│   ├── neg.txt           Samples for label "neg" (negative)
-│   ├── neu.txt           Samples for label "neu" (neutral)
-│   ├── pos.txt           Samples for label "pos" (positive)
-│   └── q.txt             Samples for label "q" (question)
 ├── bom.spdx3.json        Software bill of materials, in SPDX 3 format
 ├── model.bin             A sentiment analysis model
 ├── predict.py            A script to predict a label of a text
@@ -28,8 +23,18 @@ Other files are given to complete the illustration.
 ├── techdocs              Technical documentation
 │   ├── dataprepare.md    Data prepration
 │   └── instructions.md   Instruction for use
+├── testdata              Testing data
+│   ├── neg.txt           Testing samples for label "neg" (negative)
+│   ├── neu.txt           Testing samples for label "neu" (neutral)
+│   ├── pos.txt           Testing samples for label "pos" (positive)
+│   └── q.txt             Testing samples for label "q" (question)
 ├── train.py              A script to build a model
-└── train.txt             Training data (label, tokenized text)
+├── train.txt             Training data (preprocessed, tokenized)
+└── traindata             Training data (before preprocessing)
+│   ├── neg.txt           Training samples for label "neg" (negative)
+│   ├── neu.txt           Training samples for label "neu" (neutral)
+│   ├── pos.txt           Training samples for label "pos" (positive)
+│   └── q.txt             Training samples for label "q" (question)
 ```
 
 ## Usage

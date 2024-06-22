@@ -1,31 +1,34 @@
 # SPDX-License-Identifier: CC0-1.0
 
+import sys
+
 from newmm_tokenizer.tokenizer import word_tokenize
-from th_preprocessor.preprocess import preprocess, remove_dup_spaces, remove_stopwords
+from th_preprocessor.preprocess import preprocess, remove_dup_spaces
 
 
-def get_training_lines(file_path, label):
-    training_lines = []
-    with open(file_path, "r") as file:
-        for line in file:
-            line = preprocess(line)
-            line = " ".join(remove_stopwords(word_tokenize(line)))
-            line = remove_dup_spaces(line)
-            training_lines.append(f"__label__{label} {line}")
-    return training_lines
+def preprocess_text(text: str) -> str:
+    text = preprocess(text)
+    text = " ".join(word_tokenize(text))
+    text = remove_dup_spaces(text)
+    return text
 
 
-def main():
-    training_data = []
-    training_data += get_training_lines("data/neg.txt", "neg")
-    training_data += get_training_lines("data/neu.txt", "neu")
-    training_data += get_training_lines("data/pos.txt", "pos")
-    training_data += get_training_lines("data/q.txt", "q")
+def main(data_dir_path: str, output_file_path: str) -> None:
+    labels = ["neg", "neu", "pos", "q"]
 
-    with open("train.txt", "w") as file:
-        for line in training_data:
-            file.write(f"{line}\n")
+    with open(output_file_path, "w") as destination:
+        for label in labels:
+            with open(f"{data_dir_path}/{label}.txt", "r") as source:
+                for line in source:
+                    line = preprocess_text(line)
+                    if len(line) > 0:
+                        destination.write(f"__label__{label} {line}\n")
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) != 3:
+        print("Usage: python preprocess.py <data_dir_path> <output_file_path>")
+        sys.exit(1)
+    data_dir_path = sys.argv[1]
+    output_file_path = sys.argv[2]
+    main(data_dir_path, output_file_path)
