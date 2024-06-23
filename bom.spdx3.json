@@ -42,36 +42,84 @@
             "type": "software_Sbom"
         },
         {
-            "comment": "Dataset to be used as a training data for the sentiment analysis model.",
+            "comment": "Dataset ready to be used as a training/validation/testing data for a sentiment analysis model.",
             "creationInfo": "_:creationinfo",
             "name": "data",
             "software_fileKind": "directory",
-            "spdxId": "https://spdx.org/spdxdocs/File1-0126db11-b59b-4514-8c0b-75b88597b08a",
+            "spdxId": "https://spdx.org/spdxdocs/File1-d1f75466-39c8-4d2b-8ec9-79f67e8a20d7",
             "type": "software_File"
         },
         {
-            "comment": "Technical documentation for the software package.",
+            "comment": "Dataset before preprocessing.",
+            "creationInfo": "_:creationinfo",
+            "name": "rawdata",
+            "software_fileKind": "directory",
+            "spdxId": "https://spdx.org/spdxdocs/File2-d2b5a206-1125-4576-a3ed-200876245147",
+            "type": "software_File"
+        },
+        {
+            "comment": "Technical documentation for the AI package.",
             "creationInfo": "_:creationinfo",
             "name": "techdocs",
             "software_fileKind": "directory",
-            "spdxId": "https://spdx.org/spdxdocs/File2-02dc2086-309f-46d3-b3e5-37ca2d152570",
+            "spdxId": "https://spdx.org/spdxdocs/File3-d36bc4df-b88e-4e0c-8aeb-ec446dbae90f",
             "type": "software_File"
         },
         {
-            "comment": "License file for the content of this repository, but not include the content of the dataset.",
+            "comment": "Test data.",
             "creationInfo": "_:creationinfo",
-            "name": "LICENSE",
-            "software_fileKind": "file",
-            "spdxId": "https://spdx.org/spdxdocs/File3-032e68ce-8218-4493-a59d-13949d36d489",
+            "name": "test",
+            "software_fileKind": "directory",
+            "spdxId": "https://spdx.org/spdxdocs/File4-d4aa32c6-a333-4200-9242-c75ba13c68bf",
+            "type": "software_File"
+        },
+        {
+            "comment": "Training data.",
+            "creationInfo": "_:creationinfo",
+            "name": "train",
+            "software_fileKind": "directory",
+            "spdxId": "https://spdx.org/spdxdocs/File5-d5b2e0a8-dcc1-4395-960b-3856e3a34b57",
+            "type": "software_File"
+        },
+        {
+            "comment": "Validation data.",
+            "creationInfo": "_:creationinfo",
+            "name": "valid",
+            "software_fileKind": "directory",
+            "spdxId": "https://spdx.org/spdxdocs/File6-d6d11e8e-8558-4be4-a87c-4b9b8a8b2fb8",
             "type": "software_File"
         },
         {
             "comment": "Software bill of materials in SPDX 3.0 format.",
             "creationInfo": "_:creationinfo",
             "name": "bom.spdx3.json",
+            "software_contentType": "text/spdx",
             "software_fileKind": "file",
-            "software_primaryPurpose": "manifest",
-            "spdxId": "https://spdx.org/spdxdocs/File4-04530429-8a33-4ec7-8b91-5a7fbae73db7",
+            "software_primaryPurpose": "bom",
+            "spdxId": "https://spdx.org/spdxdocs/File7-f07ab2e5-f0bd-4557-8630-113d935086fb",
+            "type": "software_File"
+        },
+        {
+            "comment": "Evaluation script. Reporting precision, recall, and F1 score.",
+            "creationInfo": "_:creationinfo",
+            "name": "evaluate.py",
+            "software_additionalPurpose": [
+                "executable",
+                "source"
+            ],
+            "software_fileKind": "file",
+            "software_primaryPurpose": "test",
+            "spdxId": "https://spdx.org/spdxdocs/File8-f08b4fa4-2658-421b-80e9-e9ab116102de",
+            "type": "software_File"
+        },
+        {
+            "comment": "License file for the content of this repository, but not include the content of the datasets.",
+            "creationInfo": "_:creationinfo",
+            "name": "LICENSE",
+            "software_contentType": "text/plain",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File9-f09b8718-e9ab-4d89-97b5-940988fdf050",
             "type": "software_File"
         },
         {
@@ -80,7 +128,7 @@
             "name": "model.bin",
             "software_fileKind": "file",
             "software_primaryPurpose": "model",
-            "spdxId": "https://spdx.org/spdxdocs/File5-05981e1e-37af-4b10-8893-f920e5710c8c",
+            "spdxId": "https://spdx.org/spdxdocs/File10-f10f9f75-3a23-465e-a80d-3a4fec75b220",
             "type": "software_File"
         },
         {
@@ -92,7 +140,7 @@
             ],
             "software_fileKind": "file",
             "software_primaryPurpose": "executable",
-            "spdxId": "https://spdx.org/spdxdocs/File6-062a2290-4d42-40bc-929d-df6c11980dd9",
+            "spdxId": "https://spdx.org/spdxdocs/File11-f11e140e-67ef-48db-bb4a-7fcb3775406f",
             "type": "software_File"
         },
         {
@@ -104,24 +152,26 @@
             ],
             "software_fileKind": "file",
             "software_primaryPurpose": "executable",
-            "spdxId": "https://spdx.org/spdxdocs/File7-070a7d60-9d99-496e-89b1-0d79002f5cc5",
+            "spdxId": "https://spdx.org/spdxdocs/File12-f12effed-9289-4fc3-986a-5fd83ff6724c",
             "type": "software_File"
         },
         {
             "creationInfo": "_:creationinfo",
             "name": "README.md",
+            "software_contentType": "text/markdown;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
-            "spdxId": "https://spdx.org/spdxdocs/File8-0843064e-d205-418e-9a97-b196a4272b70",
+            "spdxId": "https://spdx.org/spdxdocs/File13-f13b1a21-3183-4eb8-a4c2-c4c0e2f55d50",
             "type": "software_File"
         },
         {
             "comment": "Python package requirements.",
             "creationInfo": "_:creationinfo",
             "name": "requirements.txt",
+            "software_contentType": "text/plain",
             "software_fileKind": "file",
             "software_primaryPurpose": "manifest",
-            "spdxId": "https://spdx.org/spdxdocs/File9-09ca0842-5198-477c-8e2d-1696b5cd87c9",
+            "spdxId": "https://spdx.org/spdxdocs/File14-f14b0f00-1396-4986-8ca9-5d59b9362826",
             "type": "software_File"
         },
         {
@@ -133,84 +183,210 @@
             ],
             "software_fileKind": "file",
             "software_primaryPurpose": "executable",
-            "spdxId": "https://spdx.org/spdxdocs/File10-10856935-576c-47e0-9c8f-491693e83e80",
+            "spdxId": "https://spdx.org/spdxdocs/File15-f15b29a6-9634-4813-aa99-9986891a0711",
             "type": "software_File"
         },
         {
-            "comment": "Training data after preprocessing by preprocess.py.",
+            "comment": "Testing data after preprocessing.",
             "creationInfo": "_:creationinfo",
-            "name": "train.txt",
+            "name": "test.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "data",
-            "spdxId": "https://spdx.org/spdxdocs/File11-11cd41bc-9b8d-407e-900e-292dba0c6f66",
+            "spdxId": "https://spdx.org/spdxdocs/File16-f16c17ad-d95d-40d6-860f-1bacde2dbfd9",
+            "type": "software_File"
+        },
+        {
+            "comment": "Training data after preprocessing.",
+            "creationInfo": "_:creationinfo",
+            "name": "train.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "spdxId": "https://spdx.org/spdxdocs/File17-f17f40d2-0540-4d2b-9f23-1b58d7ab4652",
+            "type": "software_File"
+        },
+        {
+            "comment": "Validation data after preprocessing.",
+            "creationInfo": "_:creationinfo",
+            "name": "valid.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "data",
+            "spdxId": "https://spdx.org/spdxdocs/File18-f18be0d7-d16f-4658-91f3-5e5cf364edfa",
+            "type": "software_File"
+        },
+        {
+            "comment": "Negative sentiment testing data.",
+            "creationInfo": "_:creationinfo",
+            "name": "neg.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File19-f19d35f9-e9cc-4f65-b1a6-9dbbf0067712",
+            "type": "software_File"
+        },
+        {
+            "comment": "Neutral sentiment testing data.",
+            "creationInfo": "_:creationinfo",
+            "name": "neu.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File20-f20afdc1-cedd-402a-86e6-20f43bda64b3",
+            "type": "software_File"
+        },
+        {
+            "comment": "Positive sentiment testing data.",
+            "creationInfo": "_:creationinfo",
+            "name": "pos.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File21-f21d426e-13a3-496e-9de4-b4ad5b3045e9",
+            "type": "software_File"
+        },
+        {
+            "comment": "Questioning expression testing data.",
+            "creationInfo": "_:creationinfo",
+            "name": "q.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File22-f22a6d6b-c667-4ea4-bc6a-bf958871b2ac",
             "type": "software_File"
         },
         {
             "comment": "Negative sentiment training data.",
             "creationInfo": "_:creationinfo",
             "name": "neg.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
-            "spdxId": "https://spdx.org/spdxdocs/File12-12587b02-c9cd-433a-92c8-8ee5c09492b1",
+            "spdxId": "https://spdx.org/spdxdocs/File23-f23fc75b-91b1-4ad9-8905-17d49bed5f67",
             "type": "software_File"
         },
         {
             "comment": "Neutral sentiment training data.",
             "creationInfo": "_:creationinfo",
             "name": "neu.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
-            "spdxId": "https://spdx.org/spdxdocs/File13-1334ef34-93fd-47c8-b379-bd2f56cca997",
+            "spdxId": "https://spdx.org/spdxdocs/File24-f24bc52d-048e-4abe-a959-36e049affd38",
             "type": "software_File"
         },
         {
             "comment": "Positive sentiment training data.",
             "creationInfo": "_:creationinfo",
             "name": "pos.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
-            "spdxId": "https://spdx.org/spdxdocs/File14-14a1fe63-18ad-48e3-9839-52cd449c62a8",
+            "spdxId": "https://spdx.org/spdxdocs/File25-f25b0253-d5f0-4255-ae61-a53d72b9608c",
             "type": "software_File"
         },
         {
             "comment": "Questioning expression training data.",
             "creationInfo": "_:creationinfo",
             "name": "q.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
-            "spdxId": "https://spdx.org/spdxdocs/File15-15d18973-4719-47dd-bc52-43289be1fe88",
+            "spdxId": "https://spdx.org/spdxdocs/File26-f26bfd7c-b0cc-432b-baa9-8efec2997dd7",
+            "type": "software_File"
+        },
+        {
+            "comment": "Negative sentiment validation data.",
+            "creationInfo": "_:creationinfo",
+            "name": "neg.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File27-f27e10ff-c542-4555-a5b2-dd715ef4a226",
+            "type": "software_File"
+        },
+        {
+            "comment": "Neutral sentiment validation data.",
+            "creationInfo": "_:creationinfo",
+            "name": "neu.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File28-f28ffdae-341b-425d-93ef-307ea64e6816",
+            "type": "software_File"
+        },
+        {
+            "comment": "Positive sentiment validation data.",
+            "creationInfo": "_:creationinfo",
+            "name": "pos.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File29-f29e137b-a38f-4c8f-8d0d-871deee24edf",
+            "type": "software_File"
+        },
+        {
+            "comment": "Questioning expression validation data.",
+            "creationInfo": "_:creationinfo",
+            "name": "q.txt",
+            "software_contentType": "text/plain;charset=UTF-8",
+            "software_fileKind": "file",
+            "software_primaryPurpose": "documentation",
+            "spdxId": "https://spdx.org/spdxdocs/File30-f30b013b-d6bf-4263-a5ed-f653159cd136",
             "type": "software_File"
         },
         {
             "comment": "Training data prepration documentation.",
             "creationInfo": "_:creationinfo",
             "name": "dataprepare.md",
+            "software_contentType": "text/markdown;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
-            "spdxId": "https://spdx.org/spdxdocs/File16-16681b24-e0e1-4707-8a1a-6c8e4ba2d2db",
+            "spdxId": "https://spdx.org/spdxdocs/File31-f31f6dc0-f9ce-4efa-9ccd-47dee50041d3",
             "type": "software_File"
         },
         {
             "comment": "Instructions for use.",
             "creationInfo": "_:creationinfo",
             "name": "instructions.md",
+            "software_contentType": "text/markdown;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
-            "spdxId": "https://spdx.org/spdxdocs/File17-17e0ca61-e938-4048-b5d8-18ec725fa4cc",
+            "spdxId": "https://spdx.org/spdxdocs/File32-f32f0784-038e-488d-a7bf-7d172dfe8b8a",
             "type": "software_File"
         },
         {
-            "comment": "120 samples from the full original dataset.",
+            "comment": "Preprocessed data ready for training/testing.",
+            "creationInfo": "_:creationinfo",
+            "dataset_datasetAvailability": "directDownload",
+            "dataset_datasetSize": 117553,
+            "dataset_datasetType": [
+                "text"
+            ],
+            "name": "Data after preprocessing",
+            "spdxId": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
+            "type": "dataset_DatasetPackage"
+        },
+        {
+            "comment": "Samples from the full original dataset.",
             "creationInfo": "_:creationinfo",
             "dataset_anonymizationMethodUsed": [
                 "Social media account mentions and phone numbers were detected using common pattern matching and replaced with placeholders."
             ],
-            "dataset_datasetSize": 22498,
+            "dataset_datasetAvailability": "directDownload",
+            "dataset_datasetSize": 103544,
             "dataset_datasetType": [
                 "text"
             ],
-            "name": "Training data",
-            "spdxId": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
+            "dataset_hasSensitivePersonalInformation": "no",
+            "dataset_knownBias": [
+                "The original dataset was collected from social media which popular among younger population. The dataset may not be representative of the general population.",
+                "The dataset was collected with some specific market research questions in mind, and the sentiment may not be relevant to other contexts.",
+                "The collection of the dataset was done in a specific time period, and the sentiment of the text may not be relevant to the current time."
+            ],
+            "name": "Raw data before preprocessing",
+            "spdxId": "https://spdx.org/spdxdocs/DatasetPackage2-d2e56dc7-3d39-4710-8b8e-08f9bc249de6",
             "type": "dataset_DatasetPackage"
         },
         {
@@ -384,7 +560,7 @@
                 }
             ],
             "ai_informationAboutApplication": "Text sentiment analysis.",
-            "ai_informationAboutTraining": "From 400 samples of social media text.",
+            "ai_informationAboutTraining": "The model size is limited to 100 Kilobytes and the duration for auto-tuning hyperparameters is capped at 2 hours.",
             "ai_metric": [
                 {
                     "key": "precision",
@@ -418,83 +594,150 @@
             "type": "ai_AIPackage"
         },
         {
+            "comment": "DatasetPackage1 contains: data/",
             "creationInfo": "_:creationinfo",
             "from": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
             "relationshipType": "contains",
             "to": [
-                "https://spdx.org/spdxdocs/File1-0126db11-b59b-4514-8c0b-75b88597b08a",
-                "https://spdx.org/spdxdocs/File12-12587b02-c9cd-433a-92c8-8ee5c09492b1",
-                "https://spdx.org/spdxdocs/File13-1334ef34-93fd-47c8-b379-bd2f56cca997",
-                "https://spdx.org/spdxdocs/File14-14a1fe63-18ad-48e3-9839-52cd449c62a8",
-                "https://spdx.org/spdxdocs/File15-15d18973-4719-47dd-bc52-43289be1fe88"
+                "https://spdx.org/spdxdocs/File1-d1f75466-39c8-4d2b-8ec9-79f67e8a20d7"
             ],
             "type": "Relationship"
         },
         {
+            "comment": "DatasetPackage2 contains: rawdata/",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/DatasetPackage2-d2e56dc7-3d39-4710-8b8e-08f9bc249de6",
+            "relationshipType": "contains",
+            "to": [
+                "https://spdx.org/spdxdocs/File2-d2b5a206-1125-4576-a3ed-200876245147"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "comment": "data/ directory contains: test.txt, train.txt, valid.txt",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/File1-d1f75466-39c8-4d2b-8ec9-79f67e8a20d7",
+            "relationshipType": "contains",
+            "to": [
+                "https://spdx.org/spdxdocs/File16-f16c17ad-d95d-40d6-860f-1bacde2dbfd9",
+                "https://spdx.org/spdxdocs/File17-f17f40d2-0540-4d2b-9f23-1b58d7ab4652",
+                "https://spdx.org/spdxdocs/File18-f18be0d7-d16f-4658-91f3-5e5cf364edfa"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "comment": "rawdata/ directory contains: test/, train/, valid/",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/File2-d2b5a206-1125-4576-a3ed-200876245147",
+            "relationshipType": "contains",
+            "to": [
+                "https://spdx.org/spdxdocs/File4-d4aa32c6-a333-4200-9242-c75ba13c68bf",
+                "https://spdx.org/spdxdocs/File5-d5b2e0a8-dcc1-4395-960b-3856e3a34b57",
+                "https://spdx.org/spdxdocs/File6-d6d11e8e-8558-4be4-a87c-4b9b8a8b2fb8"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "comment": "test/ directory contains: neg.txt, neu.txt, pos.txt, q.txt",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/File4-d4aa32c6-a333-4200-9242-c75ba13c68bf",
+            "relationshipType": "contains",
+            "to": [
+                "https://spdx.org/spdxdocs/File19-f19d35f9-e9cc-4f65-b1a6-9dbbf0067712",
+                "https://spdx.org/spdxdocs/File20-f20afdc1-cedd-402a-86e6-20f43bda64b3",
+                "https://spdx.org/spdxdocs/File21-f21d426e-13a3-496e-9de4-b4ad5b3045e9",
+                "https://spdx.org/spdxdocs/File22-f22a6d6b-c667-4ea4-bc6a-bf958871b2ac"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "comment": "train/ directory contains: neg.txt, neu.txt, pos.txt, q.txt",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/File5-d5b2e0a8-dcc1-4395-960b-3856e3a34b57",
+            "relationshipType": "contains",
+            "to": [
+                "https://spdx.org/spdxdocs/File23-f23fc75b-91b1-4ad9-8905-17d49bed5f67",
+                "https://spdx.org/spdxdocs/File24-f24bc52d-048e-4abe-a959-36e049affd38",
+                "https://spdx.org/spdxdocs/File25-f25b0253-d5f0-4255-ae61-a53d72b9608c",
+                "https://spdx.org/spdxdocs/File26-f26bfd7c-b0cc-432b-baa9-8efec2997dd7"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "comment": "valid/ directory contains: neg.txt, neu.txt, pos.txt, q.txt",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/File6-d6d11e8e-8558-4be4-a87c-4b9b8a8b2fb8",
+            "relationshipType": "contains",
+            "to": [
+                "https://spdx.org/spdxdocs/File27-f27e10ff-c542-4555-a5b2-dd715ef4a226",
+                "https://spdx.org/spdxdocs/File28-f28ffdae-341b-425d-93ef-307ea64e6816",
+                "https://spdx.org/spdxdocs/File29-f29e137b-a38f-4c8f-8d0d-871deee24edf",
+                "https://spdx.org/spdxdocs/File30-f30b013b-d6bf-4263-a5ed-f653159cd136"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "comment": "AIPackage1 contains: techdocs/, evaluate.py, LICENSE, model.bin, predict.py, preprocess.py, README.md, requirements.txt, train.py",
             "creationInfo": "_:creationinfo",
             "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
             "relationshipType": "contains",
             "to": [
-                "https://spdx.org/spdxdocs/File2-02dc2086-309f-46d3-b3e5-37ca2d152570",
-                "https://spdx.org/spdxdocs/File3-032e68ce-8218-4493-a59d-13949d36d489",
-                "https://spdx.org/spdxdocs/File5-05981e1e-37af-4b10-8893-f920e5710c8c",
-                "https://spdx.org/spdxdocs/File6-062a2290-4d42-40bc-929d-df6c11980dd9",
-                "https://spdx.org/spdxdocs/File7-070a7d60-9d99-496e-89b1-0d79002f5cc5",
-                "https://spdx.org/spdxdocs/File10-10856935-576c-47e0-9c8f-491693e83e80"
+                "https://spdx.org/spdxdocs/File3-d36bc4df-b88e-4e0c-8aeb-ec446dbae90f",
+                "https://spdx.org/spdxdocs/File8-f08b4fa4-2658-421b-80e9-e9ab116102de",
+                "https://spdx.org/spdxdocs/File9-f09b8718-e9ab-4d89-97b5-940988fdf050",
+                "https://spdx.org/spdxdocs/File10-f10f9f75-3a23-465e-a80d-3a4fec75b220",
+                "https://spdx.org/spdxdocs/File11-f11e140e-67ef-48db-bb4a-7fcb3775406f",
+                "https://spdx.org/spdxdocs/File12-f12effed-9289-4fc3-986a-5fd83ff6724c",
+                "https://spdx.org/spdxdocs/File13-f13b1a21-3183-4eb8-a4c2-c4c0e2f55d50",
+                "https://spdx.org/spdxdocs/File14-f14b0f00-1396-4986-8ca9-5d59b9362826",
+                "https://spdx.org/spdxdocs/File15-f15b29a6-9634-4813-aa99-9986891a0711"
             ],
             "type": "Relationship"
         },
         {
+            "comment": "preprocess.py generates: test.txt, train.txt, valid.txt",
             "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/File7-070a7d60-9d99-496e-89b1-0d79002f5cc5",
-            "relationshipType": "hasDataFile",
-            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDataFile1-1f46478f-18b4-4c92-ba36-a440afa1e478",
-            "to": [
-                "https://spdx.org/spdxdocs/File12-12587b02-c9cd-433a-92c8-8ee5c09492b1",
-                "https://spdx.org/spdxdocs/File13-1334ef34-93fd-47c8-b379-bd2f56cca997",
-                "https://spdx.org/spdxdocs/File14-14a1fe63-18ad-48e3-9839-52cd449c62a8",
-                "https://spdx.org/spdxdocs/File15-15d18973-4719-47dd-bc52-43289be1fe88"
-            ],
-            "type": "Relationship"
-        },
-        {
-            "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/File7-070a7d60-9d99-496e-89b1-0d79002f5cc5",
+            "from": "https://spdx.org/spdxdocs/File12-f12effed-9289-4fc3-986a-5fd83ff6724c",
             "relationshipType": "generates",
             "scope": "build",
             "spdxId": "https://spdx.org/spdxdocs/Relationship/generates1-01bd0839-cb33-4446-9cae-b01c9148d221",
             "to": [
-                "https://spdx.org/spdxdocs/File11-11cd41bc-9b8d-407e-900e-292dba0c6f66"
+                "https://spdx.org/spdxdocs/File16-f16c17ad-d95d-40d6-860f-1bacde2dbfd9",
+                "https://spdx.org/spdxdocs/File17-f17f40d2-0540-4d2b-9f23-1b58d7ab4652",
+                "https://spdx.org/spdxdocs/File18-f18be0d7-d16f-4658-91f3-5e5cf364edfa"
             ],
             "type": "LifecycleScopedRelationship"
         },
         {
+            "comment": "predict.py hasDataFile: model.bin",
             "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/File6-062a2290-4d42-40bc-929d-df6c11980dd9",
+            "from": "https://spdx.org/spdxdocs/File11-f11e140e-67ef-48db-bb4a-7fcb3775406f",
             "relationshipType": "hasDataFile",
             "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDataFile2-2fec70f0-8900-470b-b7fa-cd7b5c513491",
             "to": [
-                "https://spdx.org/spdxdocs/File5-05981e1e-37af-4b10-8893-f920e5710c8c"
+                "https://spdx.org/spdxdocs/File10-f10f9f75-3a23-465e-a80d-3a4fec75b220"
             ],
             "type": "Relationship"
         },
         {
+            "comment": "train.py generates: model.bin",
             "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/File10-10856935-576c-47e0-9c8f-491693e83e80",
+            "from": "https://spdx.org/spdxdocs/File15-f15b29a6-9634-4813-aa99-9986891a0711",
             "relationshipType": "generates",
             "scope": "build",
             "spdxId": "https://spdx.org/spdxdocs/Relationship/generates2-02ec04c7-b248-4472-b017-da7c04145ec2",
             "to": [
-                "https://spdx.org/spdxdocs/File5-05981e1e-37af-4b10-8893-f920e5710c8c"
+                "https://spdx.org/spdxdocs/File10-f10f9f75-3a23-465e-a80d-3a4fec75b220"
             ],
             "type": "LifecycleScopedRelationship"
         },
         {
+            "comment": "AIPackage1 hasDependencyManifest: requirements.txt",
             "creationInfo": "_:creationinfo",
             "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
             "relationshipType": "hasDependencyManifest",
             "to": [
-                "https://spdx.org/spdxdocs/File9-09ca0842-5198-477c-8e2d-1696b5cd87c9"
+                "https://spdx.org/spdxdocs/File14-f14b0f00-1396-4986-8ca9-5d59b9362826"
             ],
             "type": "Relationship"
         },
@@ -503,8 +746,9 @@
             "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
             "relationshipType": "hasDocumentation",
             "to": [
-                "https://spdx.org/spdxdocs/File16-16681b24-e0e1-4707-8a1a-6c8e4ba2d2db",
-                "https://spdx.org/spdxdocs/File17-17e0ca61-e938-4048-b5d8-18ec725fa4cc"
+                "https://spdx.org/spdxdocs/File3-d36bc4df-b88e-4e0c-8aeb-ec446dbae90f",
+                "https://spdx.org/spdxdocs/File9-f09b8718-e9ab-4d89-97b5-940988fdf050",
+                "https://spdx.org/spdxdocs/File13-f13b1a21-3183-4eb8-a4c2-c4c0e2f55d50"
             ],
             "type": "Relationship"
         },
@@ -538,7 +782,7 @@
         },
         {
             "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "from": "https://spdx.org/spdxdocs/DatasetPackage2-d2e56dc7-3d39-4710-8b8e-08f9bc249de6",
             "relationshipType": "hasDeclaredLicense",
             "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense2-d2656830-3744-4970-baf6-62586d30f5eb",
             "to": [
@@ -548,9 +792,29 @@
         },
         {
             "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "from": "https://spdx.org/spdxdocs/DatasetPackage2-d2e56dc7-3d39-4710-8b8e-08f9bc249de6",
             "relationshipType": "hasConcludedLicense",
             "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense2-c231b750-fe86-4d12-9308-89142e760517",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "relationshipType": "hasDeclaredLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense3-d3e53884-69b0-404d-b297-e2180d2724be",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "relationshipType": "hasConcludedLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense3-c3e6ff66-b9da-4529-bd8b-dc75a13baad3",
             "to": [
                 "https://spdx.org/licenses/CC-BY-4.0"
             ],
