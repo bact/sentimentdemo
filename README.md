@@ -2,7 +2,9 @@
 
 A simple text classification application, published solely as an artifact for
 the purpose of demonstrating a software bill of materials.
-Will be submitted to [spdx/spdx-examples](https://github.com/spdx/spdx-examples) repo.
+
+Will eventually be submitted to
+[spdx/spdx-examples](https://github.com/spdx/spdx-examples) repo.
 
 *Not suitable for any serious use.*
 
@@ -16,25 +18,29 @@ Other files are given to complete the illustration.
 ├── LICENSE               License information
 ├── README.md             This README file
 ├── bom.spdx3.json        Software bill of materials, in SPDX 3 format
+├── data                  Dataset, preprocessed and tokenized
+│   ├── test.txt          Testing data
+│   ├── train.txt         Training data
+│   └── valid.txt         Validation data
+├── evaluate.py           A script to evaluate prediction performance
 ├── model.bin             A sentiment analysis model
 ├── predict.py            A script to predict a label of a text
 ├── preprocess.py         A script to prepare training data
+├── rawdata               Dataset, samples from the full corpus
+│   ├── test              Testing data (before preprocessing)
+│   │   ├── neg.txt       Testing samples for label "neg" (negative)
+│   │   ├── neu.txt       Testing samples for label "neu" (neutral)
+│   │   ├── pos.txt       Testing samples for label "pos" (positive)
+│   │   └── q.txt         Testing samples for label "q" (question)
+│   ├── train             Training data (before preprocessing)
+│   │   └── ...
+│   └── valid             Validation data (before preprocessing)
+│       └── ...
 ├── requirements.txt      List of required Python libraries
 ├── techdocs              Technical documentation
 │   ├── dataprepare.md    Data prepration
 │   └── instructions.md   Instruction for use
-├── testdata              Testing data
-│   ├── neg.txt           Testing samples for label "neg" (negative)
-│   ├── neu.txt           Testing samples for label "neu" (neutral)
-│   ├── pos.txt           Testing samples for label "pos" (positive)
-│   └── q.txt             Testing samples for label "q" (question)
-├── train.py              A script to build a model
-├── train.txt             Training data (preprocessed, tokenized)
-└── traindata             Training data (before preprocessing)
-│   ├── neg.txt           Training samples for label "neg" (negative)
-│   ├── neu.txt           Training samples for label "neu" (neutral)
-│   ├── pos.txt           Training samples for label "pos" (positive)
-│   └── q.txt             Training samples for label "q" (question)
+└── train.py              A script to build a model
 ```
 
 ## Usage
@@ -45,6 +51,14 @@ application.
 ## Data preparation
 
 See [data preparation](./techdocs/dataprepare.md).
+
+## Notes
+
+- The energy used by the computer during model training is tracked by
+  [energy-tracker](https://github.com/rdegges/energy-tracker).
+  It measures how much energy the computer uses during the training.
+  This means the actual energy used for training the model might be a bit less
+  than the reported amount.
 
 ## Licenses
 
@@ -61,5 +75,5 @@ related or neighboring rights worldwide to the extent allowed by law.
 | Text classifier | [fastText](https://pypi.org/project/fasttext/) | MIT License | |
 | Array package | [NumPy](https://pypi.org/project/numpy/) | BSD License | |
 
- The specific version information can be found in
+The specific version information can be found in
 [requirements.txt](./requirements.txt).

@@ -15,10 +15,23 @@ personal identifiable information removed or masked.
 
 ## Preparation of training data
 
-From each file, 100 samples are randomly selected. This results in a total of
-400 samples across the four labels.
+From each file in the original dataset, 100 samples are randomly selected to be
+included in the raw training data located in the `rawdata/train/` directory:
 
-Messages undergo the following normlaization treatments:
+- `neg.txt` for negative samples
+- `neu.txt` for neutral samples
+- `pos.txt` for positive samples
+- `q.txt` for question samples
+
+The following command will process and compile these four file into a single
+file named `data/train.txt`, containing all the 400 samples ready for training:
+
+```shell
+python preprocess.py rawdata/train/ data/train.txt
+```
+
+Using that command, each sample will undergo the following normalization
+treatments:
 
 - Hashtags and special characters are removed.
 - Accented characters are normalized.
@@ -56,6 +69,19 @@ format expected by [fastText][4]:
 
 ```text
 __label__neu จัด ไป WSHAHA ตอนนี้ พร้อม เอา หลาน มา ด้วย
+```
+
+## Preparation of validation data and testing data
+
+Validation data and testing data are prepared in the same way as the training data.
+They consist of 80 samples and 40 samples, respectively, across the four labels.
+
+```shell
+python preprocess.py rawdata/valid/ data/valid.txt
+```
+
+```shell
+python preprocess.py rawdata/test/ data/test.txt
 ```
 
 [1]: https://github.com/PyThaiNLP/wisesight-sentiment/

@@ -4,53 +4,27 @@ import sys
 import time
 
 import fasttext
-from pyJoules.energy_meter import measure_energy
 
 
-@measure_energy
 def train(train_data_file_path: str, valid_data_file_path: str, model_file_path: str):
-    # model = fasttext.train_supervised(
-    #    input=train_data_file_path,
-    #    autotuneValidationFile=valid_data_file_path,
-    #    autotuneDuration=7200,  # 2 hours
-    #    autotuneModelSize="500K",
-    # )
-
+    # Auto-tune hyperparameters.
+    # Limit the duration to 2 hours. Limit the model size to 100K.
     model = fasttext.train_supervised(
         input=train_data_file_path,
-        lr=0.34,
-        lrUpdateRate=100,
-        epoch=100,
-        dim=26,
-        ws=5,
-        wordNgrams=3,
-        minCount=1,
-        minCountLabel=0,
-        minn=2,
-        maxn=6,
-        neg=5,
-        loss="softmax",
-        bucket=3036115,
-        thread=3,
-        t=0.0001,
-        seed=0,
-    )
-    model = model.quantize(
-        input=train_data_file_path,
-        qnorm=True,
-        retrain=True,
-        cutoff=19700,
-        qout=False,
-        dsub=2,
+        autotuneDuration=7200,
+        autotuneModelSize="100K",
+        autotuneValidationFile=valid_data_file_path,
     )
 
     # Print final hyperparameters
-    # args_obj = model.f.getArgs()
-    # for hparam in dir(args_obj):
-    #    if not hparam.startswith("__"):
-    #        print(f"{hparam}: {getattr(args_obj, hparam)}")
+    if hasattr(model, "f"):
+        print("Final hyperparameters:")
+        args_obj = model.f.getArgs()
+        for hparam in dir(args_obj):
+            if not hparam.startswith("__"):
+                print(f"{hparam}: {getattr(args_obj, hparam)}")
 
-    # model.save_model(model_file_path)
+    model.save_model(model_file_path)
 
 
 def main(train_data_file_path: str, valid_data_file_path: str, model_file_path: str):

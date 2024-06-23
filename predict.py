@@ -1,6 +1,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 import sys
+import time
 
 import fasttext
 from newmm_tokenizer.tokenizer import word_tokenize
@@ -9,12 +10,7 @@ from th_preprocessor.preprocess import preprocess, remove_dup_spaces, remove_sto
 model = fasttext.load_model("model.bin")
 
 
-def main():
-    if len(sys.argv) != 2:
-        print("Usage: python predict.py <text>")
-        sys.exit(1)
-
-    text = sys.argv[1]
+def predict(text: str):
     text = preprocess(text)
     text = " ".join(remove_stopwords(word_tokenize(text)))
     text = remove_dup_spaces(text)
@@ -24,4 +20,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) != 2:
+        print("Usage: python predict.py \"<text>\"")
+        sys.exit(1)
+
+    text = sys.argv[1]
+    predict(text)

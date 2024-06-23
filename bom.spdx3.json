@@ -222,14 +222,14 @@
             "ai_energyConsumption": {
                 "ai_inferenceEnergyConsumption": [
                     {
-                        "ai_energyQuantity": "42.42",
+                        "ai_energyQuantity": "0.0000036",
                         "ai_energyUnit": "kilowattHour",
                         "type": "ai_EnergyConsumptionDescription"
                     }
                 ],
                 "ai_trainingEnergyConsumption": [
                     {
-                        "ai_energyQuantity": "424.2",
+                        "ai_energyQuantity": "0.0048269",
                         "ai_energyUnit": "kilowattHour",
                         "type": "ai_EnergyConsumptionDescription"
                     }
@@ -238,24 +238,170 @@
             },
             "ai_hyperparameter": [
                 {
-                    "key": "qnorm",
+                    "key": "autotuneDuration",
                     "type": "DictionaryEntry",
-                    "value": "True"
+                    "value": "7200"
                 },
                 {
-                    "key": "retrain",
+                    "key": "autotuneMetric",
                     "type": "DictionaryEntry",
-                    "value": "True"
+                    "value": "f1"
+                },
+                {
+                    "key": "autotuneModelSize",
+                    "type": "DictionaryEntry",
+                    "value": "100K"
+                },
+                {
+                    "key": "autotunePredictions",
+                    "type": "DictionaryEntry",
+                    "value": "1"
+                },
+                {
+                    "key": "bucket",
+                    "type": "DictionaryEntry",
+                    "value": "33502"
                 },
                 {
                     "key": "cutoff",
                     "type": "DictionaryEntry",
-                    "value": "256"
+                    "value": "3547"
+                },
+                {
+                    "key": "dim",
+                    "type": "DictionaryEntry",
+                    "value": "21"
+                },
+                {
+                    "key": "dsub",
+                    "type": "DictionaryEntry",
+                    "value": "2"
+                },
+                {
+                    "key": "epoch",
+                    "type": "DictionaryEntry",
+                    "value": "100"
+                },
+                {
+                    "key": "label",
+                    "type": "DictionaryEntry",
+                    "value": "__label__"
+                },
+                {
+                    "key": "loss",
+                    "type": "DictionaryEntry",
+                    "value": "loss_name.softmax"
+                },
+                {
+                    "key": "lr",
+                    "type": "DictionaryEntry",
+                    "value": "0.0991838877283529"
+                },
+                {
+                    "key": "lrUpdateRate",
+                    "type": "DictionaryEntry",
+                    "value": "100"
+                },
+                {
+                    "key": "maxn",
+                    "type": "DictionaryEntry",
+                    "value": "6"
+                },
+                {
+                    "key": "minCount",
+                    "type": "DictionaryEntry",
+                    "value": "1"
+                },
+                {
+                    "key": "minCountLabel",
+                    "type": "DictionaryEntry",
+                    "value": "0"
+                },
+                {
+                    "key": "minn",
+                    "type": "DictionaryEntry",
+                    "value": "3"
+                },
+                {
+                    "key": "model",
+                    "type": "DictionaryEntry",
+                    "value": "model_name.supervised"
+                },
+                {
+                    "key": "neg",
+                    "type": "DictionaryEntry",
+                    "value": "5"
+                },
+                {
+                    "key": "qnorm",
+                    "type": "DictionaryEntry",
+                    "value": "true"
+                },
+                {
+                    "key": "qout",
+                    "type": "DictionaryEntry",
+                    "value": "false"
+                },
+                {
+                    "key": "retrain",
+                    "type": "DictionaryEntry",
+                    "value": "true"
+                },
+                {
+                    "key": "saveOutput",
+                    "type": "DictionaryEntry",
+                    "value": "false"
+                },
+                {
+                    "key": "seed",
+                    "type": "DictionaryEntry",
+                    "value": "0"
+                },
+                {
+                    "key": "t",
+                    "type": "DictionaryEntry",
+                    "value": "0.0001"
+                },
+                {
+                    "key": "thread",
+                    "type": "DictionaryEntry",
+                    "value": "7"
+                },
+                {
+                    "key": "verbose",
+                    "type": "DictionaryEntry",
+                    "value": "2"
+                },
+                {
+                    "key": "wordNgrams",
+                    "type": "DictionaryEntry",
+                    "value": "4"
+                },
+                {
+                    "key": "ws",
+                    "type": "DictionaryEntry",
+                    "value": "5"
                 }
             ],
             "ai_informationAboutApplication": "Text sentiment analysis.",
-            "ai_informationAboutTraining": "From 120 samples of social media text.",
-            "ai_metric": [],
+            "ai_informationAboutTraining": "From 400 samples of social media text.",
+            "ai_metric": [
+                {
+                    "key": "precision",
+                    "type": "DictionaryEntry",
+                    "value": "0.4625"
+                },
+                {
+                    "key": "recall",
+                    "type": "DictionaryEntry",
+                    "value": "0.475"
+                },
+                {
+                    "key": "f1",
+                    "type": "DictionaryEntry",
+                    "value": "0.4669192"
+                }
+            ],
             "ai_modelDataPreprocessing": [
                 "See: techdocs/dataprepare.md"
             ],
@@ -264,6 +410,7 @@
                 "superivsed"
             ],
             "ai_useSensitivePersonalInformation": "no",
+            "comment": "A sentiment analysis model trained on a very small dataset, using fastText library. A. Joulin, E. Grave, P. Bojanowski, T. Mikolov, 2017, Bag of Tricks for Efficient Text Classification.",
             "creationInfo": "_:creationinfo",
             "name": "Sentiment Demo",
             "software_primaryPurpose": "model",
