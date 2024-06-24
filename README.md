@@ -1,18 +1,24 @@
 # sentimentdemo
 
 A simple text classification application, published solely as an artifact for
-the purpose of demonstrating a software bill of materials.
+the purpose of demonstrating
+[a software bill of materials (SBOM)](https://en.wikipedia.org/wiki/Software_supply_chain).
 
-Will eventually be submitted to
-[spdx/spdx-examples](https://github.com/spdx/spdx-examples) repo.
-
-*Not suitable for any serious use.*
-
-## Content
+*Not suitable for any serious use of text classification.*
 
 The main content of this repository is the software bill of materials at
 [bom.spdx3.json](./bom.spdx3.json).
 Other files are given to complete the illustration.
+
+Design goals:
+
+- Small enough for human comprehension
+- Elaborate enough to demonstrate the use of different information fields
+
+Will eventually be submitted to
+[spdx/spdx-examples](https://github.com/spdx/spdx-examples) repo.
+
+## Content
 
 ```text
 ├── LICENSE               License information
