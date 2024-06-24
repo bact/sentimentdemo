@@ -32,15 +32,15 @@ Will eventually be submitted to
 ├── model.bin             A sentiment analysis model
 ├── predict.py            A script to predict a label of a text
 ├── preprocess.py         A script to prepare training data
-├── rawdata               Dataset, samples from the full corpus
-│   ├── test              Testing data (before preprocessing)
+├── rawdata               Raw dataset, before preprocessing
+│   ├── test              Testing data
 │   │   ├── neg.txt       Testing samples for label "neg" (negative)
 │   │   ├── neu.txt       Testing samples for label "neu" (neutral)
 │   │   ├── pos.txt       Testing samples for label "pos" (positive)
 │   │   └── q.txt         Testing samples for label "q" (question)
-│   ├── train             Training data (before preprocessing)
+│   ├── train             Training data
 │   │   └── ...
-│   └── valid             Validation data (before preprocessing)
+│   └── valid             Validation data
 │       └── ...
 ├── requirements.txt      List of required Python libraries
 ├── techdocs              Technical documentation
