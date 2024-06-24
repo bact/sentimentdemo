@@ -459,11 +459,6 @@
                     "value": "100"
                 },
                 {
-                    "key": "label",
-                    "type": "DictionaryEntry",
-                    "value": "__label__"
-                },
-                {
                     "key": "loss",
                     "type": "DictionaryEntry",
                     "value": "loss_name.softmax"
@@ -592,6 +587,75 @@
             "software_primaryPurpose": "model",
             "spdxId": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
             "type": "ai_AIPackage"
+        },
+        {
+            "comment": "This meant to be a temporary workaround for the lack of the ListedLicense (from SPDX Licenses List) in SPDX 3.0 ontology. Once the ListedLicense instance for CC-BY-4.0 is available, this element should be removed. See: https://github.com/spdx/LicenseListPublisher/issues/183",
+            "creationInfo": "_:creationinfo",
+            "description": "Creative Commons Attribution 4.0 International",
+            "simplelicensing_licenseExpression": "CC-BY-4.0",
+            "simplelicensing_licenseListVersion": "3.24.0",
+            "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
+            "type": "simplelicensing_LicenseExpression"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
+            "relationshipType": "hasDeclaredLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense1-d1741c4c-4c18-459a-b9f9-e24f018e39f1",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
+            "relationshipType": "hasConcludedLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense1-c18ca8f8-32f1-4682-a136-51c32a5d555a",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/DatasetPackage2-d2e56dc7-3d39-4710-8b8e-08f9bc249de6",
+            "relationshipType": "hasDeclaredLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense2-d2656830-3744-4970-baf6-62586d30f5eb",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/DatasetPackage2-d2e56dc7-3d39-4710-8b8e-08f9bc249de6",
+            "relationshipType": "hasConcludedLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense2-c231b750-fe86-4d12-9308-89142e760517",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "relationshipType": "hasDeclaredLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense3-d3e53884-69b0-404d-b297-e2180d2724be",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ],
+            "type": "Relationship"
+        },
+        {
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
+            "relationshipType": "hasConcludedLicense",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense3-c3e6ff66-b9da-4529-bd8b-dc75a13baad3",
+            "to": [
+                "https://spdx.org/licenses/CC-BY-4.0"
+            ],
+            "type": "Relationship"
         },
         {
             "creationInfo": "_:creationinfo",
@@ -764,71 +828,25 @@
             "type": "Relationship"
         },
         {
-            "comment": "This meant to be a temporary workaround for the lack of the ListedLicense (from SPDX Licenses List) in SPDX 3.0 ontology. Once the ListedLicense instance for CC-BY-4.0 is available, this element should be removed. See: https://github.com/spdx/LicenseListPublisher/issues/183",
             "creationInfo": "_:creationinfo",
-            "description": "Creative Commons Attribution 4.0 International",
-            "simplelicensing_licenseExpression": "CC-BY-4.0",
-            "simplelicensing_licenseListVersion": "3.24.0",
-            "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
-            "type": "simplelicensing_LicenseExpression"
-        },
-        {
-            "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
-            "relationshipType": "hasDeclaredLicense",
-            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense1-d1741c4c-4c18-459a-b9f9-e24f018e39f1",
+            "description": "model.bin trainedOn: train.txt, valid.txt",
+            "from": "https://spdx.org/spdxdocs/File10-f10f9f75-3a23-465e-a80d-3a4fec75b220",
+            "relationshipType": "trainedOn",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/trainedOn1-01b4b32c-7854-4c31-9bf0-95f2e5805b66",
             "to": [
-                "https://spdx.org/licenses/CC-BY-4.0"
+                "https://spdx.org/spdxdocs/File17-f17f40d2-0540-4d2b-9f23-1b58d7ab4652",
+                "https://spdx.org/spdxdocs/File18-f18be0d7-d16f-4658-91f3-5e5cf364edfa"
             ],
             "type": "Relationship"
         },
         {
             "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
-            "relationshipType": "hasConcludedLicense",
-            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense1-c18ca8f8-32f1-4682-a136-51c32a5d555a",
+            "description": "model.bin testedOn: test.txt",
+            "from": "https://spdx.org/spdxdocs/File10-f10f9f75-3a23-465e-a80d-3a4fec75b220",
+            "relationshipType": "testedOn",
+            "spdxId": "https://spdx.org/spdxdocs/Relationship/testedOn1-01efd83b-b615-4099-a9b7-e0c7db47fdd8",
             "to": [
-                "https://spdx.org/licenses/CC-BY-4.0"
-            ],
-            "type": "Relationship"
-        },
-        {
-            "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/DatasetPackage2-d2e56dc7-3d39-4710-8b8e-08f9bc249de6",
-            "relationshipType": "hasDeclaredLicense",
-            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense2-d2656830-3744-4970-baf6-62586d30f5eb",
-            "to": [
-                "https://spdx.org/licenses/CC-BY-4.0"
-            ],
-            "type": "Relationship"
-        },
-        {
-            "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/DatasetPackage2-d2e56dc7-3d39-4710-8b8e-08f9bc249de6",
-            "relationshipType": "hasConcludedLicense",
-            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense2-c231b750-fe86-4d12-9308-89142e760517",
-            "to": [
-                "https://spdx.org/licenses/CC-BY-4.0"
-            ],
-            "type": "Relationship"
-        },
-        {
-            "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
-            "relationshipType": "hasDeclaredLicense",
-            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense3-d3e53884-69b0-404d-b297-e2180d2724be",
-            "to": [
-                "https://spdx.org/licenses/CC-BY-4.0"
-            ],
-            "type": "Relationship"
-        },
-        {
-            "creationInfo": "_:creationinfo",
-            "from": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
-            "relationshipType": "hasConcludedLicense",
-            "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense3-c3e6ff66-b9da-4529-bd8b-dc75a13baad3",
-            "to": [
-                "https://spdx.org/licenses/CC-BY-4.0"
+                "https://spdx.org/spdxdocs/File16-f16c17ad-d95d-40d6-860f-1bacde2dbfd9"
             ],
             "type": "Relationship"
         }
