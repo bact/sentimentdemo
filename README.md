@@ -75,7 +75,7 @@ related or neighboring rights worldwide to the extent allowed by law.
 
 | Component | Name | License | Notes |
 | --------- | ---- | ------- | ----- |
-| Training data | [Wisesight Sentiment Corpus](https://github.com/PyThaiNLP/wisesight-sentiment) | Creative Commons Zero v1.0 Universal | In `data/`. For the interest of size, the excerpt contains only 100 lines. See [data preparation](./techdocs/dataprepare.md). |
+| Training data | [Wisesight Sentiment Corpus](https://github.com/PyThaiNLP/wisesight-sentiment) | Creative Commons Zero v1.0 Universal | Samples from the corpus are in `rawdata/`. Preprocessed data is in `data/`. See [data preparation](./techdocs/dataprepare.md) for details. |
 | Text preprocessor | [th-simple-preprocessor](https://pypi.org/project/th-simple-preprocessor/) |  Apache License 2.0 | |
 | Word tokenizer | [newmm-tokenizer](https://pypi.org/project/newmm-tokenizer/) | Apache License 2.0 | Inherited the license from [PyThaiNLP](https://pypi.org/project/pythainlp/). |
 | Text classifier | [fastText](https://pypi.org/project/fasttext/) | MIT License | |
