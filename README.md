@@ -2,9 +2,10 @@
 
 A simple text classification application, published solely as an artifact for
 the purpose of demonstrating
-[a software bill of materials (SBOM)](https://en.wikipedia.org/wiki/Software_supply_chain).
+[a software bill of materials (SBOM)](https://en.wikipedia.org/wiki/Software_supply_chain)
+in [SPDX 3.0 format](https://spdx.dev/use/specifications/).
 
-*Not suitable for any serious use of text classification.*
+*Not recommended for critical text classification tasks.*
 
 The main content of this repository is the software bill of materials at
 [bom.spdx3.json](./bom.spdx3.json).
