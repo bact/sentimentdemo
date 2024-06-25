@@ -1,0 +1,318 @@
+@startuml
+Package "bom.spdx3.json" as c284559edaba292c65640d1b0fdf5a9b {
+object "<b>evaluate.py</b>\nsoftware_F..." as c284559edaba292c65640d1b0fdf5a9b_o1
+object "CreationInfo" as c284559edaba292c65640d1b0fdf5a9b_o2
+object "<b>Arthit Suriyawongkul</b>\nP..." as c284559edaba292c65640d1b0fdf5a9b_o3
+object "hasConcludedLicense1\nRelation..." as c284559edaba292c65640d1b0fdf5a9b_o4
+object "<b>Data after preprocessing</b..." as c284559edaba292c65640d1b0fdf5a9b_o5
+object "https://spdx.org/licenses/CC-B..." as c284559edaba292c65640d1b0fdf5a9b_o6
+object "contains3\nRelationship" as c284559edaba292c65640d1b0fdf5a9b_o7
+object "<b>data</b>\nsoftware_File" as c284559edaba292c65640d1b0fdf5a9b_o8
+object "<b>test.txt</b>\nsoftware_File..." as c284559edaba292c65640d1b0fdf5a9b_o9
+object "<b>train.txt</b>\nsoftware_Fil..." as c284559edaba292c65640d1b0fdf5a9b_o10
+object "<b>valid.txt</b>\nsoftware_Fil..." as c284559edaba292c65640d1b0fdf5a9b_o11
+object "contains9\nRelationship" as c284559edaba292c65640d1b0fdf5a9b_o12
+object "<b>techdocs</b>\nsoftware_File..." as c284559edaba292c65640d1b0fdf5a9b_o13
+object "<b>dataprepare.md</b>\nsoftwar..." as c284559edaba292c65640d1b0fdf5a9b_o14
+object "<b>instructions.md</b>\nsoftwa..." as c284559edaba292c65640d1b0fdf5a9b_o15
+object "<b>model.bin</b>\nsoftware_Fil..." as c284559edaba292c65640d1b0fdf5a9b_o16
+object "hasDataFile1\nRelationship" as c284559edaba292c65640d1b0fdf5a9b_o17
+object "<b>predict.py</b>\nsoftware_Fi..." as c284559edaba292c65640d1b0fdf5a9b_o18
+object "hasDependencyManifest1\nRelati..." as c284559edaba292c65640d1b0fdf5a9b_o19
+object "<b>Sentiment Demo</b>\nai_AIPa..." as c284559edaba292c65640d1b0fdf5a9b_o20
+object "ai_EnergyConsumption" as c284559edaba292c65640d1b0fdf5a9b_o21
+object "ai_EnergyConsumptionDescriptio..." as c284559edaba292c65640d1b0fdf5a9b_o22
+object "ai_EnergyConsumptionDescriptio..." as c284559edaba292c65640d1b0fdf5a9b_o23
+object "DictionaryEntry" as c284559edaba292c65640d1b0fdf5a9b_o24
+object "DictionaryEntry" as c284559edaba292c65640d1b0fdf5a9b_o52
+object "DictionaryEntry" as c284559edaba292c65640d1b0fdf5a9b_o53
+object "DictionaryEntry" as c284559edaba292c65640d1b0fdf5a9b_o54
+object "<b>requirements.txt</b>\nsoftw..." as c284559edaba292c65640d1b0fdf5a9b_o55
+object "<b>README.md</b>\nsoftware_Fil..." as c284559edaba292c65640d1b0fdf5a9b_o56
+object "trainedOn1\nRelationship" as c284559edaba292c65640d1b0fdf5a9b_o57
+object "SpdxDocument1\nSpdxDocument" as c284559edaba292c65640d1b0fdf5a9b_o58
+object "Sbom1\nsoftware_Sbom" as c284559edaba292c65640d1b0fdf5a9b_o59
+object "<b>LICENSE</b>\nsoftware_File" as c284559edaba292c65640d1b0fdf5a9b_o60
+object "hasDeclaredLicense3\nRelations..." as c284559edaba292c65640d1b0fdf5a9b_o61
+object "<b>preprocess.py</b>\nsoftware..." as c284559edaba292c65640d1b0fdf5a9b_o62
+object "contains1\nRelationship" as c284559edaba292c65640d1b0fdf5a9b_o63
+object "contains8\nRelationship" as c284559edaba292c65640d1b0fdf5a9b_o64
+object "<b>bom.spdx3.json</b>\nsoftwar..." as c284559edaba292c65640d1b0fdf5a9b_o65
+object "<b>train.py</b>\nsoftware_File..." as c284559edaba292c65640d1b0fdf5a9b_o66
+object "generates1\nLifecycleScopedRel..." as c284559edaba292c65640d1b0fdf5a9b_o67
+object "generates2\nLifecycleScopedRel..." as c284559edaba292c65640d1b0fdf5a9b_o68
+object "hasDocumentation1\nRelationshi..." as c284559edaba292c65640d1b0fdf5a9b_o69
+object "hasDeclaredLicense1\nRelations..." as c284559edaba292c65640d1b0fdf5a9b_o70
+object "testedOn1\nRelationship" as c284559edaba292c65640d1b0fdf5a9b_o71
+object "hasConcludedLicense3\nRelation..." as c284559edaba292c65640d1b0fdf5a9b_o72
+}
+c284559edaba292c65640d1b0fdf5a9b_o1 : spdxId = "File8"
+c284559edaba292c65640d1b0fdf5a9b_o2 : created = 2024-06-18 06:34:00+00:00
+c284559edaba292c65640d1b0fdf5a9b_o3 : spdxId = "Person1"
+c284559edaba292c65640d1b0fdf5a9b_o3::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o3 : name = "Arthit Suriyawongkul"
+c284559edaba292c65640d1b0fdf5a9b_o2::createdBy --> c284559edaba292c65640d1b0fdf5a9b_o3 : createdBy
+c284559edaba292c65640d1b0fdf5a9b_o2 : specVersion = "3.0.0"
+c284559edaba292c65640d1b0fdf5a9b_o1::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o1 : description = "Evaluation script. Reporting p..."
+c284559edaba292c65640d1b0fdf5a9b_o1 : name = "evaluate.py"
+c284559edaba292c65640d1b0fdf5a9b_o1 : software_additionalPurpose = ['executable', 'source']
+c284559edaba292c65640d1b0fdf5a9b_o1 : software_primaryPurpose = "test"
+c284559edaba292c65640d1b0fdf5a9b_o1 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o4 : spdxId = "hasConcludedLicense1"
+c284559edaba292c65640d1b0fdf5a9b_o4::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o5 : spdxId = "DatasetPackage1"
+c284559edaba292c65640d1b0fdf5a9b_o5::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o5 : description = "Preprocessed data ready for tr..."
+c284559edaba292c65640d1b0fdf5a9b_o5 : name = "Data after preprocessing"
+c284559edaba292c65640d1b0fdf5a9b_o5 : dataset_datasetAvailability = "directDownload"
+c284559edaba292c65640d1b0fdf5a9b_o5 : dataset_datasetSize = 117553
+c284559edaba292c65640d1b0fdf5a9b_o5 : dataset_datasetType = ['text']
+c284559edaba292c65640d1b0fdf5a9b_o5 <-- c284559edaba292c65640d1b0fdf5a9b_o4::from : from
+c284559edaba292c65640d1b0fdf5a9b_o4 : relationshipType = "hasConcludedLicense"
+c284559edaba292c65640d1b0fdf5a9b_o6 : spdxId = "https://spdx.org/licenses/CC-B..."
+c284559edaba292c65640d1b0fdf5a9b_o6 : comment = "This meant to be a temporary w..."
+c284559edaba292c65640d1b0fdf5a9b_o6::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o6 : description = "Creative Commons Attribution 4..."
+c284559edaba292c65640d1b0fdf5a9b_o6 : simplelicensing_licenseExpression = "CC-BY-4.0"
+c284559edaba292c65640d1b0fdf5a9b_o6 : simplelicensing_licenseListVersion = "3.24.0"
+c284559edaba292c65640d1b0fdf5a9b_o4::to --> c284559edaba292c65640d1b0fdf5a9b_o6 : to
+c284559edaba292c65640d1b0fdf5a9b_o7 : spdxId = "contains3"
+c284559edaba292c65640d1b0fdf5a9b_o7::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o7 : description = "data/ directory contains: test..."
+c284559edaba292c65640d1b0fdf5a9b_o8 : spdxId = "File1"
+c284559edaba292c65640d1b0fdf5a9b_o8::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o8 : description = "Dataset ready to be used as a ..."
+c284559edaba292c65640d1b0fdf5a9b_o8 : name = "data"
+c284559edaba292c65640d1b0fdf5a9b_o8 : software_fileKind = "directory"
+c284559edaba292c65640d1b0fdf5a9b_o8 <-- c284559edaba292c65640d1b0fdf5a9b_o7::from : from
+c284559edaba292c65640d1b0fdf5a9b_o7 : relationshipType = "contains"
+c284559edaba292c65640d1b0fdf5a9b_o9 : spdxId = "File16"
+c284559edaba292c65640d1b0fdf5a9b_o9::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o9 : description = "Testing data after preprocessi..."
+c284559edaba292c65640d1b0fdf5a9b_o9 : name = "test.txt"
+c284559edaba292c65640d1b0fdf5a9b_o9 : software_primaryPurpose = "data"
+c284559edaba292c65640d1b0fdf5a9b_o9 : software_contentType = "text/plain"
+c284559edaba292c65640d1b0fdf5a9b_o9 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o7::to --> c284559edaba292c65640d1b0fdf5a9b_o9 : to
+c284559edaba292c65640d1b0fdf5a9b_o10 : spdxId = "File17"
+c284559edaba292c65640d1b0fdf5a9b_o10::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o10 : description = "Training data after preprocess..."
+c284559edaba292c65640d1b0fdf5a9b_o10 : name = "train.txt"
+c284559edaba292c65640d1b0fdf5a9b_o10 : software_primaryPurpose = "data"
+c284559edaba292c65640d1b0fdf5a9b_o10 : software_contentType = "text/plain"
+c284559edaba292c65640d1b0fdf5a9b_o10 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o7::to --> c284559edaba292c65640d1b0fdf5a9b_o10 : to
+c284559edaba292c65640d1b0fdf5a9b_o11 : spdxId = "File18"
+c284559edaba292c65640d1b0fdf5a9b_o11::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o11 : description = "Validation data after preproce..."
+c284559edaba292c65640d1b0fdf5a9b_o11 : name = "valid.txt"
+c284559edaba292c65640d1b0fdf5a9b_o11 : software_primaryPurpose = "data"
+c284559edaba292c65640d1b0fdf5a9b_o11 : software_contentType = "text/plain"
+c284559edaba292c65640d1b0fdf5a9b_o11 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o7::to --> c284559edaba292c65640d1b0fdf5a9b_o11 : to
+c284559edaba292c65640d1b0fdf5a9b_o12 : spdxId = "contains9"
+c284559edaba292c65640d1b0fdf5a9b_o12::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o12 : description = "techdocs/ directory contains: ..."
+c284559edaba292c65640d1b0fdf5a9b_o13 : spdxId = "File3"
+c284559edaba292c65640d1b0fdf5a9b_o13::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o13 : description = "Technical documentation for th..."
+c284559edaba292c65640d1b0fdf5a9b_o13 : name = "techdocs"
+c284559edaba292c65640d1b0fdf5a9b_o13 : software_fileKind = "directory"
+c284559edaba292c65640d1b0fdf5a9b_o13 <-- c284559edaba292c65640d1b0fdf5a9b_o12::from : from
+c284559edaba292c65640d1b0fdf5a9b_o12 : relationshipType = "contains"
+c284559edaba292c65640d1b0fdf5a9b_o14 : spdxId = "File31"
+c284559edaba292c65640d1b0fdf5a9b_o14::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o14 : description = "Training data prepration docum..."
+c284559edaba292c65640d1b0fdf5a9b_o14 : name = "dataprepare.md"
+c284559edaba292c65640d1b0fdf5a9b_o14 : software_primaryPurpose = "documentation"
+c284559edaba292c65640d1b0fdf5a9b_o14 : software_contentType = "text/markdown"
+c284559edaba292c65640d1b0fdf5a9b_o14 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o12::to --> c284559edaba292c65640d1b0fdf5a9b_o14 : to
+c284559edaba292c65640d1b0fdf5a9b_o15 : spdxId = "File32"
+c284559edaba292c65640d1b0fdf5a9b_o15::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o15 : description = "Instructions for use."
+c284559edaba292c65640d1b0fdf5a9b_o15 : name = "instructions.md"
+c284559edaba292c65640d1b0fdf5a9b_o15 : software_primaryPurpose = "documentation"
+c284559edaba292c65640d1b0fdf5a9b_o15 : software_contentType = "text/markdown"
+c284559edaba292c65640d1b0fdf5a9b_o15 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o12::to --> c284559edaba292c65640d1b0fdf5a9b_o15 : to
+c284559edaba292c65640d1b0fdf5a9b_o16 : spdxId = "File10"
+c284559edaba292c65640d1b0fdf5a9b_o16::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o16 : description = "Sentiment analysis model."
+c284559edaba292c65640d1b0fdf5a9b_o16 : name = "model.bin"
+c284559edaba292c65640d1b0fdf5a9b_o16 : software_primaryPurpose = "model"
+c284559edaba292c65640d1b0fdf5a9b_o16 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o17 : spdxId = "hasDataFile1"
+c284559edaba292c65640d1b0fdf5a9b_o17::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o17 : description = "predict.py hasDataFile: model...."
+c284559edaba292c65640d1b0fdf5a9b_o18 : spdxId = "File11"
+c284559edaba292c65640d1b0fdf5a9b_o18::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o18 : description = "Sentiment prediction script."
+c284559edaba292c65640d1b0fdf5a9b_o18 : name = "predict.py"
+c284559edaba292c65640d1b0fdf5a9b_o18 : software_additionalPurpose = ['source']
+c284559edaba292c65640d1b0fdf5a9b_o18 : software_primaryPurpose = "executable"
+c284559edaba292c65640d1b0fdf5a9b_o18 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o18 <-- c284559edaba292c65640d1b0fdf5a9b_o17::from : from
+c284559edaba292c65640d1b0fdf5a9b_o17 : relationshipType = "hasDataFile"
+c284559edaba292c65640d1b0fdf5a9b_o17::to --> c284559edaba292c65640d1b0fdf5a9b_o16 : to
+c284559edaba292c65640d1b0fdf5a9b_o19 : spdxId = "hasDependencyManifest1"
+c284559edaba292c65640d1b0fdf5a9b_o19::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o19 : description = "AIPackage1 hasDependencyManife..."
+c284559edaba292c65640d1b0fdf5a9b_o20 : spdxId = "AIPackage1"
+c284559edaba292c65640d1b0fdf5a9b_o20::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o20 : description = "A sentiment analysis model tra..."
+c284559edaba292c65640d1b0fdf5a9b_o20 : name = "Sentiment Demo"
+c284559edaba292c65640d1b0fdf5a9b_o20 : software_primaryPurpose = "model"
+c284559edaba292c65640d1b0fdf5a9b_o20 : ai_autonomyType = "yes"
+c284559edaba292c65640d1b0fdf5a9b_o20 : ai_domain = ['sentiment analysis', 'natural language processing']
+c284559edaba292c65640d1b0fdf5a9b_o22 : ai_energyQuantity = 3.6e-06
+c284559edaba292c65640d1b0fdf5a9b_o22 : ai_energyUnit = "kilowattHour"
+c284559edaba292c65640d1b0fdf5a9b_o21::ai_inferenceEnergyConsumption --> c284559edaba292c65640d1b0fdf5a9b_o22 : ai_inferenceEnergyConsumption
+c284559edaba292c65640d1b0fdf5a9b_o23 : ai_energyQuantity = 0.0048269
+c284559edaba292c65640d1b0fdf5a9b_o23 : ai_energyUnit = "kilowattHour"
+c284559edaba292c65640d1b0fdf5a9b_o21::ai_trainingEnergyConsumption --> c284559edaba292c65640d1b0fdf5a9b_o23 : ai_trainingEnergyConsumption
+c284559edaba292c65640d1b0fdf5a9b_o20::ai_energyConsumption --> c284559edaba292c65640d1b0fdf5a9b_o21 : ai_energyConsumption
+c284559edaba292c65640d1b0fdf5a9b_o24 : key = "autotuneDuration"
+c284559edaba292c65640d1b0fdf5a9b_o24 : value = "7200"
+c284559edaba292c65640d1b0fdf5a9b_o20::ai_hyperparameter --> c284559edaba292c65640d1b0fdf5a9b_o24 : ai_hyperparameter
+c284559edaba292c65640d1b0fdf5a9b_o20 : ai_informationAboutApplication = "Text sentiment analysis."
+c284559edaba292c65640d1b0fdf5a9b_o20 : ai_informationAboutTraining = "The model size is limited to 1..."
+c284559edaba292c65640d1b0fdf5a9b_o52 : key = "precision"
+c284559edaba292c65640d1b0fdf5a9b_o52 : value = "0.4625"
+c284559edaba292c65640d1b0fdf5a9b_o20::ai_metric --> c284559edaba292c65640d1b0fdf5a9b_o52 : ai_metric
+c284559edaba292c65640d1b0fdf5a9b_o53 : key = "recall"
+c284559edaba292c65640d1b0fdf5a9b_o53 : value = "0.475"
+c284559edaba292c65640d1b0fdf5a9b_o20::ai_metric --> c284559edaba292c65640d1b0fdf5a9b_o53 : ai_metric
+c284559edaba292c65640d1b0fdf5a9b_o54 : key = "f1"
+c284559edaba292c65640d1b0fdf5a9b_o54 : value = "0.4669192"
+c284559edaba292c65640d1b0fdf5a9b_o20::ai_metric --> c284559edaba292c65640d1b0fdf5a9b_o54 : ai_metric
+c284559edaba292c65640d1b0fdf5a9b_o20 : ai_modelDataPreprocessing = ['See: techdocs/dataprepare.md']
+c284559edaba292c65640d1b0fdf5a9b_o20 : ai_typeOfModel = ['classification', 'superivsed']
+c284559edaba292c65640d1b0fdf5a9b_o20 : ai_useSensitivePersonalInformation = "no"
+c284559edaba292c65640d1b0fdf5a9b_o20 <-- c284559edaba292c65640d1b0fdf5a9b_o19::from : from
+c284559edaba292c65640d1b0fdf5a9b_o19 : relationshipType = "hasDependencyManifest"
+c284559edaba292c65640d1b0fdf5a9b_o55 : spdxId = "File14"
+c284559edaba292c65640d1b0fdf5a9b_o55::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o55 : description = "Python package requirements."
+c284559edaba292c65640d1b0fdf5a9b_o55 : name = "requirements.txt"
+c284559edaba292c65640d1b0fdf5a9b_o55 : software_primaryPurpose = "manifest"
+c284559edaba292c65640d1b0fdf5a9b_o55 : software_contentType = "text/plain"
+c284559edaba292c65640d1b0fdf5a9b_o55 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o19::to --> c284559edaba292c65640d1b0fdf5a9b_o55 : to
+c284559edaba292c65640d1b0fdf5a9b_o56 : spdxId = "File13"
+c284559edaba292c65640d1b0fdf5a9b_o56::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o56 : name = "README.md"
+c284559edaba292c65640d1b0fdf5a9b_o56 : software_primaryPurpose = "documentation"
+c284559edaba292c65640d1b0fdf5a9b_o56 : software_contentType = "text/markdown"
+c284559edaba292c65640d1b0fdf5a9b_o56 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o57 : spdxId = "trainedOn1"
+c284559edaba292c65640d1b0fdf5a9b_o57::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o57 : description = "model.bin trainedOn: train.txt..."
+c284559edaba292c65640d1b0fdf5a9b_o16 <-- c284559edaba292c65640d1b0fdf5a9b_o57::from : from
+c284559edaba292c65640d1b0fdf5a9b_o57 : relationshipType = "trainedOn"
+c284559edaba292c65640d1b0fdf5a9b_o57::to --> c284559edaba292c65640d1b0fdf5a9b_o10 : to
+c284559edaba292c65640d1b0fdf5a9b_o57::to --> c284559edaba292c65640d1b0fdf5a9b_o11 : to
+c284559edaba292c65640d1b0fdf5a9b_o58 : spdxId = "SpdxDocument1"
+c284559edaba292c65640d1b0fdf5a9b_o58::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o58 : profileConformance = ['ai', 'core', 'dataset']
+c284559edaba292c65640d1b0fdf5a9b_o59 : spdxId = "Sbom1"
+c284559edaba292c65640d1b0fdf5a9b_o59::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o59::rootElement --> c284559edaba292c65640d1b0fdf5a9b_o20 : rootElement
+c284559edaba292c65640d1b0fdf5a9b_o59 : software_sbomType = ['build', 'runtime']
+c284559edaba292c65640d1b0fdf5a9b_o58::rootElement --> c284559edaba292c65640d1b0fdf5a9b_o59 : rootElement
+c284559edaba292c65640d1b0fdf5a9b_o60 : spdxId = "File9"
+c284559edaba292c65640d1b0fdf5a9b_o60::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o60 : description = "License file for the content o..."
+c284559edaba292c65640d1b0fdf5a9b_o60 : name = "LICENSE"
+c284559edaba292c65640d1b0fdf5a9b_o60 : software_primaryPurpose = "documentation"
+c284559edaba292c65640d1b0fdf5a9b_o60 : software_contentType = "text/plain"
+c284559edaba292c65640d1b0fdf5a9b_o60 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o61 : spdxId = "hasDeclaredLicense3"
+c284559edaba292c65640d1b0fdf5a9b_o61::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o20 <-- c284559edaba292c65640d1b0fdf5a9b_o61::from : from
+c284559edaba292c65640d1b0fdf5a9b_o61 : relationshipType = "hasDeclaredLicense"
+c284559edaba292c65640d1b0fdf5a9b_o61::to --> c284559edaba292c65640d1b0fdf5a9b_o6 : to
+c284559edaba292c65640d1b0fdf5a9b_o62 : spdxId = "File12"
+c284559edaba292c65640d1b0fdf5a9b_o62::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o62 : description = "Preprocessing script."
+c284559edaba292c65640d1b0fdf5a9b_o62 : name = "preprocess.py"
+c284559edaba292c65640d1b0fdf5a9b_o62 : software_additionalPurpose = ['source']
+c284559edaba292c65640d1b0fdf5a9b_o62 : software_primaryPurpose = "executable"
+c284559edaba292c65640d1b0fdf5a9b_o62 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o63 : spdxId = "contains1"
+c284559edaba292c65640d1b0fdf5a9b_o63::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o63 : description = "DatasetPackage1 contains: data..."
+c284559edaba292c65640d1b0fdf5a9b_o5 <-- c284559edaba292c65640d1b0fdf5a9b_o63::from : from
+c284559edaba292c65640d1b0fdf5a9b_o63 : relationshipType = "contains"
+c284559edaba292c65640d1b0fdf5a9b_o63::to --> c284559edaba292c65640d1b0fdf5a9b_o8 : to
+c284559edaba292c65640d1b0fdf5a9b_o64 : spdxId = "contains8"
+c284559edaba292c65640d1b0fdf5a9b_o64::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o64 : description = "AIPackage1 contains: techdocs/..."
+c284559edaba292c65640d1b0fdf5a9b_o20 <-- c284559edaba292c65640d1b0fdf5a9b_o64::from : from
+c284559edaba292c65640d1b0fdf5a9b_o64 : relationshipType = "contains"
+c284559edaba292c65640d1b0fdf5a9b_o64::to --> c284559edaba292c65640d1b0fdf5a9b_o13 : to
+c284559edaba292c65640d1b0fdf5a9b_o65 : spdxId = "File7"
+c284559edaba292c65640d1b0fdf5a9b_o65::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o65 : description = "Software bill of materials in ..."
+c284559edaba292c65640d1b0fdf5a9b_o65 : name = "bom.spdx3.json"
+c284559edaba292c65640d1b0fdf5a9b_o65 : software_primaryPurpose = "bom"
+c284559edaba292c65640d1b0fdf5a9b_o65 : software_contentType = "text/spdx"
+c284559edaba292c65640d1b0fdf5a9b_o65 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o64::to --> c284559edaba292c65640d1b0fdf5a9b_o65 : to
+c284559edaba292c65640d1b0fdf5a9b_o64::to --> c284559edaba292c65640d1b0fdf5a9b_o1 : to
+c284559edaba292c65640d1b0fdf5a9b_o64::to --> c284559edaba292c65640d1b0fdf5a9b_o60 : to
+c284559edaba292c65640d1b0fdf5a9b_o64::to --> c284559edaba292c65640d1b0fdf5a9b_o16 : to
+c284559edaba292c65640d1b0fdf5a9b_o64::to --> c284559edaba292c65640d1b0fdf5a9b_o18 : to
+c284559edaba292c65640d1b0fdf5a9b_o64::to --> c284559edaba292c65640d1b0fdf5a9b_o62 : to
+c284559edaba292c65640d1b0fdf5a9b_o64::to --> c284559edaba292c65640d1b0fdf5a9b_o56 : to
+c284559edaba292c65640d1b0fdf5a9b_o64::to --> c284559edaba292c65640d1b0fdf5a9b_o55 : to
+c284559edaba292c65640d1b0fdf5a9b_o66 : spdxId = "File15"
+c284559edaba292c65640d1b0fdf5a9b_o66::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o66 : description = "Training script."
+c284559edaba292c65640d1b0fdf5a9b_o66 : name = "train.py"
+c284559edaba292c65640d1b0fdf5a9b_o66 : software_additionalPurpose = ['source']
+c284559edaba292c65640d1b0fdf5a9b_o66 : software_primaryPurpose = "executable"
+c284559edaba292c65640d1b0fdf5a9b_o66 : software_fileKind = "file"
+c284559edaba292c65640d1b0fdf5a9b_o64::to --> c284559edaba292c65640d1b0fdf5a9b_o66 : to
+c284559edaba292c65640d1b0fdf5a9b_o67 : spdxId = "generates1"
+c284559edaba292c65640d1b0fdf5a9b_o67::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o67 : description = "preprocess.py generates: test...."
+c284559edaba292c65640d1b0fdf5a9b_o62 <-- c284559edaba292c65640d1b0fdf5a9b_o67::from : from
+c284559edaba292c65640d1b0fdf5a9b_o67 : relationshipType = "generates"
+c284559edaba292c65640d1b0fdf5a9b_o67::to --> c284559edaba292c65640d1b0fdf5a9b_o9 : to
+c284559edaba292c65640d1b0fdf5a9b_o67::to --> c284559edaba292c65640d1b0fdf5a9b_o10 : to
+c284559edaba292c65640d1b0fdf5a9b_o67::to --> c284559edaba292c65640d1b0fdf5a9b_o11 : to
+c284559edaba292c65640d1b0fdf5a9b_o67 : scope = "build"
+c284559edaba292c65640d1b0fdf5a9b_o68 : spdxId = "generates2"
+c284559edaba292c65640d1b0fdf5a9b_o68::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o68 : description = "train.py generates: model.bin"
+c284559edaba292c65640d1b0fdf5a9b_o66 <-- c284559edaba292c65640d1b0fdf5a9b_o68::from : from
+c284559edaba292c65640d1b0fdf5a9b_o68 : relationshipType = "generates"
+c284559edaba292c65640d1b0fdf5a9b_o68::to --> c284559edaba292c65640d1b0fdf5a9b_o16 : to
+c284559edaba292c65640d1b0fdf5a9b_o68 : scope = "build"
+c284559edaba292c65640d1b0fdf5a9b_o69 : spdxId = "hasDocumentation1"
+c284559edaba292c65640d1b0fdf5a9b_o69::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o69 : description = "AIPackage1 hasDocumentation: t..."
+c284559edaba292c65640d1b0fdf5a9b_o20 <-- c284559edaba292c65640d1b0fdf5a9b_o69::from : from
+c284559edaba292c65640d1b0fdf5a9b_o69 : relationshipType = "hasDocumentation"
+c284559edaba292c65640d1b0fdf5a9b_o69::to --> c284559edaba292c65640d1b0fdf5a9b_o13 : to
+c284559edaba292c65640d1b0fdf5a9b_o69::to --> c284559edaba292c65640d1b0fdf5a9b_o60 : to
+c284559edaba292c65640d1b0fdf5a9b_o69::to --> c284559edaba292c65640d1b0fdf5a9b_o56 : to
+c284559edaba292c65640d1b0fdf5a9b_o70 : spdxId = "hasDeclaredLicense1"
+c284559edaba292c65640d1b0fdf5a9b_o70::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o5 <-- c284559edaba292c65640d1b0fdf5a9b_o70::from : from
+c284559edaba292c65640d1b0fdf5a9b_o70 : relationshipType = "hasDeclaredLicense"
+c284559edaba292c65640d1b0fdf5a9b_o70::to --> c284559edaba292c65640d1b0fdf5a9b_o6 : to
+c284559edaba292c65640d1b0fdf5a9b_o71 : spdxId = "testedOn1"
+c284559edaba292c65640d1b0fdf5a9b_o71::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o71 : description = "model.bin testedOn: test.txt"
+c284559edaba292c65640d1b0fdf5a9b_o16 <-- c284559edaba292c65640d1b0fdf5a9b_o71::from : from
+c284559edaba292c65640d1b0fdf5a9b_o71 : relationshipType = "testedOn"
+c284559edaba292c65640d1b0fdf5a9b_o71::to --> c284559edaba292c65640d1b0fdf5a9b_o9 : to
+c284559edaba292c65640d1b0fdf5a9b_o72 : spdxId = "hasConcludedLicense3"
+c284559edaba292c65640d1b0fdf5a9b_o72::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
+c284559edaba292c65640d1b0fdf5a9b_o20 <-- c284559edaba292c65640d1b0fdf5a9b_o72::from : from
+c284559edaba292c65640d1b0fdf5a9b_o72 : relationshipType = "hasConcludedLicense"
+c284559edaba292c65640d1b0fdf5a9b_o72::to --> c284559edaba292c65640d1b0fdf5a9b_o6 : to
+@enduml
