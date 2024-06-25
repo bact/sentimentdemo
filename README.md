@@ -13,8 +13,9 @@ Other files are given to complete the illustration.
 
 SBOM demonstration design goals:
 
-- Small enough for human comprehension
-- Elaborate enough to demonstrate the use of different information fields
+- **Comprehensible:** Small enough for a human to understand easily.
+- **Informative:** Elaborate enough to showcase the use of various information fields within an SBOM.
+- **Testable:** Designed to facilitate testing and evaluation against specific use case requirements.
 
 Will eventually be submitted to
 [spdx/spdx-examples](https://github.com/spdx/spdx-examples) repo.
