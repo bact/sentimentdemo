@@ -76,6 +76,9 @@ See [data preparation](./techdocs/dataprepare.md).
   It measures how much energy the computer uses during the training.
   This means the actual energy used for training the model might be a bit less
   than the reported amount.
+- Next steps:
+  - Get tested with an SBOM quality check tool like [sbomsq](https://github.com/interlynk-io/sbomqs) (once it supports SPDX 3.0).
+  - Using information requirements and obligations in the EU AI Act as a target, labeling all relevant properties and relationships with corresponding difficulty levels and support levels, based on the [BOM Maturity Model](https://scvs.owasp.org/bom-maturity-model/difficulty-levels/).
 
 ## Licenses
 
