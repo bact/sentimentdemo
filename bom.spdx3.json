@@ -12,6 +12,20 @@
         },
         {
             "creationInfo": "_:creationinfo",
+            "externalIdentifier": [
+                {
+                    "identifier": "0000-0002-9698-1899",
+                    "identifierLocator": "https://orcid.org/0000-0002-9698-1899",
+                    "identifierType": "other",
+                    "issuingAuthority": "ORCID",
+                    "type": "ExternalIdentifier"
+                },
+                {
+                    "identifier": "arthit@gmail.com",
+                    "identifierType": "email",
+                    "type": "ExternalIdentifier"
+                }
+            ],
             "name": "Arthit Suriyawongkul",
             "spdxId": "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1",
             "type": "Person"
