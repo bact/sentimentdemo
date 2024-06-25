@@ -54,7 +54,7 @@ c284559edaba292c65640d1b0fdf5a9b_o3 : name = "Arthit Suriyawongkul"
 c284559edaba292c65640d1b0fdf5a9b_o2::createdBy --> c284559edaba292c65640d1b0fdf5a9b_o3 : createdBy
 c284559edaba292c65640d1b0fdf5a9b_o2 : specVersion = "3.0.0"
 c284559edaba292c65640d1b0fdf5a9b_o1::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
-c284559edaba292c65640d1b0fdf5a9b_o1 : description = "Evaluation script. Reporting precision..."
+c284559edaba292c65640d1b0fdf5a9b_o1 : description = "Evaluation script. Reporting p..."
 c284559edaba292c65640d1b0fdf5a9b_o1 : name = "evaluate.py"
 c284559edaba292c65640d1b0fdf5a9b_o1 : software_additionalPurpose = ['executable', 'source']
 c284559edaba292c65640d1b0fdf5a9b_o1 : software_primaryPurpose = "test"
@@ -71,7 +71,7 @@ c284559edaba292c65640d1b0fdf5a9b_o5 : dataset_datasetType = ['text']
 c284559edaba292c65640d1b0fdf5a9b_o5 <-- c284559edaba292c65640d1b0fdf5a9b_o4::from : from
 c284559edaba292c65640d1b0fdf5a9b_o4 : relationshipType = "hasConcludedLicense"
 c284559edaba292c65640d1b0fdf5a9b_o6 : spdxId = "https://spdx.org/licenses/CC-BY-4.0"
-c284559edaba292c65640d1b0fdf5a9b_o6 : comment = "This meant to be a temporary workaroun..."
+c284559edaba292c65640d1b0fdf5a9b_o6 : comment = "This meant to be a temporary w..."
 c284559edaba292c65640d1b0fdf5a9b_o6::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
 c284559edaba292c65640d1b0fdf5a9b_o6 : description = "Creative Commons Attribution 4.0 Inter..."
 c284559edaba292c65640d1b0fdf5a9b_o6 : simplelicensing_licenseExpression = "CC-BY-4.0"
@@ -82,7 +82,7 @@ c284559edaba292c65640d1b0fdf5a9b_o7::creationInfo --> c284559edaba292c65640d1b0f
 c284559edaba292c65640d1b0fdf5a9b_o7 : description = "data/ directory contains: test.txt, tr..."
 c284559edaba292c65640d1b0fdf5a9b_o8 : spdxId = "File1"
 c284559edaba292c65640d1b0fdf5a9b_o8::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
-c284559edaba292c65640d1b0fdf5a9b_o8 : description = "Dataset ready to be used as a training..."
+c284559edaba292c65640d1b0fdf5a9b_o8 : description = "Dataset ready to be used as a ..."
 c284559edaba292c65640d1b0fdf5a9b_o8 : name = "data"
 c284559edaba292c65640d1b0fdf5a9b_o8 : software_fileKind = "directory"
 c284559edaba292c65640d1b0fdf5a9b_o8 <-- c284559edaba292c65640d1b0fdf5a9b_o7::from : from
@@ -113,7 +113,7 @@ c284559edaba292c65640d1b0fdf5a9b_o11 : software_fileKind = "file"
 c284559edaba292c65640d1b0fdf5a9b_o7::to --> c284559edaba292c65640d1b0fdf5a9b_o11 : to
 c284559edaba292c65640d1b0fdf5a9b_o12 : spdxId = "contains9"
 c284559edaba292c65640d1b0fdf5a9b_o12::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
-c284559edaba292c65640d1b0fdf5a9b_o12 : description = "techdocs/ directory contains: dataprep..."
+c284559edaba292c65640d1b0fdf5a9b_o12 : description = "techdocs/ directory contains: ..."
 c284559edaba292c65640d1b0fdf5a9b_o13 : spdxId = "File3"
 c284559edaba292c65640d1b0fdf5a9b_o13::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
 c284559edaba292c65640d1b0fdf5a9b_o13 : description = "Technical documentation for the AI pac..."
@@ -123,7 +123,7 @@ c284559edaba292c65640d1b0fdf5a9b_o13 <-- c284559edaba292c65640d1b0fdf5a9b_o12::f
 c284559edaba292c65640d1b0fdf5a9b_o12 : relationshipType = "contains"
 c284559edaba292c65640d1b0fdf5a9b_o14 : spdxId = "File31"
 c284559edaba292c65640d1b0fdf5a9b_o14::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
-c284559edaba292c65640d1b0fdf5a9b_o14 : description = "Training data prepration documentation..."
+c284559edaba292c65640d1b0fdf5a9b_o14 : description = "Training data prepration docum..."
 c284559edaba292c65640d1b0fdf5a9b_o14 : name = "dataprepare.md"
 c284559edaba292c65640d1b0fdf5a9b_o14 : software_primaryPurpose = "documentation"
 c284559edaba292c65640d1b0fdf5a9b_o14 : software_contentType = "text/markdown"
@@ -256,7 +256,6 @@ c284559edaba292c65640d1b0fdf5a9b_o65 : spdxId = "File7"
 c284559edaba292c65640d1b0fdf5a9b_o65::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
 c284559edaba292c65640d1b0fdf5a9b_o65 : description = "Software bill of materials in SPDX 3.0..."
 c284559edaba292c65640d1b0fdf5a9b_o65 : name = "bom.spdx3.json"
- c284559edaba292c65640d1b0fdf5a9b <... c284559edaba292c65640d1b0fdf5a9b_o65::name: name
 c284559edaba292c65640d1b0fdf5a9b_o65 : software_primaryPurpose = "bom"
 c284559edaba292c65640d1b0fdf5a9b_o65 : software_contentType = "text/spdx"
 c284559edaba292c65640d1b0fdf5a9b_o65 : software_fileKind = "file"

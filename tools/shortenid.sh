@@ -22,5 +22,5 @@ sed -i '' -E 's|https://spdx.org/rdf/3.0.0/terms/Dataset/DatasetType/||g' "$file
 sed -i '' -E 's|https://spdx.org/spdxdocs/Relationship/||g' "$file"
 sed -i '' -E 's|https://spdx.org/spdxdocs/||g' "$file"
 sed -i '' -E 's|;charset=UTF-8||g' "$file"
-sed -i '' -E 's/"([^"]{38})[^"]*"/"\1..."/g' "$file"
+sed -i '' -E 's/"([^"]{30})[^"]*"/"\1..."/g' "$file"
 sed -i '' -E "s/'([^']{30})[^']*'/'\1...'/g" "$file"
