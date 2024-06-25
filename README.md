@@ -76,9 +76,18 @@ See [data preparation](./techdocs/dataprepare.md).
   It measures how much energy the computer uses during the training.
   This means the actual energy used for training the model might be a bit less
   than the reported amount.
+- The SPDX 3.0 SBOM is validated structurally against the JSON Schema at
+  <https://spdx.org/schema/3.0.0/spdx-json-schema.json>
+  and semantically against the SHACL model at
+  <https://spdx.org/rdf/3.0.0/spdx-model.ttl>.
 - Next steps:
-  - Get tested with an SBOM quality check tool like [sbomsq](https://github.com/interlynk-io/sbomqs) (once it supports SPDX 3.0).
-  - Using information requirements and obligations in the EU AI Act as a target, labeling all relevant properties and relationships with corresponding difficulty levels and support levels, based on the [BOM Maturity Model](https://scvs.owasp.org/bom-maturity-model/difficulty-levels/).
+  - Get tested with an SBOM quality check tool like
+    [sbomsq](https://github.com/interlynk-io/sbomqs) (once it supports SPDX
+    3.0).
+  - Using information requirements and obligations in the EU AI Act as a
+    target, labeling all relevant properties and relationships with
+    corresponding difficulty levels and support levels, based on the
+    [BOM Maturity Model](https://scvs.owasp.org/bom-maturity-model/difficulty-levels/).
 
 ## Licenses
 

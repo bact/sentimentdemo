@@ -1,0 +1,36 @@
+Element,spdxId
+data,https://spdx.org/spdxdocs/File1-d1f75466-39c8-4d2b-8ec9-79f67e8a20d7
+rawdata,https://spdx.org/spdxdocs/File2-d2b5a206-1125-4576-a3ed-200876245147
+techdocs,https://spdx.org/spdxdocs/File3-d36bc4df-b88e-4e0c-8aeb-ec446dbae90f
+test,https://spdx.org/spdxdocs/File4-d4aa32c6-a333-4200-9242-c75ba13c68bf
+train,https://spdx.org/spdxdocs/File5-d5b2e0a8-dcc1-4395-960b-3856e3a34b57
+valid,https://spdx.org/spdxdocs/File6-d6d11e8e-8558-4be4-a87c-4b9b8a8b2fb8
+bom.spdx3.json,https://spdx.org/spdxdocs/File7-f07ab2e5-f0bd-4557-8630-113d935086fb
+evaluate.py,https://spdx.org/spdxdocs/File8-f08b4fa4-2658-421b-80e9-e9ab116102de
+LICENSE,https://spdx.org/spdxdocs/File9-f09b8718-e9ab-4d89-97b5-940988fdf050
+model.bin,https://spdx.org/spdxdocs/File10-f10f9f75-3a23-465e-a80d-3a4fec75b220
+predict.py,https://spdx.org/spdxdocs/File11-f11e140e-67ef-48db-bb4a-7fcb3775406f
+preprocess.py,https://spdx.org/spdxdocs/File12-f12effed-9289-4fc3-986a-5fd83ff6724c
+README.md,https://spdx.org/spdxdocs/File13-f13b1a21-3183-4eb8-a4c2-c4c0e2f55d50
+requirements.txt,https://spdx.org/spdxdocs/File14-f14b0f00-1396-4986-8ca9-5d59b9362826
+train.py,https://spdx.org/spdxdocs/File15-f15b29a6-9634-4813-aa99-9986891a0711
+test.txt,https://spdx.org/spdxdocs/File16-f16c17ad-d95d-40d6-860f-1bacde2dbfd9
+train.txt,https://spdx.org/spdxdocs/File17-f17f40d2-0540-4d2b-9f23-1b58d7ab4652
+valid.txt,https://spdx.org/spdxdocs/File18-f18be0d7-d16f-4658-91f3-5e5cf364edfa
+neg.txt,https://spdx.org/spdxdocs/File19-f19d35f9-e9cc-4f65-b1a6-9dbbf0067712
+neu.txt,https://spdx.org/spdxdocs/File20-f20afdc1-cedd-402a-86e6-20f43bda64b3
+pos.txt,https://spdx.org/spdxdocs/File21-f21d426e-13a3-496e-9de4-b4ad5b3045e9
+q.txt,https://spdx.org/spdxdocs/File22-f22a6d6b-c667-4ea4-bc6a-bf958871b2ac
+neg.txt,https://spdx.org/spdxdocs/File23-f23fc75b-91b1-4ad9-8905-17d49bed5f67
+neu.txt,https://spdx.org/spdxdocs/File24-f24bc52d-048e-4abe-a959-36e049affd38
+pos.txt,https://spdx.org/spdxdocs/File25-f25b0253-d5f0-4255-ae61-a53d72b9608c
+q.txt,https://spdx.org/spdxdocs/File26-f26bfd7c-b0cc-432b-baa9-8efec2997dd7
+neg.txt,https://spdx.org/spdxdocs/File27-f27e10ff-c542-4555-a5b2-dd715ef4a226
+neu.txt,https://spdx.org/spdxdocs/File28-f28ffdae-341b-425d-93ef-307ea64e6816
+pos.txt,https://spdx.org/spdxdocs/File29-f29e137b-a38f-4c8f-8d0d-871deee24edf
+q.txt,https://spdx.org/spdxdocs/File30-f30b013b-d6bf-4263-a5ed-f653159cd136
+dataprepare.md,https://spdx.org/spdxdocs/File31-f31f6dc0-f9ce-4efa-9ccd-47dee50041d3
+instructions.md,https://spdx.org/spdxdocs/File32-f32f0784-038e-488d-a7bf-7d172dfe8b8a
+Data after preprocessing,https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863
+Raw data before preprocessing,https://spdx.org/spdxdocs/DatasetPackage2-d2e56dc7-3d39-4710-8b8e-08f9bc249de6
+Sentiment Demo,https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481
