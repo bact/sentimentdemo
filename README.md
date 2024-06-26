@@ -81,6 +81,7 @@ See [data preparation](./techdocs/dataprepare.md).
   and semantically against the SHACL model at
   <https://spdx.org/rdf/3.0.0/spdx-model.ttl>.
 - Next steps:
+  - Add external dependency relationships (e.g. `dependsOn`, `hasProvidedDependency`)
   - Get tested with an SBOM quality check tool like
     [sbomsq](https://github.com/interlynk-io/sbomqs) (once it supports SPDX
     3.0).

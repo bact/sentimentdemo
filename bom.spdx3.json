@@ -3,7 +3,7 @@
     "@graph": [
         {
             "@id": "_:creationinfo",
-            "created": "2024-06-18T06:34:00Z",
+            "created": "2024-06-24T05:30:00Z",
             "createdBy": [
                 "https://spdx.org/spdxdocs/Person1-1000e6a2-0229-4875-baa7-c99be213b6e1"
             ],
@@ -14,17 +14,17 @@
             "creationInfo": "_:creationinfo",
             "externalIdentifier": [
                 {
+                    "externalIdentifierType": "other",
                     "identifier": "0000-0002-9698-1899",
                     "identifierLocator": [
                         "https://orcid.org/0000-0002-9698-1899"
                     ],
-                    "externalIdentifierType": "other",
                     "issuingAuthority": "ORCID",
                     "type": "ExternalIdentifier"
                 },
                 {
-                    "identifier": "suriyawa@tcd.ie",
                     "externalIdentifierType": "email",
+                    "identifier": "suriyawa@tcd.ie",
                     "type": "ExternalIdentifier"
                 }
             ],
