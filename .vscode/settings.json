@@ -1,11 +1,10 @@
 {
     "json.schemas": [
-    
         {
             "fileMatch": [
                 "*.spdx3.json"
             ],
-            "url": "./spdx-3-schema.json"
+            "url": "https://spdx.org/schema/3.0.0/spdx-json-schema.json"
         }
     ]
 }

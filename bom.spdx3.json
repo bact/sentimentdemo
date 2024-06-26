@@ -15,14 +15,16 @@
             "externalIdentifier": [
                 {
                     "identifier": "0000-0002-9698-1899",
-                    "identifierLocator": "https://orcid.org/0000-0002-9698-1899",
-                    "identifierType": "other",
+                    "identifierLocator": [
+                        "https://orcid.org/0000-0002-9698-1899"
+                    ],
+                    "externalIdentifierType": "other",
                     "issuingAuthority": "ORCID",
                     "type": "ExternalIdentifier"
                 },
                 {
-                    "identifier": "arthit@gmail.com",
-                    "identifierType": "email",
+                    "identifier": "suriyawa@tcd.ie",
+                    "externalIdentifierType": "email",
                     "type": "ExternalIdentifier"
                 }
             ],
