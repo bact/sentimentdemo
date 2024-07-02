@@ -188,3 +188,4 @@ $RECYCLE.BIN/
 .directory
 .Trash-*
 .nfs*
+.python-version
