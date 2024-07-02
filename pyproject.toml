@@ -55,6 +55,7 @@ path = "src/sentimentdemo/__about__.py"
 
 [tool.hatch.envs.default]
 python = "3.9"
+installer = "uv"
 
 [tool.hatch.envs.types]
 extra-dependencies = ["mypy>=1.0.0"]
