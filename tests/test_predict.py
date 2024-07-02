@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: CC0-1.0
 
+"""Test package for sentimentdemo."""
+
 from sentimentdemo.predict import predict
 from sentimentdemo.preprocess import preprocess_text
 
@@ -16,6 +18,7 @@ def test_predict():
         "__label__pos",
         "__label__q",
     ]
+
 
 def test_preprocess_text():
     """Test preprocess_text function."""
