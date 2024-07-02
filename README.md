@@ -17,6 +17,7 @@ SBOM demonstration design goals:
 - **Informative:** Elaborate enough to showcase the use of various information fields within an SBOM.
 - **Testable:** Designed to facilitate testing and evaluation against specific use case requirements.
 
+Development is in the `dev` branch.
 Will eventually be submitted to
 [spdx/spdx-examples](https://github.com/spdx/spdx-examples) repo.
 
