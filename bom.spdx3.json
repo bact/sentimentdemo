@@ -229,6 +229,7 @@
             ],
             "description": "Preprocessed data ready for training/testing.",
             "name": "Data after preprocessing",
+            "software_downloadLocation": "https://github.com/bact/sentimentdemo/tree/main/data",
             "spdxId": "https://spdx.org/spdxdocs/DatasetPackage1-d1f693d0-b420-4b6a-b9f2-ec2097bac863",
             "type": "dataset_DatasetPackage"
         },
@@ -427,6 +428,7 @@
             "creationInfo": "_:creationinfo",
             "description": "A sentiment analysis model trained on a very small dataset, using fastText library. A. Joulin, E. Grave, P. Bojanowski, T. Mikolov, 2017, Bag of Tricks for Efficient Text Classification.",
             "name": "Sentiment Demo",
+            "software_downloadLocation": "https://github.com/bact/sentimentdemo",
             "software_primaryPurpose": "model",
             "spdxId": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
             "type": "ai_AIPackage"
