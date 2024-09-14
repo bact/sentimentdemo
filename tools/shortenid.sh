@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Shorten IDs so they can fit in diagram
+
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <file>"
     exit 1
@@ -7,7 +9,7 @@ fi
 
 file="$1"
 
-echo "Shortening UUIDs in $file..."
+echo "Shortening IDs in $file..."
 sed -i '' -E 's/-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}//g' "$file"
 sed -i '' -E 's|https://spdx.org/rdf/3.0.1/terms/Core/ExternalIdentifierType/||g' "$file"
 sed -i '' -E 's|https://spdx.org/rdf/3.0.1/terms/Core/PresenceType/||g' "$file"
