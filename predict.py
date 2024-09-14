@@ -26,11 +26,11 @@ def predict(text: str):
     Returns:
         None
     """
-    text = preprocess(text)
-    text = " ".join(remove_stopwords(word_tokenize(text)))
-    text = remove_dup_spaces(text)
+    _text = preprocess(text)
+    _text = " ".join(remove_stopwords(word_tokenize(_text)))
+    _text = remove_dup_spaces(_text)
 
-    labels, probabilities = model.predict(text)
+    labels, probabilities = model.predict(_text)
     print(f"Label: {labels[0][9:]}, Probability: {probabilities[0]:.4f}")
 
 

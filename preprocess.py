@@ -20,10 +20,10 @@ def preprocess_text(text: str) -> str:
     Returns:
         str: The preprocessed text.
     """
-    text = preprocess(text)
-    text = " ".join(word_tokenize(text))
-    text = remove_dup_spaces(text)
-    return text
+    _text = preprocess(text)
+    _text = " ".join(word_tokenize(_text))
+    _text = remove_dup_spaces(_text)
+    return _text
 
 
 def main(data_dir_path: str, output_file_path: str) -> None:
@@ -37,9 +37,9 @@ def main(data_dir_path: str, output_file_path: str) -> None:
     """
     labels = ["neg", "neu", "pos", "q"]
 
-    with open(output_file_path, "w") as destination:
+    with open(output_file_path, "w", encoding="utf-8") as destination:
         for label in labels:
-            with open(f"{data_dir_path}/{label}.txt", "r") as source:
+            with open(f"{data_dir_path}/{label}.txt", "r", encoding="utf-8") as source:
                 for line in source:
                     line = preprocess_text(line)
                     if len(line) > 0:

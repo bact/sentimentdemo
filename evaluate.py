@@ -30,7 +30,7 @@ def load_data(file_path: str) -> tuple[list, list]:
     """
     labels = []
     texts = []
-    with open(file_path, "r") as file:
+    with open(file_path, "r", encoding="utf-8") as file:
         for line in file:
             pair = line.strip().split(" ", 1)  # assumed one label per message
 
