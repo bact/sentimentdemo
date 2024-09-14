@@ -39,5 +39,4 @@ if __name__ == "__main__":
         print('Usage: python predict.py "<text>"')
         sys.exit(1)
 
-    text = sys.argv[1]
-    predict(text)
+    predict(sys.argv[1])

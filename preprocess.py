@@ -2,7 +2,8 @@
 
 """
 Provides text preprocessing function.
-""" 
+"""
+
 import sys
 
 from newmm_tokenizer.tokenizer import word_tokenize
@@ -26,20 +27,20 @@ def preprocess_text(text: str) -> str:
     return _text
 
 
-def main(data_dir_path: str, output_file_path: str) -> None:
+def main(data_dir: str, output_path: str) -> None:
     """
     Main function to preprocess text files from a specified directory and
     write the processed text to an output file with labels.
 
     Args:
-        data_dir_path (str): The path to the directory containing the text files.
-        output_file_path (str): The path to the output file where the processed text will be written.
+        data_dir (str): The path to the directory containing the input text files.
+        output_path (str): The path to the file where the processed text will be written.
     """
     labels = ["neg", "neu", "pos", "q"]
 
-    with open(output_file_path, "w", encoding="utf-8") as destination:
+    with open(output_path, "w", encoding="utf-8") as destination:
         for label in labels:
-            with open(f"{data_dir_path}/{label}.txt", "r", encoding="utf-8") as source:
+            with open(f"{data_dir}/{label}.txt", "r", encoding="utf-8") as source:
                 for line in source:
                     line = preprocess_text(line)
                     if len(line) > 0:
@@ -48,8 +49,7 @@ def main(data_dir_path: str, output_file_path: str) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python preprocess.py <data_dir_path> <output_file_path>")
+        print("Usage: python preprocess.py <data_dir> <output_file>")
         sys.exit(1)
-    data_dir_path = sys.argv[1]
-    output_file_path = sys.argv[2]
-    main(data_dir_path, output_file_path)
+
+    main(sys.argv[1], sys.argv[2])
