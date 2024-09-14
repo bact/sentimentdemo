@@ -78,9 +78,9 @@ See [data preparation](./techdocs/dataprepare.md).
   This means the actual energy used for training the model might be a bit less
   than the reported amount.
 - The SPDX 3.0 SBOM is validated structurally against the JSON Schema at
-  <https://spdx.org/schema/3.0.0/spdx-json-schema.json>
+  <https://spdx.org/schema/3.0.1/spdx-json-schema.json>
   and semantically against the SHACL model at
-  <https://spdx.org/rdf/3.0.0/spdx-model.ttl>.
+  <https://spdx.org/rdf/3.0.1/spdx-model.ttl>.
 - Next steps:
   - Add external dependency relationships (e.g. `dependsOn`, `hasProvidedDependency`)
   - Get tested with an SBOM quality check tool like
