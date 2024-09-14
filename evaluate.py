@@ -1,3 +1,16 @@
+# SPDX-License-Identifier: CC0-1.0
+
+"""
+This script evaluates a FastText model on test data.
+It calculates and prints the F1 score, precision, and recall.
+
+Functions:
+    load_data(file_path: str) -> tuple[list, list]:
+        Loads test data from a specified file.
+    main(model_file_path: str, test_data_file_path: str) -> None:
+        Main function to evaluate the FastText model on the test data.
+"""
+
 import sys
 
 import fasttext
@@ -6,6 +19,15 @@ from sklearn.preprocessing import LabelEncoder
 
 
 def load_data(file_path: str) -> tuple[list, list]:
+    """
+    Load test data from the specified file.
+
+    Args:
+        test_data_file_path (str): Path to the test data file.
+
+    Returns:
+        tuple: A tuple containing labels and data.
+    """
     labels = []
     texts = []
     with open(file_path, "r") as file:
@@ -20,6 +42,16 @@ def load_data(file_path: str) -> tuple[list, list]:
 
 
 def main(model_file_path: str, test_data_file_path: str) -> None:
+    """
+    Main function to evaluate the FastText model on the test data.
+
+    Args:
+        model_file_path (str): Path to the FastText model file.
+        test_data_file_path (str): Path to the test data file.
+
+    Returns:
+        None
+    """
     labels, data = load_data(test_data_file_path)
     model = fasttext.load_model(model_file_path)
 
@@ -40,7 +72,7 @@ def main(model_file_path: str, test_data_file_path: str) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python evaluate.py <model_file_path> <test_data_file_path>")
+        print("Usage: python evaluate.py <model_file> <test_file>")
         sys.exit(1)
     model_file_path = sys.argv[1]
     test_data_file_path = sys.argv[2]
