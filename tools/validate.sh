@@ -44,16 +44,19 @@ check_spdx3() {
 
 validate() {
     check_schema $1
+    echo ""
     check_model $1
+    echo ""
     #check_spdx3 $1
+    #echo ""
 }
 
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <file> or $0 --all"
+    echo "Usage: $0 <file> or $0 --check-all"
     exit 1
 fi
 
-if [ "$1" = "--all" ]; then
+if [ "$1" = "--check-all" ]; then
     # Check all *.spdx3.json files
     print_config
     for file in $(find . -name '*.spdx3.json'); do
