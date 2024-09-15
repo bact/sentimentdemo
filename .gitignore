@@ -188,3 +188,6 @@ $RECYCLE.BIN/
 .directory
 .Trash-*
 .nfs*
+
+# Temporary
+logs/

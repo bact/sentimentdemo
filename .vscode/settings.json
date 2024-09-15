@@ -4,7 +4,7 @@
             "fileMatch": [
                 "*.spdx3.json"
             ],
-            "url": "https://spdx.org/schema/3.0.0/spdx-json-schema.json"
+            "url": "https://spdx.org/schema/3.0.1/spdx-json-schema.json"
         }
     ]
 }
