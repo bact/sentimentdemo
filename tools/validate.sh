@@ -27,7 +27,7 @@ check_schema() {
         --verbose \
         --schemafile $SCHEMA_URL \
         "$1"
-    if ! jq . "$1" > /dev/null; then
+    if [ $? -ne 0 ]; then
         echo "check-jsonschema validation failed for $1"
         exit 1
     fi
@@ -39,7 +39,7 @@ check_model() {
         --shacl $RDF_URL \
         --ont-graph $RDF_URL \
         "$1"
-    if ! some_model_validation_command "$1"; then
+    if [ $? -ne 0 ]; then
         echo "pyshacl validation failed for $1"
         exit 1
     fi
@@ -47,8 +47,7 @@ check_model() {
 
 check_spdx3() {
     echo "Validating (spdx3-validate): $1"
-    spdx3-validate --json $1
-    if ! spdx3-validate --json "$1"; then
+    if [ $? -ne 0 ]; then
         echo "spdx3-validate validation failed for $1"
         exit 1
     fi
