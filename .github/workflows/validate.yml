@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC0-1.0
+
 on:
   pull_request:
     paths:
@@ -14,9 +16,6 @@ jobs:
       - name: Install Python dependencies
         run: |
           python3 -m pip install check-jsonschema==0.29.2 pyshacl==0.26.0 spdx3-validate==0.0.2
-      - name: Install dependencies
-        run: |
-          sudo apt install -y gawk
       - name: Check examples
         run: |
-          ./tools/validate.sh --all
+          ./tools/validate.sh --check-all
