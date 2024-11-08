@@ -428,7 +428,7 @@
             "creationInfo": "_:creationinfo",
             "description": "A simple sentiment analysis application. Published solely as an artifact for the purpose of demonstrating a software bill of materials (SBOM). Not recommended for critical text classification tasks. The model is trained on a very small dataset, using fastText library. A. Joulin, E. Grave, P. Bojanowski, T. Mikolov, 2017, Bag of Tricks for Efficient Text Classification.",
             "name": "Sentiment Demo",
-            "software_copyrightText": "Arthit Suriyawongkul dedicating to the public domain under CC0.",
+            "software_copyrightText": "Dedicated to the public domain",
             "software_downloadLocation": "https://github.com/bact/sentimentdemo",
             "software_primaryPurpose": "model",
             "spdxId": "https://spdx.org/spdxdocs/AIPackage1-a1fae2b4-2c1a-4f21-9001-1bdc5ac9e481",
@@ -436,12 +436,12 @@
             "type": "ai_AIPackage"
         },
         {
-            "comment": "This meant to be a temporary workaround for the lack of the ListedLicense (from SPDX Licenses List) in SPDX 3.0 ontology. Once the ListedLicense instance for CC-BY-4.0 is available, this element should be removed. See: https://github.com/spdx/LicenseListPublisher/issues/183",
+            "comment": "This meant to be a temporary workaround for the lack of the ListedLicense (from SPDX Licenses List) in SPDX 3.0 ontology. Once the ListedLicense instance for CC0-1.0 is available, this element should be removed. See: https://github.com/spdx/LicenseListPublisher/issues/183",
             "creationInfo": "_:creationinfo",
-            "description": "Creative Commons Attribution 4.0 International",
-            "simplelicensing_licenseExpression": "CC-BY-4.0",
-            "simplelicensing_licenseListVersion": "3.24.0",
-            "spdxId": "https://spdx.org/licenses/CC-BY-4.0",
+            "description": "Creative Commons Zero v1.0 Universal",
+            "simplelicensing_licenseExpression": "CC0-1.0",
+            "simplelicensing_licenseListVersion": "3.25.0",
+            "spdxId": "https://spdx.org/licenses/CC0-1.0",
             "type": "simplelicensing_LicenseExpression"
         },
         {
@@ -450,7 +450,7 @@
             "relationshipType": "hasDeclaredLicense",
             "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense1-d1741c4c-4c18-459a-b9f9-e24f018e39f1",
             "to": [
-                "https://spdx.org/licenses/CC-BY-4.0"
+                "https://spdx.org/licenses/CC0-1.0"
             ],
             "type": "Relationship"
         },
@@ -460,7 +460,7 @@
             "relationshipType": "hasConcludedLicense",
             "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense1-c18ca8f8-32f1-4682-a136-51c32a5d555a",
             "to": [
-                "https://spdx.org/licenses/CC-BY-4.0"
+                "https://spdx.org/licenses/CC0-1.0"
             ],
             "type": "Relationship"
         },
@@ -470,7 +470,7 @@
             "relationshipType": "hasDeclaredLicense",
             "spdxId": "https://spdx.org/spdxdocs/Relationship/hasDeclaredLicense3-d3e53884-69b0-404d-b297-e2180d2724be",
             "to": [
-                "https://spdx.org/licenses/CC-BY-4.0"
+                "https://spdx.org/licenses/CC0-1.0"
             ],
             "type": "Relationship"
         },
@@ -480,7 +480,7 @@
             "relationshipType": "hasConcludedLicense",
             "spdxId": "https://spdx.org/spdxdocs/Relationship/hasConcludedLicense3-c3e6ff66-b9da-4529-bd8b-dc75a13baad3",
             "to": [
-                "https://spdx.org/licenses/CC-BY-4.0"
+                "https://spdx.org/licenses/CC0-1.0"
             ],
             "type": "Relationship"
         },
