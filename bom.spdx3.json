@@ -14,17 +14,26 @@
             "creationInfo": "_:creationinfo",
             "externalIdentifier": [
                 {
+                    "externalIdentifierType": "email",
+                    "identifier": "suriyawa@tcd.ie",
+                    "type": "ExternalIdentifier"
+                },
+                {
+                    "externalIdentifierType": "other",
+                    "identifier": "bact",
+                    "identifierLocator": [
+                        "https://github.com/bact/"
+                    ],
+                    "issuingAuthority": "GitHub",
+                    "type": "ExternalIdentifier"
+                },
+                {
                     "externalIdentifierType": "other",
                     "identifier": "0000-0002-9698-1899",
                     "identifierLocator": [
                         "https://orcid.org/0000-0002-9698-1899"
                     ],
                     "issuingAuthority": "ORCID",
-                    "type": "ExternalIdentifier"
-                },
-                {
-                    "externalIdentifierType": "email",
-                    "identifier": "suriyawa@tcd.ie",
                     "type": "ExternalIdentifier"
                 }
             ],
@@ -74,13 +83,14 @@
             "type": "software_File"
         },
         {
-            "contentType": "text/spdx",
+            "contentType": "text/json",
             "creationInfo": "_:creationinfo",
-            "description": "Software bill of materials in SPDX 3.0 format.",
+            "description": "Software bill of materials in JSON-LD serialization format of SPDX 3.0 specification.",
             "name": "bom.spdx3.json",
             "software_fileKind": "file",
             "software_primaryPurpose": "bom",
             "spdxId": "https://spdx.org/spdxdocs/File7-f07ab2e5-f0bd-4557-8630-113d935086fb",
+            "summary": "Software bill of materials in SPDX 3.0 format.",
             "type": "software_File"
         },
         {
