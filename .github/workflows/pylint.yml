@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC0-1.0
+
 name: Pylint
 
 on: [push]
@@ -7,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.9"]
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332  #v4.1.7
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:

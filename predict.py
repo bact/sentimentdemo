@@ -1,7 +1,13 @@
 # SPDX-License-Identifier: CC0-1.0
 
+"""
+Provides a function to predict the label of a given text.
+
+The text is preprocessed before prediction, including tokenization,
+stopword removal, and space normalization.
+"""
+
 import sys
-import time
 
 import fasttext
 from newmm_tokenizer.tokenizer import word_tokenize
@@ -11,18 +17,26 @@ model = fasttext.load_model("model.bin")
 
 
 def predict(text: str):
-    text = preprocess(text)
-    text = " ".join(remove_stopwords(word_tokenize(text)))
-    text = remove_dup_spaces(text)
+    """
+    Predict the label of the given text using the loaded FastText model.
 
-    labels, probabilities = model.predict(text)
+    Args:
+        text (str): The input text to be classified.
+
+    Returns:
+        None
+    """
+    _text = preprocess(text)
+    _text = " ".join(remove_stopwords(word_tokenize(_text)))
+    _text = remove_dup_spaces(_text)
+
+    labels, probabilities = model.predict(_text)
     print(f"Label: {labels[0][9:]}, Probability: {probabilities[0]:.4f}")
 
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python predict.py \"<text>\"")
+        print('Usage: python predict.py "<text>"')
         sys.exit(1)
 
-    text = sys.argv[1]
-    predict(text)
+    predict(sys.argv[1])

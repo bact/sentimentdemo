@@ -1,5 +1,5 @@
 {
-    "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
     "@graph": [
         {
             "@id": "_:creationinfo",
@@ -7,7 +7,7 @@
             "createdBy": [
                 "https://spdx.org/spdxdocs/Person/AS-1000e6a2-0229-4875-baa7-c99be213b6e1"
             ],
-            "specVersion": "3.0.0",
+            "specVersion": "3.0.1",
             "type": "CreationInfo"
         },
         {
@@ -77,7 +77,7 @@
             "creationInfo": "_:creationinfo",
             "description": "Software bill of materials in SPDX 3.0 format.",
             "name": "bom.spdx3.json",
-            "software_contentType": "text/spdx",
+            "contentType": "text/spdx",
             "software_fileKind": "file",
             "software_primaryPurpose": "bom",
             "spdxId": "https://spdx.org/spdxdocs/File7-f07ab2e5-f0bd-4557-8630-113d935086fb",
@@ -100,7 +100,7 @@
             "creationInfo": "_:creationinfo",
             "description": "License file for the content of this repository, but not include the content of the datasets.",
             "name": "LICENSE",
-            "software_contentType": "text/plain",
+            "contentType": "text/plain",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
             "spdxId": "https://spdx.org/spdxdocs/File9-f09b8718-e9ab-4d89-97b5-940988fdf050",
@@ -142,7 +142,7 @@
         {
             "creationInfo": "_:creationinfo",
             "name": "README.md",
-            "software_contentType": "text/markdown;charset=UTF-8",
+            "contentType": "text/markdown;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
             "spdxId": "https://spdx.org/spdxdocs/File13-f13b1a21-3183-4eb8-a4c2-c4c0e2f55d50",
@@ -152,7 +152,7 @@
             "creationInfo": "_:creationinfo",
             "description": "Python package requirements.",
             "name": "requirements.txt",
-            "software_contentType": "text/plain",
+            "contentType": "text/plain",
             "software_fileKind": "file",
             "software_primaryPurpose": "manifest",
             "spdxId": "https://spdx.org/spdxdocs/File14-f14b0f00-1396-4986-8ca9-5d59b9362826",
@@ -174,7 +174,7 @@
             "creationInfo": "_:creationinfo",
             "description": "Testing data after preprocessing.",
             "name": "test.txt",
-            "software_contentType": "text/plain;charset=UTF-8",
+            "contentType": "text/plain;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "data",
             "spdxId": "https://spdx.org/spdxdocs/File16-f16c17ad-d95d-40d6-860f-1bacde2dbfd9",
@@ -184,7 +184,7 @@
             "creationInfo": "_:creationinfo",
             "description": "Training data after preprocessing.",
             "name": "train.txt",
-            "software_contentType": "text/plain;charset=UTF-8",
+            "contentType": "text/plain;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "data",
             "spdxId": "https://spdx.org/spdxdocs/File17-f17f40d2-0540-4d2b-9f23-1b58d7ab4652",
@@ -194,7 +194,7 @@
             "creationInfo": "_:creationinfo",
             "description": "Validation data after preprocessing.",
             "name": "valid.txt",
-            "software_contentType": "text/plain;charset=UTF-8",
+            "contentType": "text/plain;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "data",
             "spdxId": "https://spdx.org/spdxdocs/File18-f18be0d7-d16f-4658-91f3-5e5cf364edfa",
@@ -204,7 +204,7 @@
             "creationInfo": "_:creationinfo",
             "description": "Training data prepration documentation.",
             "name": "dataprepare.md",
-            "software_contentType": "text/markdown;charset=UTF-8",
+            "contentType": "text/markdown;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
             "spdxId": "https://spdx.org/spdxdocs/File31-f31f6dc0-f9ce-4efa-9ccd-47dee50041d3",
@@ -214,7 +214,7 @@
             "creationInfo": "_:creationinfo",
             "description": "Instructions for use.",
             "name": "instructions.md",
-            "software_contentType": "text/markdown;charset=UTF-8",
+            "contentType": "text/markdown;charset=UTF-8",
             "software_fileKind": "file",
             "software_primaryPurpose": "documentation",
             "spdxId": "https://spdx.org/spdxdocs/File32-f32f0784-038e-488d-a7bf-7d172dfe8b8a",
