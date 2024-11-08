@@ -132,6 +132,7 @@ BibTeX:
 ```bibtex
 @software{Suriyawongkul_Sentiment_Demo_A_2024,
     author = {Suriyawongkul, Arthit},
+    doi = {10.5281/zenodo.14055332},
     license = {CC0-1.0},
     month = nov,
     title = {{Sentiment Demo: A Simple AI Application and its AI BOM Example}},
