@@ -123,7 +123,7 @@ The specific version information can be found in
 If you use this software, including its software bill of materials (SBOM),
 please cite it as follows:
 
-> Suriyawongkul, A. (2024). Sentiment Demo: A Simple AI Application and its AI BOM Example (Version 0.1) [Computer software]. <https://github.com/bact/sentimentdemo/>
+> Suriyawongkul, Arthit. (2024). Sentiment Demo: A Simple AI Application and its AI BOM Example (Version 0.1) [Computer software]. <https://github.com/bact/sentimentdemo/>
 
 BibTeX:
 
