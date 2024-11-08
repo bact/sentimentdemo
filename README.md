@@ -128,7 +128,7 @@ please cite it as follows:
 BibTeX:
 
 ```bibtex
-@software{Suriyawongkul_Sentiment_Demo_AI_2024,
+@software{Suriyawongkul_Sentiment_Demo_A_2024,
     author = {Suriyawongkul, Arthit},
     license = {CC0-1.0},
     month = nov,
