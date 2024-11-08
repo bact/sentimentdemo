@@ -437,7 +437,7 @@
             "ai_useSensitivePersonalInformation": "no",
             "creationInfo": "_:creationinfo",
             "description": "A simple sentiment analysis application. Published solely as an artifact for the purpose of demonstrating a software bill of materials (SBOM). Not recommended for critical text classification tasks. The model is trained on a very small dataset, using fastText library. A. Joulin, E. Grave, P. Bojanowski, T. Mikolov, 2017, Bag of Tricks for Efficient Text Classification.",
-            "name": "Sentiment Demo: AI BOM Example",
+            "name": "Sentiment Demo: A Simple AI Application and its AI BOM Example",
             "software_copyrightText": "Dedicated to the public domain",
             "software_downloadLocation": "https://github.com/bact/sentimentdemo",
             "software_primaryPurpose": "model",

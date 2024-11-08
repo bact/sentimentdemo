@@ -2,7 +2,7 @@
 SPDX-License-Identifier: CC0-1.0
 ---
 
-# Sentiment Demo: A Compact AI Application and its AI BOM Example
+# Sentiment Demo: A Simple AI Application and its AI BOM Example
 
 A simple text classification application, published solely as an artifact for
 the purpose of demonstrating
@@ -20,6 +20,11 @@ SBOM demonstration design goals:
 - **Comprehensible:** Small enough for a human to understand easily.
 - **Informative:** Elaborate enough to showcase the use of various information fields within an SBOM.
 - **Testable:** Designed to facilitate testing and evaluation against specific use case requirements.
+
+For more information about implementing AI BOM using SPDX specification,
+see *Karen Bennet, Gopi Krishnan Rajbahadur, Arthit Suriyawongkul, and
+Kate Stewart, [“Implementing AI Bill of Materials (AI BOM) with SPDX 3.0: A Comprehensive Guide to Creating AI and
+Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom), The Linux Foundation, October 2024*.
 
 ## Content
 
@@ -119,18 +124,18 @@ The specific version information can be found in
 If you use this software, including its software bill of materials (SBOM),
 please cite it as follows:
 
-> Suriyawongkul, A. (2024). Sentiment Demo: AI BOM Example (Version 0.1) [Computer software]. <https://github.com/bact/sentimentdemo/>
+> Suriyawongkul, A. (2024). Sentiment Demo: A Simple AI Application and its AI BOM Example (Version 0.1) [Computer software]. <https://github.com/bact/sentimentdemo/>
 
 BibTeX:
 
 ```bibtex
 @software{Suriyawongkul_Sentiment_Demo_AI_2024,
-author = {Suriyawongkul, Arthit},
-license = {CC0-1.0},
-month = nov,
-title = {{Sentiment Demo: AI BOM Example}},
-url = {https://github.com/bact/sentimentdemo/},
-version = {0.1},
-year = {2024}
+    author = {Suriyawongkul, Arthit},
+    license = {CC0-1.0},
+    month = nov,
+    title = {{Sentiment Demo: A Simple AI Application and its AI BOM Example}},
+    url = {https://github.com/bact/sentimentdemo/},
+    version = {0.1},
+    year = {2024}
 }
 ```
