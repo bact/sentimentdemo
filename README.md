@@ -113,3 +113,24 @@ related or neighboring rights worldwide to the extent allowed by law.
 
 The specific version information can be found in
 [requirements.txt](./requirements.txt).
+
+## Citation
+
+If you use this software, including its software bill of materials (SBOM),
+please cite it as follows:
+
+> Suriyawongkul, A. (2024). Sentiment Demo: AI BOM Example (Version 0.1) [Computer software]. <https://github.com/bact/sentimentdemo/>
+
+BibTeX:
+
+```bibtex
+@software{Suriyawongkul_Sentiment_Demo_AI_2024,
+author = {Suriyawongkul, Arthit},
+license = {CC0-1.0},
+month = nov,
+title = {{Sentiment Demo: AI BOM Example}},
+url = {https://github.com/bact/sentimentdemo/},
+version = {0.1},
+year = {2024}
+}
+```
