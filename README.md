@@ -4,7 +4,7 @@ SPDX-License-Identifier: CC0-1.0
 
 # Sentiment Demo: A Simple AI Application and its AI BOM Example
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14055333.svg)](https://doi.org/10.5281/zenodo.14055333)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14055332.svg)](https://doi.org/10.5281/zenodo.14055332)
 
 A simple text classification application, published solely to demonstrate
 [a software bill of materials (SBOM)](https://en.wikipedia.org/wiki/Software_supply_chain)
@@ -125,7 +125,7 @@ The specific version information can be found in
 If you use this software, including its software bill of materials (SBOM),
 please cite it as follows:
 
-> Suriyawongkul, Arthit. “Sentiment Demo: A Simple AI Application and Its AI BOM Example”. Zenodo, 8 November 2024. <https://doi.org/10.5281/zenodo.14055333>.
+> Suriyawongkul, Arthit. “Sentiment Demo: A Simple AI Application and Its AI BOM Example”. Zenodo, 8 November 2024. <https://doi.org/10.5281/zenodo.14055332>.
 
 BibTeX:
 
