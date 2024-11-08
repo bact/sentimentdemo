@@ -2,7 +2,7 @@
 SPDX-License-Identifier: CC0-1.0
 ---
 
-# Sentiment Demo: A Compact AI Application and its SBOM Example
+# Sentiment Demo: A Compact AI Application and its AI BOM Example
 
 A simple text classification application, published solely as an artifact for
 the purpose of demonstrating
