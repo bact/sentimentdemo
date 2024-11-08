@@ -1,27 +1,28 @@
 # SPDX-License-Identifier: CC0-1.0
 
+name: Validate SBOM
+
 on:
   pull_request:
     paths:
-      - '*.spdx3.json'
+    - "*.spdx3.json"
   push:
     paths:
-      - '*.spdx3.json'
+    - "*.spdx3.json"
+
 jobs:
-  validate-examples:
+  validate-sbom:
     runs-on: ubuntu-latest
-    strategy:
-        fail-fast: true
     steps:
-      - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  #v4.2.2
-      - name: Set up Python 3.12
-        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b  #v5.3.0
-        with:
-          python-version: "3.12"
-      - name: Install Python dependencies
-        run: |
-          python3 -m pip install check-jsonschema==0.29.4 pyshacl==0.29.0 spdx3-validate==0.0.4
-      - name: Check examples
-        run: |
-          ./tools/validate.sh --check-all
+    - name: Checkout
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  #v4.2.2
+    - name: Set up Python 3.12
+      uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b  #v5.3.0
+      with:
+        python-version: "3.12"
+    - name: Install Python dependencies
+      run: |
+        python3 -m pip install check-jsonschema==0.29.4 pyshacl==0.29.0 spdx3-validate==0.0.4
+    - name: Check examples
+      run: |
+        ./tools/validate.sh --check-all
