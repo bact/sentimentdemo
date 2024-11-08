@@ -24,6 +24,13 @@ keywords:
   - "machine learning"
   - "SPDX"
   - "AI BOM"
+identifiers:
+  - description: This is the collection of archived snapshots of all versions of the software.
+    type: doi
+    value: "10.5281/zenodo.14055332"
+  - description: This is the archived snapshot of version 0.1 of the software.
+    type: doi
+    value: "10.5281/zenodo.14055333"
 license: CC0-1.0
 version: "0.1"
 date-released: "2024-11-08"
