@@ -1,7 +1,9 @@
+# SPDX-FileCopyrightText: 2024-present Arthit Suriyawongkul <suriyawa@tcd.ie>
+# SPDX-FileType: SOURCE
 # SPDX-License-Identifier: CC0-1.0
 
 """
-Provides a function to train a FastText model using supervised learning.
+Trains a text classification model using supervised learning (FastText).
 """
 
 import sys
@@ -10,7 +12,9 @@ import time
 import fasttext
 
 
-def train(train_data_file_path: str, valid_data_file_path: str, model_file_path: str):
+def train(
+    train_data_file_path: str, valid_data_file_path: str, model_file_path: str
+) -> None:
     """
     Trains a FastText model with auto-tuned hyperparameters
     and saves the model to a file.
@@ -43,7 +47,7 @@ def train(train_data_file_path: str, valid_data_file_path: str, model_file_path:
     model.save_model(model_file_path)
 
 
-def main(train_data_path: str, valid_data_path: str, model_path: str):
+def main(train_data_path: str, valid_data_path: str, model_path: str) -> None:
     """
     Main function to handle the training process and print start and end times.
 

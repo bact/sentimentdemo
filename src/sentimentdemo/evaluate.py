@@ -1,7 +1,9 @@
+# SPDX-FileCopyrightText: 2024-present Arthit Suriyawongkul <suriyawa@tcd.ie>
+# SPDX-FileType: SOURCE
 # SPDX-License-Identifier: CC0-1.0
 
 """
-This script evaluates a FastText model on test data.
+Evaluates a text classification model on test data.
 It calculates and prints the F1 score, precision, and recall.
 
 Functions:
@@ -30,7 +32,7 @@ def load_data(data_path: str) -> tuple[list, list]:
     """
     labels = []
     texts = []
-    with open(data_path, "r", encoding="utf-8") as file:
+    with open(data_path, mode="r", encoding="utf-8") as file:
         for line in file:
             pair = line.strip().split(" ", 1)  # assumed one label per message
 

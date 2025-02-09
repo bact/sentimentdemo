@@ -1,0 +1,95 @@
+# SPDX-FileCopyrightText: 2024-present Arthit Suriyawongkul <suriyawa@tcd.ie>
+#
+# SPDX-License-Identifier: CC0-1.0
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sentimentdemo"
+dynamic = ["version"]
+description = """A simple sentiment analysis application,
+published solely as an artifact for the purpose of demonstrating
+a software bill of materials.
+Not recommended for critical text classification tasks."""
+readme = "README.md"
+requires-python = ">=3.9,<3.12"
+license = "CC0-1.0"
+keywords = [
+    "sbom",
+    "bom",
+    "aibom",
+    "spdx",
+    "software bill of materials",
+    "artificial intelligence",
+    "machine learning",
+    "natural language processing",
+    "sentiment analysis",
+    "ai",
+    "nlp",
+]
+authors = [{ name = "Arthit Suriyawongkul", email = "suriyawa@tcd.ie" }]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "fasttext==0.9.3",
+    "newmm-tokenizer==0.2.2",
+    "numpy==1.26.4",
+    "th-simple-preprocessor==0.10.1",
+]
+
+[project.urls]
+Documentation = "https://github.com/bact/sentimentdemo#readme"
+Issues = "https://github.com/bact/sentimentdemo/issues"
+Source = "https://github.com/bact/sentimentdemo"
+
+[tool.hatch.version]
+path = "src/sentimentdemo/__about__.py"
+
+[tool.hatch.envs.default]
+python = "3.9"
+installer = "uv"
+
+[tool.hatch.envs.types]
+extra-dependencies = ["mypy>=1.0.0"]
+
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/sentimentdemo tests}"
+
+[tool.hatch.envs.test]
+extra-dependencies = [
+    "coverage[toml]==7.5.4",
+    "pytest==8.2.2",
+    "pytest-cov==5.0.0",
+    #"scikit-learn==1.5.0",
+]
+
+[tool.hatch.envs.test.scripts]
+# hatch run test:cov
+cov = 'pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=tests'
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.9", "3.10", "3.11"]
+
+[tool.coverage.run]
+source_pkgs = ["sentimentdemo", "tests"]
+branch = true
+parallel = true
+omit = ["src/sentimentdemo/__about__.py"]
+
+[tool.coverage.paths]
+sentimentdemo = ["src/sentimentdemo", "*/sentimentdemo/src/sentimentdemo"]
+tests = ["tests", "*/sentimentdemo/tests"]
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
