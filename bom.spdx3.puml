@@ -52,7 +52,7 @@ c284559edaba292c65640d1b0fdf5a9b_o3 : spdxId = "Person1"
 c284559edaba292c65640d1b0fdf5a9b_o3::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
 c284559edaba292c65640d1b0fdf5a9b_o3 : name = "Arthit Suriyawongkul"
 c284559edaba292c65640d1b0fdf5a9b_o2::createdBy --> c284559edaba292c65640d1b0fdf5a9b_o3 : createdBy
-c284559edaba292c65640d1b0fdf5a9b_o2 : specVersion = "3.0.0"
+c284559edaba292c65640d1b0fdf5a9b_o2 : specVersion = "3.0.1"
 c284559edaba292c65640d1b0fdf5a9b_o1::creationInfo --> c284559edaba292c65640d1b0fdf5a9b_o2 : creationInfo
 c284559edaba292c65640d1b0fdf5a9b_o1 : description = "Evaluation script. Reporting p..."
 c284559edaba292c65640d1b0fdf5a9b_o1 : name = "evaluate.py"

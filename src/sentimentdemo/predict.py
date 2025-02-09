@@ -1,8 +1,13 @@
 # SPDX-FileCopyrightText: 2024-present Arthit Suriyawongkul <suriyawa@tcd.ie>
-#
+# SPDX-FileType: SOURCE
 # SPDX-License-Identifier: CC0-1.0
 
-"""A prediction script for a text classifcation model."""
+"""
+Predicts the label of a given text.
+
+The text is preprocessed before prediction, including tokenization,
+stopword removal, and space normalization.
+"""
 
 import sys
 
@@ -14,12 +19,16 @@ model = fasttext.load_model("model.bin")
 
 
 def predict(text: str) -> tuple[list, list]:
-    """Predict the sentiment of a text.
+    """
+    Predict the label of the given text using the loaded FastText model.
 
-    :param text: The text to predict the sentiment of.
-    :type text: str
-    :return: Return a tuple of labels and probabilities.
-    :rtype: tuple[list, list]
+    Args:
+        text (str): The input text to be classified.
+
+    Returns:
+        tuple: A tuple containing two lists:
+        - list of str: The predicted labels.
+        - list of float: The probabilities associated with each label.
     """
     text = preprocess(text)
     text = " ".join(remove_stopwords(word_tokenize(text)))

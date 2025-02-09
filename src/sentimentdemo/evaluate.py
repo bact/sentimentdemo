@@ -1,10 +1,16 @@
 # SPDX-FileCopyrightText: 2024-present Arthit Suriyawongkul <suriyawa@tcd.ie>
-#
+# SPDX-FileType: SOURCE
 # SPDX-License-Identifier: CC0-1.0
 
-"""An evaluation script for a text classifcation model.
+"""
+Evaluates a text classification model on test data.
+It calculates and prints the F1 score, precision, and recall.
 
-Output the F1 score, precision, and recall of a model on a test dataset.
+Functions:
+    load_data(file_path: str) -> tuple[list, list]:
+        Loads test data from a specified file.
+    main(model_file_path: str, test_data_file_path: str) -> None:
+        Main function to evaluate the FastText model on the test data.
 """
 
 import sys
@@ -14,18 +20,19 @@ from sklearn.metrics import f1_score, precision_score, recall_score
 from sklearn.preprocessing import LabelEncoder
 
 
-def load_data(file_path: str) -> tuple[list, list]:
-    """Load evaluation data from a file.
-
-    :param file_path: Path to the evaluation data file.
-    :type file_path: str
-    :return: Return an evaluation dataset, as a tuple of labels and texts.
-    :rtype: tuple[list, list]
+def load_data(data_path: str) -> tuple[list, list]:
     """
+    Load data from the specified file.
 
+    Args:
+        data_path (str): Path to the data file.
+
+    Returns:
+        tuple: A tuple containing labels and data.
+    """
     labels = []
     texts = []
-    with open(file_path, mode="r", encoding="utf-8") as file:
+    with open(data_path, mode="r", encoding="utf-8") as file:
         for line in file:
             pair = line.strip().split(" ", 1)  # assumed one label per message
 
@@ -36,16 +43,19 @@ def load_data(file_path: str) -> tuple[list, list]:
     return labels, texts
 
 
-def main(model_file_path: str, test_data_file_path: str) -> None:
-    """Main function to evaluate a model on a test dataset.
-
-    :param model_file_path: _description_
-    :type model_file_path: str
-    :param test_data_file_path: _description_
-    :type test_data_file_path: str
+def main(model_path: str, test_data_path: str) -> None:
     """
-    labels, data = load_data(test_data_file_path)
-    model = fasttext.load_model(model_file_path)
+    Main function to evaluate the FastText model on the test data.
+
+    Args:
+        model_path (str): Path to the FastText model file.
+        test_data_path (str): Path to the test data file.
+
+    Returns:
+        None
+    """
+    labels, data = load_data(test_data_path)
+    model = fasttext.load_model(model_path)
 
     predictions = [model.predict(x)[0][0] for x in data]
 
@@ -64,6 +74,7 @@ def main(model_file_path: str, test_data_file_path: str) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python evaluate.py <model_file_path> <test_data_file_path>")
+        print("Usage: python evaluate.py <model_file> <test_file>")
         sys.exit(1)
+
     main(sys.argv[1], sys.argv[2])

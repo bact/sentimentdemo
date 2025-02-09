@@ -1,8 +1,10 @@
 # SPDX-FileCopyrightText: 2024-present Arthit Suriyawongkul <suriyawa@tcd.ie>
-#
+# SPDX-FileType: SOURCE
 # SPDX-License-Identifier: CC0-1.0
 
-"""A preprocessing script for a text classification model."""
+"""
+Provides text preprocessing function.
+"""
 
 import sys
 
@@ -11,12 +13,15 @@ from th_preprocessor.preprocess import preprocess, remove_dup_spaces
 
 
 def preprocess_text(text: str) -> str:
-    """Preprocess a text for a text classification model.
+    """
+    Preprocesses a given text string by applying tokenization, removing
+    duplicate spaces, and other preprocessing steps.
 
-    :param text: The text to preprocess.
-    :type text: str
-    :return: Return the preprocessed text.
-    :rtype: str
+    Args:
+        text (str): The input text to be preprocessed.
+
+    Returns:
+        str: The preprocessed text.
     """
     text = preprocess(text)
     text = " ".join(word_tokenize(text))
@@ -24,21 +29,20 @@ def preprocess_text(text: str) -> str:
     return text
 
 
-def main(data_dir_path: str, output_file_path: str) -> None:
-    """Main function to preprocess a dataset for a text classification model.
+def main(data_dir: str, output_path: str) -> None:
+    """
+    Main function to preprocess text files from a specified directory and
+    write the processed text to an output file with labels.
 
-    :param data_dir_path: Path to the directory containing the dataset.
-    :type data_dir_path: str
-    :param output_file_path: Path to the output file.
-    :type output_file_path: str
+    Args:
+        data_dir (str): The path to the directory containing the input text files.
+        output_path (str): The path to the file where the processed text will be written.
     """
     labels = ["neg", "neu", "pos", "q"]
 
-    with open(output_file_path, mode="w", encoding="utf-8") as destination:
+    with open(output_path, mode="w", encoding="utf-8") as destination:
         for label in labels:
-            with open(
-                f"{data_dir_path}/{label}.txt", mode="r", encoding="utf-8"
-            ) as source:
+            with open(f"{data_dir}/{label}.txt", mode="r", encoding="utf-8") as source:
                 for line in source:
                     line = preprocess_text(line)
                     if len(line) > 0:
@@ -47,6 +51,7 @@ def main(data_dir_path: str, output_file_path: str) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python preprocess.py <data_dir_path> <output_file_path>")
+        print("Usage: python preprocess.py <data_dir> <output_file>")
         sys.exit(1)
+
     main(sys.argv[1], sys.argv[2])

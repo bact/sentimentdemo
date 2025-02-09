@@ -1,0 +1,36 @@
+cff-version: "1.2.0"
+title: "Sentiment Demo: A Simple AI Application and its AI BOM Example"
+message: >-
+  If you use this software, please cite it using these
+  metadata.
+type: software
+authors:
+  - family-names: Suriyawongkul
+    given-names: Arthit
+    orcid: "https://orcid.org/0000-0002-9698-1899"
+repository-code: "https://github.com/bact/sentimentdemo/"
+repository: "https://github.com/bact/sentimentdemo/"
+url: "https://github.com/bact/sentimentdemo/"
+abstract: "A simple sentiment analysis application, published solely as an artifact for the purpose of demonstrating a software bill of materials. Not recommended for critical text classification tasks."
+keywords:
+  - "natural language processing"
+  - Python
+  - "text processing"
+  - "text classification"
+  - "sentiment analysis"
+  - "software bill of materials"
+  - "software traceability"
+  - "artificial intelligence"
+  - "machine learning"
+  - "SPDX"
+  - "AI BOM"
+identifiers:
+  - description: This is the collection of archived snapshots of all versions of the software.
+    type: doi
+    value: "10.5281/zenodo.14055332"
+  - description: This is the archived snapshot of version 0.1 of the software.
+    type: doi
+    value: "10.5281/zenodo.14055333"
+license: CC0-1.0
+version: "0.1"
+date-released: "2024-11-08"
