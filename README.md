@@ -38,10 +38,7 @@ Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom), 
 │   ├── test.txt          Testing data
 │   ├── train.txt         Training data
 │   └── valid.txt         Validation data
-├── evaluate.py           A script to evaluate prediction performance
 ├── model.bin             A sentiment analysis model
-├── predict.py            A script to predict a label of a text
-├── preprocess.py         A script to prepare training data
 ├── rawdata               Raw dataset, before preprocessing
 │   ├── test              Testing data
 │   │   ├── neg.txt       Testing samples for label "neg" (negative)
@@ -53,10 +50,14 @@ Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom), 
 │   └── valid             Validation data
 │       └── ...
 ├── requirements.txt      List of required Python libraries
-├── techdocs              Technical documentation
-│   ├── dataprepare.md    Data preparation
-│   └── instructions.md   Instruction for use
-└── train.py              A script to build a model
+├── src
+│   ├── evaluate.py       A script to evaluate prediction performance
+│   ├── predict.py        A script to predict a label of a text
+│   ├── preprocess.py     A script to prepare training data
+│   └── train.py          A script to build a model
+└── techdocs              Technical documentation
+    ├── dataprepare.md    Data preparation
+    └── instructions.md   Instruction for use
 ```
 
 [![A diagram showing relationships between elements in the Sentiment Demo package.](./bom.spdx3.png "A diagram showing relationships between elements in the Sentiment Demo package.")](./bom.spdx3.png)
@@ -72,7 +73,7 @@ See [data preparation](./techdocs/dataprepare.md).
 
 ## Notes
 
-- Development is in the `dev` branch.
+- Development is in the `main` branch.
 - Will eventually be submitted to
   [spdx/spdx-examples](https://github.com/spdx/spdx-examples) repo.
 - The diagram is generated from a PlantUML file:
