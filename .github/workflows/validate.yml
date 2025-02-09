@@ -22,7 +22,7 @@ jobs:
         python-version: "3.12"
     - name: Install Python dependencies
       run: |
-        python3 -m pip install check-jsonschema==0.29.4 pyshacl==0.29.0 spdx3-validate==0.0.4
+        python3 -m pip install check-jsonschema==0.31.1 pyshacl==0.30.0 spdx3-validate==0.0.5
     - name: Check examples
       run: |
         ./tools/validate.sh --check-all
