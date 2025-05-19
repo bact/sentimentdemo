@@ -1,4 +1,5 @@
 ---
+SPDX-FileContributor: Arthit Suriyawongkul
 SPDX-FileCopyrightText: 2024-present Arthit Suriyawongkul <suriyawa@tcd.ie>
 SPDX-FileType: DOCUMENTATION
 SPDX-License-Identifier: CC0-1.0
@@ -23,6 +24,9 @@ SBOM demonstration design goals:
 - **Comprehensible:** Small enough for a human to understand easily.
 - **Informative:** Elaborate enough to showcase the use of various information fields within an SBOM.
 - **Testable:** Designed to facilitate testing and evaluation against specific use case requirements.
+
+*Since May 2025, this AI SBOM example is accepted to the **SPDX Examples** repository,*
+*as [ai/example02](https://github.com/spdx/spdx-examples/tree/master/ai/example02).*
 
 For more information about implementing AI BOM using SPDX specification,
 see *Karen Bennet, Gopi Krishnan Rajbahadur, Arthit Suriyawongkul, and
