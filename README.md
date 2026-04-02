@@ -22,10 +22,10 @@ Other files are given just to complete the illustration.
 
 Updates:
 
+- March 2026: Adopted as a development reference for the **[Pitloom][]**
+  SBOM generator.
 - May 2025: Added to the **[SPDX Usage Examples][spdx-examples]** repository
   as [ai/example02][].
-- April 2026: Adopted as a development reference for the **[Pitloom][]**
-  SBOM generator.
   
 SBOM demonstration design goals:
 
