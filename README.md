@@ -7,7 +7,7 @@ SPDX-License-Identifier: CC0-1.0
 
 # Sentiment Demo: A Simple AI Application and its AI BOM Example
 
-![PyPI - Version](https://img.shields.io/pypi/v/sentimentdemo)
+[![PyPI - Version](https://img.shields.io/pypi/v/sentimentdemo)](https://pypi.org/project/sentimentdemo/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14055332.svg)](https://doi.org/10.5281/zenodo.14055332)
 
 A simple text classification application, published solely to demonstrate
