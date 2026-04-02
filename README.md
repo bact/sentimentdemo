@@ -19,19 +19,29 @@ Other files are given just to complete the illustration.
 
 *Not recommended for actual text classification tasks.*
 
+Updates:
+
+- May 2025: Added to the **SPDX Examples** repository as [ai/example02][].
+- April 2026: Adopted as a development reference for the **[Pitloom][]**
+  SBOM generator.
+  
 SBOM demonstration design goals:
 
 - **Comprehensible:** Small enough for a human to understand easily.
-- **Informative:** Elaborate enough to showcase the use of various information fields within an SBOM.
-- **Testable:** Designed to facilitate testing and evaluation against specific use case requirements.
-
-*Since May 2025, this AI SBOM example is accepted to the **SPDX Examples** repository,*
-*as [ai/example02](https://github.com/spdx/spdx-examples/tree/master/ai/example02).*
+- **Informative:** Elaborate enough to showcase the use of various information
+  fields within an SBOM.
+- **Testable:** Designed to facilitate testing and evaluation against specific
+  use case requirements.
 
 For more information about implementing AI BOM using SPDX specification,
-see *Karen Bennet, Gopi Krishnan Rajbahadur, Arthit Suriyawongkul, and
-Kate Stewart, [“Implementing AI Bill of Materials (AI BOM) with SPDX 3.0: A Comprehensive Guide to Creating AI and
-Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom), The Linux Foundation, October 2024*.
+see *Karen Bennet, Gopi Krishnan Rajbahadur, Arthit Suriyawongkul,
+and Kate Stewart,
+[“Implementing AI Bill of Materials (AI BOM) with SPDX 3.0: A Comprehensive Guide to Creating AI and
+Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom),
+The Linux Foundation, October 2024*.
+
+[ai/example02]: https://github.com/spdx/spdx-examples/tree/master/ai/example02
+[Pitloom]: https://github.com/bact/pitloom
 
 ## Content
 
