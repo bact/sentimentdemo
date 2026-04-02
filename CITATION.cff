@@ -34,5 +34,5 @@ identifiers:
     type: doi
     value: "10.5281/zenodo.14055333"
 license: CC0-1.0
-version: "0.1"
+version: "0.2.0"
 date-released: "2024-11-08"
