@@ -7,6 +7,7 @@ SPDX-License-Identifier: CC0-1.0
 
 # Sentiment Demo: A Simple AI Application and its AI BOM Example
 
+![PyPI - Version](https://img.shields.io/pypi/v/sentimentdemo)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14055332.svg)](https://doi.org/10.5281/zenodo.14055332)
 
 A simple text classification application, published solely to demonstrate
@@ -19,19 +20,31 @@ Other files are given just to complete the illustration.
 
 *Not recommended for actual text classification tasks.*
 
+Updates:
+
+- May 2025: Added to the **[SPDX Usage Examples][spdx-examples]** repository
+  as [ai/example02][].
+- April 2026: Adopted as a development reference for the **[Pitloom][]**
+  SBOM generator.
+  
 SBOM demonstration design goals:
 
 - **Comprehensible:** Small enough for a human to understand easily.
-- **Informative:** Elaborate enough to showcase the use of various information fields within an SBOM.
-- **Testable:** Designed to facilitate testing and evaluation against specific use case requirements.
-
-*Since May 2025, this AI SBOM example is accepted to the **SPDX Examples** repository,*
-*as [ai/example02](https://github.com/spdx/spdx-examples/tree/master/ai/example02).*
+- **Informative:** Elaborate enough to showcase the use of various information
+  fields within an SBOM.
+- **Testable:** Designed to facilitate testing and evaluation against specific
+  use case requirements.
 
 For more information about implementing AI BOM using SPDX specification,
-see *Karen Bennet, Gopi Krishnan Rajbahadur, Arthit Suriyawongkul, and
-Kate Stewart, [“Implementing AI Bill of Materials (AI BOM) with SPDX 3.0: A Comprehensive Guide to Creating AI and
-Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom), The Linux Foundation, October 2024*.
+see *Karen Bennet, Gopi Krishnan Rajbahadur, Arthit Suriyawongkul,
+and Kate Stewart,
+[“Implementing AI Bill of Materials (AI BOM) with SPDX 3.0: A Comprehensive Guide to Creating AI and
+Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom),
+The Linux Foundation, October 2024*.
+
+[spdx-examples]: https://github.com/spdx/spdx-examples
+[ai/example02]: https://github.com/spdx/spdx-examples/tree/master/ai/example02
+[Pitloom]: https://github.com/bact/pitloom
 
 ## Content
 
@@ -44,7 +57,6 @@ Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom), 
 │   ├── test.txt          Testing data
 │   ├── train.txt         Training data
 │   └── valid.txt         Validation data
-├── model.bin             A sentiment analysis model
 ├── rawdata               Raw dataset, before preprocessing
 │   ├── test              Testing data
 │   │   ├── neg.txt       Testing samples for label "neg" (negative)
@@ -55,9 +67,9 @@ Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom), 
 │   │   └── ...
 │   └── valid             Validation data
 │       └── ...
-├── requirements.txt      List of required Python libraries
 ├── src
 │   ├── evaluate.py       A script to evaluate prediction performance
+│   ├── model.bin         A sentiment analysis model
 │   ├── predict.py        A script to predict a label of a text
 │   ├── preprocess.py     A script to prepare training data
 │   └── train.py          A script to build a model
@@ -118,14 +130,13 @@ related or neighboring rights worldwide to the extent allowed by law.
 
 | Component | Name | License | Notes |
 | --------- | ---- | ------- | ----- |
-| Training data | [Wisesight Sentiment Corpus](https://github.com/PyThaiNLP/wisesight-sentiment) | Creative Commons Zero v1.0 Universal | Samples from the corpus are in `rawdata/`. Preprocessed data is in `data/`. See [data preparation](./techdocs/dataprepare.md) for details. |
-| Text preprocessor | [th-simple-preprocessor](https://pypi.org/project/th-simple-preprocessor/) |  Apache License 2.0 | |
-| Word tokenizer | [newmm-tokenizer](https://pypi.org/project/newmm-tokenizer/) | Apache License 2.0 | Inherited the license from [PyThaiNLP](https://pypi.org/project/pythainlp/). |
-| Text classifier | [fastText](https://pypi.org/project/fasttext/) | MIT License | |
-| Array package | [NumPy](https://pypi.org/project/numpy/) | BSD License | |
+| Training data | [Wisesight Sentiment Corpus](https://github.com/PyThaiNLP/wisesight-sentiment) | CC0-1.0 | Samples from the corpus are in `rawdata/`. Preprocessed data is in `data/`. See [data preparation](./techdocs/dataprepare.md) for details. |
+| Text preprocessor | [th-simple-preprocessor](https://pypi.org/project/th-simple-preprocessor/) |  Apache-2.0 | |
+| Word tokenizer | [newmm-tokenizer](https://pypi.org/project/newmm-tokenizer/) | Apache-2.0 | Inherited the license from [PyThaiNLP](https://pypi.org/project/pythainlp/). |
+| Text classifier | [fastText](https://fasttext.cc/) | MIT | Use [fasttext-community](https://pypi.org/project/fasttext-community/), which is a community-maintained fork. |
+| Array package | [NumPy](https://pypi.org/project/numpy/) | BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0 | |
 
-The specific version information can be found in
-[requirements.txt](./requirements.txt).
+The specific version information can be found in [pyproject.toml](./pyproject.toml).
 
 ## Citation
 

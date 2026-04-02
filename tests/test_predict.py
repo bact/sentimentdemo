@@ -8,7 +8,7 @@ from sentimentdemo.predict import predict
 from sentimentdemo.preprocess import preprocess_text
 
 
-def test_predict():
+def test_predict() -> None:
     """Test predict function."""
     text = "This is a test ."
     labels, _ = predict(text)
@@ -20,7 +20,7 @@ def test_predict():
     ]
 
 
-def test_preprocess_text():
+def test_preprocess_text() -> None:
     """Test preprocess_text function."""
     text = "test"
     preprocessed_text = preprocess_text(text)

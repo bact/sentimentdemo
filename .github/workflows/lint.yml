@@ -1,17 +1,27 @@
 # SPDX-License-Identifier: CC0-1.0
 
-name: Validate SBOM
+name: Lint
 
 on:
-  pull_request:
-    paths:
-      - "*.spdx3.json"
   push:
-    paths:
-      - "*.spdx3.json"
+    branches: [main]
+    paths-ignore:
+      - "**.cff"
+      - "**.json"
+      - "**.md"
+      - "**.txt"
+      - "**.yml"
+  pull_request:
+    branches: [main]
+    paths-ignore:
+      - "**.cff"
+      - "**.json"
+      - "**.md"
+      - "**.txt"
+      - "**.yml"
 
 jobs:
-  validate-sbom:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,7 +34,8 @@ jobs:
           cache-dependency-path: pyproject.toml
       - name: Install Python dependencies
         run: |
-          python3 -m pip install check-jsonschema==0.37.1 pyshacl==0.31.0 spdx3-validate==0.0.5
-      - name: Check examples
+          python -m pip install --upgrade pip
+          pip install -e '.[dev,eval]'
+      - name: Analysing the code with Pylint
         run: |
-          ./tools/validate.sh --check-all
+          pylint src tests
