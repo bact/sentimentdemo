@@ -9,18 +9,21 @@ The text is preprocessed before prediction, including tokenization,
 stopword removal, and space normalization.
 """
 
+import os
 import sys
+from typing import Any, cast
 
 import fasttext
 from newmm_tokenizer.tokenizer import word_tokenize
-from th_preprocessor.preprocess import preprocess, remove_dup_spaces, remove_stopwords
+from th_preprocessor.preprocess import preprocess as th_preprocess
+from th_preprocessor.preprocess import remove_dup_spaces, remove_stopwords
 
-model = fasttext.load_model("model.bin")
+_MODEL: Any = None
 
 
-def predict(text: str) -> tuple[list, list]:
+def predict(text: str) -> tuple[list[str], list[float]]:
     """
-    Predict the label of the given text using the loaded FastText model.
+    Predict the label of the given text using the loaded fastText model.
 
     Args:
         text (str): The input text to be classified.
@@ -30,11 +33,17 @@ def predict(text: str) -> tuple[list, list]:
         - list of str: The predicted labels.
         - list of float: The probabilities associated with each label.
     """
-    text = preprocess(text)
+    global _MODEL  # pylint: disable=global-statement
+    if _MODEL is None:
+        model_path = os.path.join(os.path.dirname(__file__), "model.bin")
+        _MODEL = fasttext.load_model(model_path)
+
+    text = th_preprocess(text)
     text = " ".join(remove_stopwords(word_tokenize(text)))
     text = remove_dup_spaces(text)
 
-    return model.predict(text)
+    # fastText usually returns a tuple of strings and a numpy array
+    return cast(tuple[list[str], list[float]], _MODEL.predict(text))
 
 
 if __name__ == "__main__":

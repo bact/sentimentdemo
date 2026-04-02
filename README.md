@@ -44,7 +44,6 @@ Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom), 
 │   ├── test.txt          Testing data
 │   ├── train.txt         Training data
 │   └── valid.txt         Validation data
-├── model.bin             A sentiment analysis model
 ├── rawdata               Raw dataset, before preprocessing
 │   ├── test              Testing data
 │   │   ├── neg.txt       Testing samples for label "neg" (negative)
@@ -55,9 +54,9 @@ Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom), 
 │   │   └── ...
 │   └── valid             Validation data
 │       └── ...
-├── requirements.txt      List of required Python libraries
 ├── src
 │   ├── evaluate.py       A script to evaluate prediction performance
+│   ├── model.bin         A sentiment analysis model
 │   ├── predict.py        A script to predict a label of a text
 │   ├── preprocess.py     A script to prepare training data
 │   └── train.py          A script to build a model
@@ -118,14 +117,13 @@ related or neighboring rights worldwide to the extent allowed by law.
 
 | Component | Name | License | Notes |
 | --------- | ---- | ------- | ----- |
-| Training data | [Wisesight Sentiment Corpus](https://github.com/PyThaiNLP/wisesight-sentiment) | Creative Commons Zero v1.0 Universal | Samples from the corpus are in `rawdata/`. Preprocessed data is in `data/`. See [data preparation](./techdocs/dataprepare.md) for details. |
-| Text preprocessor | [th-simple-preprocessor](https://pypi.org/project/th-simple-preprocessor/) |  Apache License 2.0 | |
-| Word tokenizer | [newmm-tokenizer](https://pypi.org/project/newmm-tokenizer/) | Apache License 2.0 | Inherited the license from [PyThaiNLP](https://pypi.org/project/pythainlp/). |
-| Text classifier | [fastText](https://pypi.org/project/fasttext/) | MIT License | |
-| Array package | [NumPy](https://pypi.org/project/numpy/) | BSD License | |
+| Training data | [Wisesight Sentiment Corpus](https://github.com/PyThaiNLP/wisesight-sentiment) | CC0-1.0 | Samples from the corpus are in `rawdata/`. Preprocessed data is in `data/`. See [data preparation](./techdocs/dataprepare.md) for details. |
+| Text preprocessor | [th-simple-preprocessor](https://pypi.org/project/th-simple-preprocessor/) |  Apache-2.0 | |
+| Word tokenizer | [newmm-tokenizer](https://pypi.org/project/newmm-tokenizer/) | Apache-2.0 | Inherited the license from [PyThaiNLP](https://pypi.org/project/pythainlp/). |
+| Text classifier | [fastText](https://fasttext.cc/) | MIT | Use [fasttext-community](https://pypi.org/project/fasttext-community/), which is a community-maintained fork. |
+| Array package | [NumPy](https://pypi.org/project/numpy/) | BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0 | |
 
-The specific version information can be found in
-[requirements.txt](./requirements.txt).
+The specific version information can be found in [pyproject.toml](./pyproject.toml).
 
 ## Citation
 

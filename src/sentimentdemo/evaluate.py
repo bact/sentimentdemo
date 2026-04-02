@@ -10,7 +10,7 @@ Functions:
     load_data(file_path: str) -> tuple[list, list]:
         Loads test data from a specified file.
     main(model_file_path: str, test_data_file_path: str) -> None:
-        Main function to evaluate the FastText model on the test data.
+        Main function to evaluate the fastText model on the test data.
 """
 
 import sys
@@ -20,7 +20,7 @@ from sklearn.metrics import f1_score, precision_score, recall_score
 from sklearn.preprocessing import LabelEncoder
 
 
-def load_data(data_path: str) -> tuple[list, list]:
+def load_data(data_path: str) -> tuple[list[str], list[str]]:
     """
     Load data from the specified file.
 
@@ -45,10 +45,10 @@ def load_data(data_path: str) -> tuple[list, list]:
 
 def main(model_path: str, test_data_path: str) -> None:
     """
-    Main function to evaluate the FastText model on the test data.
+    Main function to evaluate the fastText model on the test data.
 
     Args:
-        model_path (str): Path to the FastText model file.
+        model_path (str): Path to the fastText model file.
         test_data_path (str): Path to the test data file.
 
     Returns:

@@ -4,4 +4,4 @@
 
 """Sentiment analysis demo configuration and metadata."""
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"

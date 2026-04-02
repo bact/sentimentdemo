@@ -10,16 +10,16 @@ in predicting text from other genres or languages.
 Install the required dependencies using this command:
 
 ```shell
-pip install -r requirements.txt
+pip install .
 ```
 
 This will install the following Python libraries:
 
-- `fasttext==0.9.3` - For text classification model training and prediction.
-- `newmm-tokenizer==0.2.2` - For tokenizing Thai text.
-- `numpy==1.26.4` - For computations with multidimensional arrays.
+- `fasttext` - For text classification model training and prediction.
+- `newmm-tokenizer` - For tokenizing Thai text.
+- `numpy` - For computations with multidimensional arrays.
   Note that NumPy version 2 and later are incompatible with fastText.
-- `th-simple-preprocessor==0.10.1` - For preprocessing Thai text.
+- `th-simple-preprocessor` - For preprocessing Thai text.
 - and all other libraries required by them.
 
 ## Predict a label of a text
@@ -71,6 +71,12 @@ by changing the `autotuneModelSize` and `autotuneDuration` parameters in
 `train.py`.
 
 ## Evaluate a model
+
+Install the required dependencies using this command:
+
+```shell
+pip install ".[eval]"
+```
 
 Given that `data/test.txt` is a test data with the same structure as the
 training data, run this command:

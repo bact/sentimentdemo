@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 """
-Trains a text classification model using supervised learning (FastText).
+Trains a text classification model using supervised learning (fastText).
 """
 
 import sys
@@ -16,7 +16,7 @@ def train(
     train_data_file_path: str, valid_data_file_path: str, model_file_path: str
 ) -> None:
     """
-    Trains a FastText model with auto-tuned hyperparameters
+    Trains a fastText model with auto-tuned hyperparameters
     and saves the model to a file.
 
     Args:
