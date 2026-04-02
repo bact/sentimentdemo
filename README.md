@@ -7,6 +7,7 @@ SPDX-License-Identifier: CC0-1.0
 
 # Sentiment Demo: A Simple AI Application and its AI BOM Example
 
+![PyPI - Version](https://img.shields.io/pypi/v/sentimentdemo)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14055332.svg)](https://doi.org/10.5281/zenodo.14055332)
 
 A simple text classification application, published solely to demonstrate
@@ -21,7 +22,8 @@ Other files are given just to complete the illustration.
 
 Updates:
 
-- May 2025: Added to the **SPDX Examples** repository as [ai/example02][].
+- May 2025: Added to the **[SPDX Usage Examples][spdx-examples]** repository
+  as [ai/example02][].
 - April 2026: Adopted as a development reference for the **[Pitloom][]**
   SBOM generator.
   
@@ -40,6 +42,7 @@ and Kate Stewart,
 Dataset Bill of Materials”](https://www.linuxfoundation.org/research/ai-bom),
 The Linux Foundation, October 2024*.
 
+[spdx-examples]: https://github.com/spdx/spdx-examples
 [ai/example02]: https://github.com/spdx/spdx-examples/tree/master/ai/example02
 [Pitloom]: https://github.com/bact/pitloom
 
