@@ -10,6 +10,7 @@ import sys
 import time
 
 import fasttext
+from pitloom import loom
 
 
 def train(
@@ -27,24 +28,35 @@ def train(
     Returns:
         None
     """
-    # Auto-tune hyperparameters.
-    # Limit the duration to 2 hours. Limit the model size to 100K.
-    model = fasttext.train_supervised(
-        input=train_data_file_path,
-        autotuneDuration=7200,
-        autotuneModelSize="100K",
-        autotuneValidationFile=valid_data_file_path,
-    )
+    with loom.shoot("fragments/train.spdx3.json", pretty=True) as shot:
+        shot.set_model(model_file_path, model_type="supervised")
+        shot.add_dataset(train_data_file_path, dataset_type="text")
+        shot.add_validation_dataset(valid_data_file_path, dataset_type="text")
 
-    # Print final hyperparameters
-    if hasattr(model, "f"):
-        print("Final hyperparameters:")
-        args_obj = model.f.getArgs()
-        for hparam in dir(args_obj):
-            if not hparam.startswith("__"):
-                print(f"{hparam}: {getattr(args_obj, hparam)}")
+        # Auto-tune hyperparameters.
+        # Limit the duration to 2 hours. Limit the model size to 100K.
+        model = fasttext.train_supervised(
+            input=train_data_file_path,
+            autotuneDuration=7200,
+            autotuneModelSize="100K",
+            autotuneValidationFile=valid_data_file_path,
+        )
 
-    model.save_model(model_file_path)
+        # Capture and record final hyperparameters in SBOM fragment
+        if hasattr(model, "f"):
+            args_obj = model.f.getArgs()
+            hparams = {
+                h: str(getattr(args_obj, h))
+                for h in dir(args_obj)
+                if not h.startswith("__")
+            }
+            shot.set_model_hyperparameters(hparams)
+
+            print("Final hyperparameters:")
+            for k, v in hparams.items():
+                print(f"{k}: {v}")
+
+        model.save_model(model_file_path)
 
 
 def main(train_data_path: str, valid_data_path: str, model_path: str) -> None:

@@ -9,6 +9,7 @@ Provides text preprocessing function.
 import sys
 
 from newmm_tokenizer.tokenizer import word_tokenize
+from pitloom import loom
 from th_preprocessor.preprocess import preprocess, remove_dup_spaces
 
 
@@ -40,13 +41,29 @@ def main(data_dir: str, output_path: str) -> None:
     """
     labels = ["neg", "neu", "pos", "q"]
 
-    with open(output_path, mode="w", encoding="utf-8") as destination:
+    with loom.shoot("fragments/preprocess.spdx3.json", pretty=True) as shot:
         for label in labels:
-            with open(f"{data_dir}/{label}.txt", mode="r", encoding="utf-8") as source:
-                for line in source:
-                    line = preprocess_text(line)
-                    if len(line) > 0:
-                        destination.write(f"__label__{label} {line}\n")
+            shot.add_input_dataset(f"{data_dir}/{label}.txt", dataset_type="text")
+
+        shot.add_output_dataset(
+            output_path,
+            dataset_type="text",
+            data_preprocessing=[
+                "thai-text-normalization",
+                "newmm-word-tokenization",
+                "fasttext-label-format",
+            ],
+        )
+
+        with open(output_path, mode="w", encoding="utf-8") as destination:
+            for label in labels:
+                with open(
+                    f"{data_dir}/{label}.txt", mode="r", encoding="utf-8"
+                ) as source:
+                    for line in source:
+                        line = preprocess_text(line)
+                        if len(line) > 0:
+                            destination.write(f"__label__{label} {line}\n")
 
 
 if __name__ == "__main__":
