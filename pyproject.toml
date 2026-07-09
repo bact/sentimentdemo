@@ -28,15 +28,17 @@ keywords = [
 ]
 authors = [{ name = "Arthit Suriyawongkul", email = "suriyawa@tcd.ie" }]
 classifiers = [
+    "Development Status :: 3 - Alpha",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
     "fasttext-community==0.11.7",
     "newmm-tokenizer==0.2.2",
     "numpy==1.26.4",
-    "pitloom>=0.10.0",
+    "pitloom>=0.11.0",
     "th-simple-preprocessor==0.10.1",
 ]
 
@@ -68,8 +70,8 @@ omit = ["src/sentimentdemo/__about__.py"]
 
 [tool.hatch.envs.test]
 extra-dependencies = [
-    "coverage[toml]==7.10.7",
-    "pytest==8.4.2",
+    "coverage[toml]==7.15.0",
+    "pytest==9.1.1",
     "pytest-cov==7.1.0",
 ]
 
@@ -84,7 +86,7 @@ enabled = true
 cov = 'pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=tests'
 
 [tool.hatch.envs.types]
-extra-dependencies = ["mypy>=1.19.1"]
+extra-dependencies = ["mypy>=2.2.0"]
 
 [[tool.hatch.envs.types.matrix]]
 python = ["3.10", "3.11"]
