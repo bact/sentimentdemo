@@ -23,6 +23,9 @@ Other files are given just to complete the illustration.
 
 Updates:
 
+- July 2026: Version 0.3.0 - [SBOM fragments](./fragments/) that were generated
+  during the runs of preprocess.py and train.py are merged into the main SBOM
+  -- shipped with the Python wheel. This gives more data provenance.
 - March 2026: Adopted as a development reference for the **[Pitloom]**
   SBOM generator.
 - May 2025: Added to the **[SPDX Usage Examples][spdx-examples]** repository
