@@ -10,7 +10,7 @@ name = "sentimentdemo"
 dynamic = ["version"]
 description = "A simple sentiment analysis application, published solely as an artifact for the purpose of demonstrating and testing a software bill of materials. Not recommended for any text classification tasks."
 readme = "README.md"
-requires-python = ">=3.9,<3.12"
+requires-python = ">=3.10,<3.12"
 license = "CC0-1.0"
 keywords = [
     "sbom",
@@ -28,20 +28,19 @@ keywords = [
 authors = [{ name = "Arthit Suriyawongkul", email = "suriyawa@tcd.ie" }]
 classifiers = [
     "Programming Language :: Python",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
 ]
 dependencies = [
-    "fasttext-community==0.11.6",
+    "fasttext-community==0.11.7",
     "newmm-tokenizer==0.2.2",
     "numpy==1.26.4",
-    "pitloom>=0.4.1",
+    "pitloom>=0.10.0",
     "th-simple-preprocessor==0.10.1",
 ]
 
 [project.optional-dependencies]
-dev = ["mypy>=1.19.1", "pylint==3.3.9", "pytest==8.4.2"]
+dev = ["mypy>=2.2.0", "pylint==4.0.6", "pytest==9.1.1"]
 eval = ["scikit-learn==1.6.1"]
 
 [project.urls]
@@ -74,7 +73,7 @@ extra-dependencies = [
 ]
 
 [[tool.hatch.envs.test.matrix]]
-python = ["3.9", "3.10", "3.11"]
+python = ["3.10", "3.11"]
 
 [tool.hatch.envs.test.scripts]
 # hatch run test:cov
@@ -84,7 +83,7 @@ cov = 'pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=tests'
 extra-dependencies = ["mypy>=1.19.1"]
 
 [[tool.hatch.envs.types.matrix]]
-python = ["3.9", "3.10", "3.11"]
+python = ["3.10", "3.11"]
 
 [tool.hatch.envs.types.scripts]
 # hatch run types:check
