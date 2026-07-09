@@ -19,12 +19,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 #v6.2.0
         with:
-          python-version: "3.14"
+          python-version: "3.11"
           cache: "pip"
           cache-dependency-path: pyproject.toml
       - name: Install Python dependencies
         run: |
-          python3 -m pip install check-jsonschema==0.37.1 pyshacl==0.31.0 spdx3-validate==0.0.5
+          python3 -m pip install check-jsonschema==0.37.4 pyshacl==0.40.0 spdx3-validate==0.0.5
       - name: Check examples
         run: |
           ./tools/validate.sh --check-all

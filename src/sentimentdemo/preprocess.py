@@ -41,11 +41,11 @@ def main(data_dir: str, output_path: str) -> None:
     """
     labels = ["neg", "neu", "pos", "q"]
 
-    with loom.shoot("fragments/preprocess.spdx3.json", pretty=True) as shot:
+    with loom.run("fragments/preprocess.spdx3.json", pretty=True) as run:
         for label in labels:
-            shot.add_input_dataset(f"{data_dir}/{label}.txt", dataset_type="text")
+            run.add_input_dataset(f"{data_dir}/{label}.txt", dataset_type="text")
 
-        shot.add_output_dataset(
+        run.add_output_dataset(
             output_path,
             dataset_type="text",
             data_preprocessing=[

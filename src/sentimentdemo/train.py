@@ -28,10 +28,10 @@ def train(
     Returns:
         None
     """
-    with loom.shoot("fragments/train.spdx3.json", pretty=True) as shot:
-        shot.set_model(model_file_path, model_type="supervised")
-        shot.add_dataset(train_data_file_path, dataset_type="text")
-        shot.add_validation_dataset(valid_data_file_path, dataset_type="text")
+    with loom.run("fragments/train.spdx3.json", pretty=True) as run:
+        run.set_model(model_file_path, model_type="supervised")
+        run.add_dataset(train_data_file_path, dataset_type="text")
+        run.add_validation_dataset(valid_data_file_path, dataset_type="text")
 
         # Auto-tune hyperparameters.
         # Limit the duration to 2 hours. Limit the model size to 100K.
@@ -50,7 +50,7 @@ def train(
                 for h in dir(args_obj)
                 if not h.startswith("__")
             }
-            shot.set_model_hyperparameters(hparams)
+            run.set_model_hyperparameters(hparams)
 
             print("Final hyperparameters:")
             for k, v in hparams.items():
