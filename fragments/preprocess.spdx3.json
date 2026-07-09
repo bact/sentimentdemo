@@ -1,0 +1,367 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "@id": "_:CreationInfo0",
+      "comment": "Generated via Pitloom loom SDK v0.10.0 (script/notebook capture)",
+      "created": "2026-07-09T09:00:03Z",
+      "createdBy": [
+        "https://spdx.org/spdxdocs/pitloom-sdk-67cb4caf-b9d9-490f-8d09-ce0773528072#SoftwareAgent-1"
+      ],
+      "createdUsing": [
+        "https://spdx.org/spdxdocs/pitloom-sdk-67cb4caf-b9d9-490f-8d09-ce0773528072#Tool-1"
+      ],
+      "specVersion": "3.0.1",
+      "type": "CreationInfo"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
+      "relationshipType": "hasInput",
+      "spdxId": "https://spdx.org/spdxdocs/data/test.txt-hasInput-sources-67cb4caf-b9d9-490f-8d09-ce0773528072#Relationship-3",
+      "to": [
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-1",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-2",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-3",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-4"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
+      "relationshipType": "hasInput",
+      "spdxId": "https://spdx.org/spdxdocs/data/train.txt-hasInput-sources-67cb4caf-b9d9-490f-8d09-ce0773528072#Relationship-1",
+      "to": [
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-5",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-6",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-7",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-8"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15",
+      "relationshipType": "hasInput",
+      "spdxId": "https://spdx.org/spdxdocs/data/valid.txt-hasInput-sources-67cb4caf-b9d9-490f-8d09-ce0773528072#Relationship-2",
+      "to": [
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-9",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-10",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-11",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-12"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "Pitloom",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-67cb4caf-b9d9-490f-8d09-ce0773528072#SoftwareAgent-1",
+      "type": "SoftwareAgent"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "Pitloom",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-67cb4caf-b9d9-490f-8d09-ce0773528072#Tool-1",
+      "summary": "Pitloom 0.10.0",
+      "type": "Tool"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/test/neg.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-1",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "a904d1f9c1e3f1a722b3d2f9f4cdcc105bcb823d899504a3085918e1f4302c8e",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/valid/neu.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-10",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "49a31b2b7bb02fd4efd22e13afafa484198813cdad6499258c687e6529b5c4f4",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/valid/pos.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-11",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "c4c371575338e827208b45560a1f9ea4d045297d9a8b446c0aca3960b0d72878",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/valid/q.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-12",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "f059001b81cadabca062c999a71166eb5bd004b5be2e7d10dcc5010eccaa1115",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_dataPreprocessing": [
+        "thai-text-normalization",
+        "newmm-word-tokenization",
+        "fasttext-label-format"
+      ],
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/test.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "6475fa086d9e14a605b1e5414cb45962cb5eb04b1237e0f2dadd225ef91a0955",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_dataPreprocessing": [
+        "thai-text-normalization",
+        "newmm-word-tokenization",
+        "fasttext-label-format"
+      ],
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/train.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "d5abf8167a1e435341ca70efaacf8afb097cd7bf5b58927e981f4ff216f95c70",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_dataPreprocessing": [
+        "thai-text-normalization",
+        "newmm-word-tokenization",
+        "fasttext-label-format"
+      ],
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/valid.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "9a859785a91102edeb83b016da5e5ab2f8c2b3a13ed50003175cba661ef8aeae",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/test/neu.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-2",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "4d94f2938ea0df40054071d1acfe3b0ae581d5c61fdc4201f6134bd8c32ee20f",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "src/sentimentdemo/preprocess.py",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-21",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "e1f5571ab19416f46c3a3dd409900bdff79664a414fd084a58934137d8f31892",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/test/pos.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-3",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "4783404f4d1c45ba2d11a9e848aafbd98a7cc36b87a77eafba82831da2942a5d",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/test/q.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-4",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "9ac63d298ab88ed4b9fbe1f8e363b346e20dc600b83cca2d2c95db8aa986083c",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/train/neg.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-5",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "2ce080d13b6f071dbee8f6bd62c40c5a7d11713aa14989fe2d8cb3859838c857",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/train/neu.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-6",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "dd8e060de260bd8e09d8dac2b05c8c1f0644db5d218df6bb296008ea694555ba",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/train/pos.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-7",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "3a56201b2c5c25076e93d909ae120e41d7c8502bd0aa7ec1494614f0149bce33",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/train/q.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-8",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "c79865bc8becc030501677284619a4562d0eb3c19f7f9e7b72af49529230518b",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/valid/neg.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-9",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "64bf2d2e5b7b9d7a71d59fde1292b94169626d4e1d468d13232b7010bc7110ed",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-21",
+      "relationshipType": "generates",
+      "scope": "build",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/preprocess.py-generates-outputs-67cb4caf-b9d9-490f-8d09-ce0773528072#Relationship-4",
+      "to": [
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15"
+      ],
+      "type": "LifecycleScopedRelationship"
+    }
+  ]
+}
