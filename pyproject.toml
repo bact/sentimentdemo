@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.28.0", "pitloom>=0.10.0,<0.11.0"]
 build-backend = "hatchling.build"
 
 [project]
@@ -99,6 +99,10 @@ strict = true
 [[tool.mypy.overrides]]
 module = ["fasttext", "newmm_tokenizer.*", "th_preprocessor.*", "sklearn.*"]
 ignore_missing_imports = true
+
+[[tool.pitloom.creator]]
+name = "Arthit Suriyawongkul"
+email = "suriyawa@tcd.ie"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
