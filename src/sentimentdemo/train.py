@@ -6,11 +6,17 @@
 Trains a text classification model using supervised learning (fastText).
 """
 
+import os
 import sys
 import time
 
 import fasttext
 from pitloom import loom
+
+# Limit for auto-tuning hyperparameters, in seconds. Defaults to 2 hours;
+# override with the AUTOTUNE_DURATION environment variable (e.g. for a quick
+# demo run) without editing this file.
+AUTOTUNE_DURATION = int(os.environ.get("AUTOTUNE_DURATION", "7200"))
 
 
 def train(
@@ -34,10 +40,11 @@ def train(
         run.add_validation_dataset(valid_data_file_path, dataset_type="text")
 
         # Auto-tune hyperparameters.
-        # Limit the duration to 2 hours. Limit the model size to 100K.
+        # Limit the duration (see AUTOTUNE_DURATION above; default 2 hours).
+        # Limit the model size to 100K.
         model = fasttext.train_supervised(
             input=train_data_file_path,
-            autotuneDuration=7200,
+            autotuneDuration=AUTOTUNE_DURATION,
             autotuneModelSize="100K",
             autotuneValidationFile=valid_data_file_path,
         )

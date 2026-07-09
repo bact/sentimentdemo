@@ -1,0 +1,297 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "@id": "_:CreationInfo0",
+      "comment": "Generated via Pitloom loom SDK v0.10.0 (script/notebook capture)",
+      "created": "2026-07-09T09:00:26Z",
+      "createdBy": [
+        "https://spdx.org/spdxdocs/pitloom-sdk-6f71b55a-8492-49b4-ab93-2183436a321c#SoftwareAgent-1"
+      ],
+      "createdUsing": [
+        "https://spdx.org/spdxdocs/pitloom-sdk-6f71b55a-8492-49b4-ab93-2183436a321c#Tool-1"
+      ],
+      "specVersion": "3.0.1",
+      "type": "CreationInfo"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "Pitloom",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-6f71b55a-8492-49b4-ab93-2183436a321c#SoftwareAgent-1",
+      "type": "SoftwareAgent"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "Pitloom",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-6f71b55a-8492-49b4-ab93-2183436a321c#Tool-1",
+      "summary": "Pitloom 0.10.0",
+      "type": "Tool"
+    },
+    {
+      "ai_hyperparameter": [
+        {
+          "key": "_pybind11_conduit_v1_",
+          "type": "DictionaryEntry",
+          "value": "<bound method pybind11_detail_function_record_v1_system_libcpp_abi1._pybind11_conduit_v1_ of <fasttext_pybind.args object at 0x11d44aab0>>"
+        },
+        {
+          "key": "autotuneDuration",
+          "type": "DictionaryEntry",
+          "value": "60"
+        },
+        {
+          "key": "autotuneMetric",
+          "type": "DictionaryEntry",
+          "value": "f1"
+        },
+        {
+          "key": "autotuneModelSize",
+          "type": "DictionaryEntry",
+          "value": "100K"
+        },
+        {
+          "key": "autotunePredictions",
+          "type": "DictionaryEntry",
+          "value": "1"
+        },
+        {
+          "key": "autotuneValidationFile",
+          "type": "DictionaryEntry",
+          "value": "data/valid.txt"
+        },
+        {
+          "key": "bucket",
+          "type": "DictionaryEntry",
+          "value": "10000000"
+        },
+        {
+          "key": "cutoff",
+          "type": "DictionaryEntry",
+          "value": "2011"
+        },
+        {
+          "key": "dim",
+          "type": "DictionaryEntry",
+          "value": "38"
+        },
+        {
+          "key": "dsub",
+          "type": "DictionaryEntry",
+          "value": "2"
+        },
+        {
+          "key": "epoch",
+          "type": "DictionaryEntry",
+          "value": "2"
+        },
+        {
+          "key": "input",
+          "type": "DictionaryEntry",
+          "value": "data/train.txt"
+        },
+        {
+          "key": "label",
+          "type": "DictionaryEntry",
+          "value": "__label__"
+        },
+        {
+          "key": "loss",
+          "type": "DictionaryEntry",
+          "value": "loss_name.softmax"
+        },
+        {
+          "key": "lr",
+          "type": "DictionaryEntry",
+          "value": "5.0"
+        },
+        {
+          "key": "lrUpdateRate",
+          "type": "DictionaryEntry",
+          "value": "100"
+        },
+        {
+          "key": "maxn",
+          "type": "DictionaryEntry",
+          "value": "6"
+        },
+        {
+          "key": "minCount",
+          "type": "DictionaryEntry",
+          "value": "1"
+        },
+        {
+          "key": "minCountLabel",
+          "type": "DictionaryEntry",
+          "value": "0"
+        },
+        {
+          "key": "minn",
+          "type": "DictionaryEntry",
+          "value": "3"
+        },
+        {
+          "key": "model",
+          "type": "DictionaryEntry",
+          "value": "model_name.supervised"
+        },
+        {
+          "key": "neg",
+          "type": "DictionaryEntry",
+          "value": "5"
+        },
+        {
+          "key": "output",
+          "type": "DictionaryEntry",
+          "value": ""
+        },
+        {
+          "key": "pretrainedVectors",
+          "type": "DictionaryEntry",
+          "value": ""
+        },
+        {
+          "key": "qnorm",
+          "type": "DictionaryEntry",
+          "value": "True"
+        },
+        {
+          "key": "qout",
+          "type": "DictionaryEntry",
+          "value": "False"
+        },
+        {
+          "key": "retrain",
+          "type": "DictionaryEntry",
+          "value": "True"
+        },
+        {
+          "key": "saveOutput",
+          "type": "DictionaryEntry",
+          "value": "False"
+        },
+        {
+          "key": "seed",
+          "type": "DictionaryEntry",
+          "value": "0"
+        },
+        {
+          "key": "setManual",
+          "type": "DictionaryEntry",
+          "value": "<bound method pybind11_detail_function_record_v1_system_libcpp_abi1.setManual of <fasttext_pybind.args object at 0x11d44aab0>>"
+        },
+        {
+          "key": "t",
+          "type": "DictionaryEntry",
+          "value": "0.0001"
+        },
+        {
+          "key": "thread",
+          "type": "DictionaryEntry",
+          "value": "9"
+        },
+        {
+          "key": "verbose",
+          "type": "DictionaryEntry",
+          "value": "2"
+        },
+        {
+          "key": "wordNgrams",
+          "type": "DictionaryEntry",
+          "value": "4"
+        },
+        {
+          "key": "ws",
+          "type": "DictionaryEntry",
+          "value": "5"
+        }
+      ],
+      "ai_typeOfModel": [
+        "supervised"
+      ],
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train)",
+      "creationInfo": "_:CreationInfo0",
+      "name": "src/sentimentdemo/model.bin",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
+      "type": "ai_AIPackage"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/train.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "d5abf8167a1e435341ca70efaacf8afb097cd7bf5b58927e981f4ff216f95c70",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/valid.txt",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "9a859785a91102edeb83b016da5e5ab2f8c2b3a13ed50003175cba661ef8aeae",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "src/sentimentdemo/train.py",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-22",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "6facabe98f926a80539ee5c5f7a289f31d8426640541015f5bade26c85b13116",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
+      "relationshipType": "testedOn",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-testedOn-data/valid.txt-6f71b55a-8492-49b4-ab93-2183436a321c#Relationship-2",
+      "to": [
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
+      "relationshipType": "trainedOn",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-trainedOn-data/train.txt-6f71b55a-8492-49b4-ab93-2183436a321c#Relationship-1",
+      "to": [
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-22",
+      "relationshipType": "generates",
+      "scope": "build",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/train.py-generates-src/sentimentdemo/model.bin-6f71b55a-8492-49b4-ab93-2183436a321c#Relationship-3",
+      "to": [
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2"
+      ],
+      "type": "LifecycleScopedRelationship"
+    }
+  ]
+}
