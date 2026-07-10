@@ -3,13 +3,13 @@
   "@graph": [
     {
       "@id": "_:CreationInfo0",
-      "comment": "Generated via Pitloom loom SDK v0.10.0 (script/notebook capture)",
-      "created": "2026-07-09T09:00:03Z",
+      "comment": "Generated via Pitloom loom SDK v0.12.0 (script/notebook capture)",
+      "created": "2026-07-10T10:57:13Z",
       "createdBy": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-67cb4caf-b9d9-490f-8d09-ce0773528072#SoftwareAgent-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-16b2759e-9d7e-4ad9-8a84-39326fad7094#SoftwareAgent-1"
       ],
       "createdUsing": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-67cb4caf-b9d9-490f-8d09-ce0773528072#Tool-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-16b2759e-9d7e-4ad9-8a84-39326fad7094#Tool-1"
       ],
       "specVersion": "3.0.1",
       "type": "CreationInfo"
@@ -18,7 +18,7 @@
       "creationInfo": "_:CreationInfo0",
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
       "relationshipType": "hasInput",
-      "spdxId": "https://spdx.org/spdxdocs/data/test.txt-hasInput-sources-67cb4caf-b9d9-490f-8d09-ce0773528072#Relationship-3",
+      "spdxId": "https://spdx.org/spdxdocs/data/test.txt-hasInput-sources-16b2759e-9d7e-4ad9-8a84-39326fad7094#Relationship-3",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-1",
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-2",
@@ -31,7 +31,7 @@
       "creationInfo": "_:CreationInfo0",
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
       "relationshipType": "hasInput",
-      "spdxId": "https://spdx.org/spdxdocs/data/train.txt-hasInput-sources-67cb4caf-b9d9-490f-8d09-ce0773528072#Relationship-1",
+      "spdxId": "https://spdx.org/spdxdocs/data/train.txt-hasInput-sources-16b2759e-9d7e-4ad9-8a84-39326fad7094#Relationship-1",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-5",
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-6",
@@ -44,7 +44,7 @@
       "creationInfo": "_:CreationInfo0",
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15",
       "relationshipType": "hasInput",
-      "spdxId": "https://spdx.org/spdxdocs/data/valid.txt-hasInput-sources-67cb4caf-b9d9-490f-8d09-ce0773528072#Relationship-2",
+      "spdxId": "https://spdx.org/spdxdocs/data/valid.txt-hasInput-sources-16b2759e-9d7e-4ad9-8a84-39326fad7094#Relationship-2",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-9",
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-10",
@@ -56,14 +56,14 @@
     {
       "creationInfo": "_:CreationInfo0",
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-67cb4caf-b9d9-490f-8d09-ce0773528072#SoftwareAgent-1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-16b2759e-9d7e-4ad9-8a84-39326fad7094#SoftwareAgent-1",
       "type": "SoftwareAgent"
     },
     {
       "creationInfo": "_:CreationInfo0",
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-67cb4caf-b9d9-490f-8d09-ce0773528072#Tool-1",
-      "summary": "Pitloom 0.10.0",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-16b2759e-9d7e-4ad9-8a84-39326fad7094#Tool-1",
+      "summary": "Pitloom 0.12.0",
       "type": "Tool"
     },
     {
@@ -355,7 +355,7 @@
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-21",
       "relationshipType": "generates",
       "scope": "build",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/preprocess.py-generates-outputs-67cb4caf-b9d9-490f-8d09-ce0773528072#Relationship-4",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/preprocess.py-generates-outputs-16b2759e-9d7e-4ad9-8a84-39326fad7094#Relationship-4",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",

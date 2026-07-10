@@ -3,13 +3,13 @@
   "@graph": [
     {
       "@id": "_:CreationInfo0",
-      "comment": "Generated via Pitloom loom SDK v0.10.0 (script/notebook capture)",
-      "created": "2026-07-09T09:00:26Z",
+      "comment": "Generated via Pitloom loom SDK v0.12.0 (script/notebook capture)",
+      "created": "2026-07-10T10:57:14Z",
       "createdBy": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-6f71b55a-8492-49b4-ab93-2183436a321c#SoftwareAgent-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-3eb26909-2945-4164-b1ae-c9ca44951608#SoftwareAgent-1"
       ],
       "createdUsing": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-6f71b55a-8492-49b4-ab93-2183436a321c#Tool-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-3eb26909-2945-4164-b1ae-c9ca44951608#Tool-1"
       ],
       "specVersion": "3.0.1",
       "type": "CreationInfo"
@@ -17,14 +17,14 @@
     {
       "creationInfo": "_:CreationInfo0",
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-6f71b55a-8492-49b4-ab93-2183436a321c#SoftwareAgent-1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-3eb26909-2945-4164-b1ae-c9ca44951608#SoftwareAgent-1",
       "type": "SoftwareAgent"
     },
     {
       "creationInfo": "_:CreationInfo0",
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-6f71b55a-8492-49b4-ab93-2183436a321c#Tool-1",
-      "summary": "Pitloom 0.10.0",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-3eb26909-2945-4164-b1ae-c9ca44951608#Tool-1",
+      "summary": "Pitloom 0.12.0",
       "type": "Tool"
     },
     {
@@ -32,12 +32,12 @@
         {
           "key": "_pybind11_conduit_v1_",
           "type": "DictionaryEntry",
-          "value": "<bound method pybind11_detail_function_record_v1_system_libcpp_abi1._pybind11_conduit_v1_ of <fasttext_pybind.args object at 0x11d44aab0>>"
+          "value": "<bound method pybind11_detail_function_record_v1_system_libcpp_abi1._pybind11_conduit_v1_ of <fasttext_pybind.args object at 0x1017b3db0>>"
         },
         {
           "key": "autotuneDuration",
           "type": "DictionaryEntry",
-          "value": "60"
+          "value": "5"
         },
         {
           "key": "autotuneMetric",
@@ -62,27 +62,27 @@
         {
           "key": "bucket",
           "type": "DictionaryEntry",
-          "value": "10000000"
+          "value": "389951"
         },
         {
           "key": "cutoff",
           "type": "DictionaryEntry",
-          "value": "2011"
+          "value": "3277"
         },
         {
           "key": "dim",
           "type": "DictionaryEntry",
-          "value": "38"
+          "value": "33"
         },
         {
           "key": "dsub",
           "type": "DictionaryEntry",
-          "value": "2"
+          "value": "4"
         },
         {
           "key": "epoch",
           "type": "DictionaryEntry",
-          "value": "2"
+          "value": "1"
         },
         {
           "key": "input",
@@ -102,7 +102,7 @@
         {
           "key": "lr",
           "type": "DictionaryEntry",
-          "value": "5.0"
+          "value": "0.05843715362137807"
         },
         {
           "key": "lrUpdateRate",
@@ -112,7 +112,7 @@
         {
           "key": "maxn",
           "type": "DictionaryEntry",
-          "value": "6"
+          "value": "0"
         },
         {
           "key": "minCount",
@@ -127,7 +127,7 @@
         {
           "key": "minn",
           "type": "DictionaryEntry",
-          "value": "3"
+          "value": "0"
         },
         {
           "key": "model",
@@ -177,7 +177,7 @@
         {
           "key": "setManual",
           "type": "DictionaryEntry",
-          "value": "<bound method pybind11_detail_function_record_v1_system_libcpp_abi1.setManual of <fasttext_pybind.args object at 0x11d44aab0>>"
+          "value": "<bound method pybind11_detail_function_record_v1_system_libcpp_abi1.setManual of <fasttext_pybind.args object at 0x1017b3db0>>"
         },
         {
           "key": "t",
@@ -197,7 +197,7 @@
         {
           "key": "wordNgrams",
           "type": "DictionaryEntry",
-          "value": "4"
+          "value": "3"
         },
         {
           "key": "ws",
@@ -266,7 +266,7 @@
       "creationInfo": "_:CreationInfo0",
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
       "relationshipType": "testedOn",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-testedOn-data/valid.txt-6f71b55a-8492-49b4-ab93-2183436a321c#Relationship-2",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-testedOn-data/valid.txt-3eb26909-2945-4164-b1ae-c9ca44951608#Relationship-2",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15"
       ],
@@ -276,7 +276,7 @@
       "creationInfo": "_:CreationInfo0",
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
       "relationshipType": "trainedOn",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-trainedOn-data/train.txt-6f71b55a-8492-49b4-ab93-2183436a321c#Relationship-1",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-trainedOn-data/train.txt-3eb26909-2945-4164-b1ae-c9ca44951608#Relationship-1",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14"
       ],
@@ -287,7 +287,7 @@
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-22",
       "relationshipType": "generates",
       "scope": "build",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/train.py-generates-src/sentimentdemo/model.bin-6f71b55a-8492-49b4-ab93-2183436a321c#Relationship-3",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/train.py-generates-src/sentimentdemo/model.bin-3eb26909-2945-4164-b1ae-c9ca44951608#Relationship-3",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2"
       ],
