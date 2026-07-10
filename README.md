@@ -15,8 +15,9 @@ A simple text classification application, published solely to demonstrate
 [a software bill of materials (SBOM)](https://en.wikipedia.org/wiki/Software_supply_chain)
 in [SPDX 3.0 format](https://spdx.dev/use/specifications/).
 
-**The main content of the package is its software bill of materials at
-[bom.spdx3.json](./bom.spdx3.json).**
+**The main content of the package are software bill of materials at
+[bom.spdx3.json](./bom.spdx3.json) (written by hand) and
+[bom-generated.spdx3.json](./bom-generated.spdx3.json) (Pitloom-generated).**
 Other files are given just to complete the illustration.
 
 *Not recommended for actual text classification tasks.*
