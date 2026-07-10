@@ -1,0 +1,66 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "@id": "_:CreationInfo0",
+      "comment": "Generated via Pitloom loom SDK v0.12.0 (script/notebook capture)",
+      "created": "2026-07-10T09:51:05Z",
+      "createdBy": [
+        "https://spdx.org/spdxdocs/pitloom-sdk-86c84a22-c435-4d9d-8acd-e2eec8b6ead4#SoftwareAgent-1"
+      ],
+      "createdUsing": [
+        "https://spdx.org/spdxdocs/pitloom-sdk-86c84a22-c435-4d9d-8acd-e2eec8b6ead4#Tool-1"
+      ],
+      "specVersion": "3.0.1",
+      "type": "CreationInfo"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "Pitloom",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-86c84a22-c435-4d9d-8acd-e2eec8b6ead4#SoftwareAgent-1",
+      "type": "SoftwareAgent"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "Pitloom",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-86c84a22-c435-4d9d-8acd-e2eec8b6ead4#Tool-1",
+      "summary": "Pitloom 0.12.0",
+      "type": "Tool"
+    },
+    {
+      "ai_typeOfModel": [
+        "supervised"
+      ],
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/predict.py | Method: inspect_caller (tool: pitloom.loom, function: predict)",
+      "creationInfo": "_:CreationInfo0",
+      "name": "src/sentimentdemo/model.bin",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
+      "type": "ai_AIPackage"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "src/sentimentdemo/predict.py",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/predict.py-86c84a22-c435-4d9d-8acd-e2eec8b6ead4#File-1",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "7551ceff745c1a6be3623b5fc45736b84e6352443fb6060d23e0824af930a6bb",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/src/sentimentdemo/predict.py-86c84a22-c435-4d9d-8acd-e2eec8b6ead4#File-1",
+      "relationshipType": "hasDataFile",
+      "scope": "runtime",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/predict.py-hasDataFile-src/sentimentdemo/model.bin-86c84a22-c435-4d9d-8acd-e2eec8b6ead4#Relationship-1",
+      "to": [
+        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2"
+      ],
+      "type": "LifecycleScopedRelationship"
+    }
+  ]
+}
