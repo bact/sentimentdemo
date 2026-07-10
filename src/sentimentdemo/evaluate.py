@@ -16,6 +16,7 @@ Functions:
 import sys
 
 import fasttext
+from pitloom import loom
 from sklearn.metrics import f1_score, precision_score, recall_score
 from sklearn.preprocessing import LabelEncoder
 
@@ -54,22 +55,28 @@ def main(model_path: str, test_data_path: str) -> None:
     Returns:
         None
     """
-    labels, data = load_data(test_data_path)
-    model = fasttext.load_model(model_path)
+    with loom.run("fragments/evaluate.spdx3.json", pretty=True) as run:
+        run.use_model(model_path, model_type="supervised")
+        run.add_validation_dataset(test_data_path, dataset_type="text")
 
-    predictions = [model.predict(x)[0][0] for x in data]
+        labels, data = load_data(test_data_path)
+        model = fasttext.load_model(model_path)
 
-    le = LabelEncoder()
-    numeric_labels = le.fit_transform(labels)
-    numeric_predictions = le.transform(predictions)
+        predictions = [model.predict(x)[0][0] for x in data]
 
-    f1 = f1_score(numeric_labels, numeric_predictions, average="weighted")
-    precision = precision_score(numeric_labels, numeric_predictions, average="weighted")
-    recall = recall_score(numeric_labels, numeric_predictions, average="weighted")
+        le = LabelEncoder()
+        numeric_labels = le.fit_transform(labels)
+        numeric_predictions = le.transform(predictions)
 
-    print(f"F1 Score: {f1}")
-    print(f"Precision: {precision}")
-    print(f"Recall: {recall}")
+        f1 = f1_score(numeric_labels, numeric_predictions, average="weighted")
+        precision = precision_score(
+            numeric_labels, numeric_predictions, average="weighted"
+        )
+        recall = recall_score(numeric_labels, numeric_predictions, average="weighted")
+
+        print(f"F1 Score: {f1}")
+        print(f"Precision: {precision}")
+        print(f"Recall: {recall}")
 
 
 if __name__ == "__main__":

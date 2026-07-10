@@ -15,17 +15,19 @@ A simple text classification application, published solely to demonstrate
 [a software bill of materials (SBOM)](https://en.wikipedia.org/wiki/Software_supply_chain)
 in [SPDX 3.0 format](https://spdx.dev/use/specifications/).
 
-**The main content of the package is its software bill of materials at
-[bom.spdx3.json](./bom.spdx3.json).**
+**The main content of the package are software bill of materials at
+[bom.spdx3.json](./bom.spdx3.json) (written by hand) and
+[bom-generated.spdx3.json](./bom-generated.spdx3.json) (Pitloom-generated).**
 Other files are given just to complete the illustration.
 
 *Not recommended for actual text classification tasks.*
 
 Updates:
 
-- July 2026: Version 0.3.0 - [SBOM fragments](./fragments/) that were generated
-  during the runs of preprocess.py and train.py are merged into the main SBOM
-  -- shipped with the Python wheel. This gives more data provenance.
+- July 2026: Version 0.3.1 - [SBOM fragments](./fragments/) that were generated
+  during the runs of evaluate/predict/preprocess/train.py are merged into the
+  main SBOM -- shipped with the Python wheel.
+  This gives more data/model provenance.
 - March 2026: Adopted as a development reference for the **[Pitloom]**
   SBOM generator.
 - May 2025: Added to the **[SPDX Usage Examples][spdx-examples]** repository

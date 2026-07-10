@@ -71,24 +71,24 @@
       "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-12"
     },
     "src/sentimentdemo/__about__.py": {
-      "sha256": "847c4d58b68dc0cfc3930dcd2e87e3c0d4e42eb98eb276c76bf854c360149e12",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-16"
+      "sha256": "144ef8cab93bcee8589ffb1fd8cad4e1c71812e691804a238f46d75bead8054d",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-24"
     },
     "src/sentimentdemo/__init__.py": {
-      "sha256": "7e65c3e5fa9ae05ef6fca272e7dd8f3a72dea516ea5d83e7131e7f36a44bef17",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-17"
+      "sha256": "8d3c2174cc102c28d3757eb54dbe8a9c526de9837a26e9ebd5558185eecdaacf",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-25"
     },
     "src/sentimentdemo/evaluate.py": {
-      "sha256": "403a21a9fceb54cab769a0137285fa1b2edf22290c10353e46858cff17a4d65c",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-18"
+      "sha256": "c6b2e1b82a16956246930bcabe84a7248496fb50aaa74fcdda85b153b7bf5806",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-26"
     },
     "src/sentimentdemo/model.bin": {
       "sha256": "2f29d77d5337559904f4bd0d26131fd5e31f99eeb870cafa39ae80a10811040d",
       "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-23"
     },
     "src/sentimentdemo/predict.py": {
-      "sha256": "5d124df4f5b17c9bf4229764ae81d8820bb82914320ac3999928dec94cc6d2fa",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-20"
+      "sha256": "7551ceff745c1a6be3623b5fc45736b84e6352443fb6060d23e0824af930a6bb",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-27"
     },
     "src/sentimentdemo/preprocess.py": {
       "sha256": "e1f5571ab19416f46c3a3dd409900bdff79664a414fd084a58934137d8f31892",
