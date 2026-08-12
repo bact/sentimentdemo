@@ -3,13 +3,13 @@
   "@graph": [
     {
       "@id": "_:CreationInfo0",
-      "comment": "Generated via Pitloom loom SDK v0.12.0 (script/notebook capture)",
-      "created": "2026-07-10T10:57:20Z",
+      "comment": "Generated via Pitloom loom SDK v0.13.3 (script/notebook capture)",
+      "created": "2026-08-12T08:44:23Z",
       "createdBy": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-91a66be5-600a-4677-89b8-ef0cbc9db227#SoftwareAgent-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-0bcb6481-82d5-4b65-867a-1a6c31588bef#SoftwareAgent-1"
       ],
       "createdUsing": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-91a66be5-600a-4677-89b8-ef0cbc9db227#Tool-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-0bcb6481-82d5-4b65-867a-1a6c31588bef#Tool-1"
       ],
       "specVersion": "3.0.1",
       "type": "CreationInfo"
@@ -17,14 +17,21 @@
     {
       "creationInfo": "_:CreationInfo0",
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-91a66be5-600a-4677-89b8-ef0cbc9db227#SoftwareAgent-1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-0bcb6481-82d5-4b65-867a-1a6c31588bef#SoftwareAgent-1",
       "type": "SoftwareAgent"
     },
     {
       "creationInfo": "_:CreationInfo0",
+      "externalIdentifier": [
+        {
+          "externalIdentifierType": "packageUrl",
+          "identifier": "pkg:pypi/pitloom@0.13.3",
+          "type": "ExternalIdentifier"
+        }
+      ],
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-91a66be5-600a-4677-89b8-ef0cbc9db227#Tool-1",
-      "summary": "Pitloom 0.12.0",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-0bcb6481-82d5-4b65-867a-1a6c31588bef#Tool-1",
+      "summary": "Pitloom 0.13.3",
       "type": "Tool"
     },
     {
@@ -52,11 +59,20 @@
       ]
     },
     {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-0bcb6481-82d5-4b65-867a-1a6c31588bef#Annotation-1",
+      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: predict)\", \"source\": \"src/sentimentdemo/predict.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
+      "type": "Annotation"
+    },
+    {
       "creationInfo": "_:CreationInfo0",
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-27",
       "relationshipType": "hasDataFile",
       "scope": "runtime",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/predict.py-hasDataFile-src/sentimentdemo/model.bin-91a66be5-600a-4677-89b8-ef0cbc9db227#Relationship-1",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/predict.py-hasDataFile-src/sentimentdemo/model.bin-0bcb6481-82d5-4b65-867a-1a6c31588bef#Relationship-1",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2"
       ],

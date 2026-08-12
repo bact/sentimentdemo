@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 [build-system]
-requires = ["hatchling>=1.28.0", "pitloom>=0.12.0"]
+requires = ["hatchling>=1.28.0", "pitloom>=0.13.3"]
 build-backend = "hatchling.build"
 
 [project]
@@ -38,7 +38,7 @@ dependencies = [
     "fasttext-community==0.11.7",
     "newmm-tokenizer==0.2.2",
     "numpy==1.26.4",
-    "pitloom>=0.12.0",
+    "pitloom>=0.13.3",
     "th-simple-preprocessor==0.10.1",
 ]
 
@@ -105,16 +105,9 @@ strict = true
 module = ["fasttext", "newmm_tokenizer.*", "th_preprocessor.*", "sklearn.*"]
 ignore_missing_imports = true
 
-[tool.pitloom]
-sbom-basename = "sentimentdemo"
-
 [[tool.pitloom.creator]]
 name = "Arthit Suriyawongkul"
 email = "suriyawa@tcd.ie"
-
-[tool.pitloom.creation]
-# Fixed for identical SBOM generation across builds (for testing purposes)
-creation-datetime = "2026-07-10T00:00:00+00:00"
 
 [tool.pitloom.fragments]
 files = [
