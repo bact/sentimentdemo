@@ -56,32 +56,33 @@ The Linux Foundation, October 2024*.
 
 ```text
 .
-├── LICENSE               License information
-├── README.md             This README file
-├── bom.spdx3.json        Software bill of materials, in SPDX 3 format
-├── data                  Dataset, preprocessed and tokenized
-│   ├── test.txt          Testing data
-│   ├── train.txt         Training data
-│   └── valid.txt         Validation data
-├── rawdata               Raw dataset, before preprocessing
-│   ├── test              Testing data
-│   │   ├── neg.txt       Testing samples for label "neg" (negative)
-│   │   ├── neu.txt       Testing samples for label "neu" (neutral)
-│   │   ├── pos.txt       Testing samples for label "pos" (positive)
-│   │   └── q.txt         Testing samples for label "q" (question)
-│   ├── train             Training data
+├── LICENSE                    License information
+├── README.md                  This README file
+├── bom-generated.spdx3.json   SBOM in SPDX 3 format (generated)
+├── bom.spdx3.json             SBOM in SPDX 3 format (handwritten)
+├── data                       Dataset, preprocessed and tokenized
+│   ├── test.txt               Testing data
+│   ├── train.txt              Training data
+│   └── valid.txt              Validation data
+├── rawdata                    Raw dataset, before preprocessing
+│   ├── test                   Testing data
+│   │   ├── neg.txt            Testing samples for label "neg" (negative)
+│   │   ├── neu.txt            Testing samples for label "neu" (neutral)
+│   │   ├── pos.txt            Testing samples for label "pos" (positive)
+│   │   └── q.txt              Testing samples for label "q" (question)
+│   ├── train                  Training data
 │   │   └── ...
-│   └── valid             Validation data
+│   └── valid                  Validation data
 │       └── ...
 ├── src
-│   ├── evaluate.py       A script to evaluate prediction performance
-│   ├── model.bin         A sentiment analysis model
-│   ├── predict.py        A script to predict a label of a text
-│   ├── preprocess.py     A script to prepare training data
-│   └── train.py          A script to build a model
-└── techdocs              Technical documentation
-    ├── dataprepare.md    Data preparation
-    └── instructions.md   Instruction for use
+│   ├── evaluate.py            Script to evaluate prediction performance
+│   ├── model.bin              Sentiment analysis model
+│   ├── predict.py             Script to predict a label of a text
+│   ├── preprocess.py          Script to prepare training data
+│   └── train.py               Script to build a model
+└── techdocs                   Technical documentation
+    ├── dataprepare.md         Data preparation
+    └── instructions.md        Instruction for use
 ```
 
 [![A diagram showing relationships between elements in the Sentiment Demo package.](./bom.spdx3.png "A diagram showing relationships between elements in the Sentiment Demo package.")](./bom.spdx3.png)
