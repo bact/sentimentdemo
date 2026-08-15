@@ -96,6 +96,65 @@ application.
 
 See [data preparation](./techdocs/dataprepare.md).
 
+## Generating the SBOM
+
+Run the following commands to generate SBOM fragments at each stage of
+the AI development lifecycle.
+Finally, use Pitloom to merge these fragments with the core project SBOM into
+a single, comprehensive file.
+
+### SBOM fragment 1: Preprocess the data
+
+```shell
+python src/sentimentdemo/preprocess.py rawdata data
+```
+
+This processes the raw data into the `data/` directory
+and generates an SBOM fragment at `fragments/preprocess.spdx3.json`
+(as specified by `loom.run` in `preprocess.py`).
+
+### SBOM fragment 2: Train the model
+
+```shell
+AUTOTUNE_DURATION=5 python src/sentimentdemo/train.py data/train.txt data/valid.txt src/sentimentdemo/model.bin
+```
+
+This step outputs the training fragment to `fragments/train.spdx3.json`.
+
+> Note: We use AUTOTUNE_DURATION=5 to speed up the training process.
+> Since the goal of this demo is to illustrate SBOM generation rather than
+> produce a highly performant model, a short duration is sufficient.
+
+### SBOM fragment 3: Run predictions
+
+```shell
+python src/sentimentdemo/predict.py "test"
+```
+
+This step outputs the prediction fragment to `fragments/predict.spdx3.json`.
+
+> Production note: Generating a fragment on every prediction may introduce
+> unnecessary overhead. You should typically enable this only during testing
+> and packaging, and disable it before deploying to production.
+
+### SBOM fragment 4: Evaluate model
+
+```shell
+python src/sentimentdemo/evaluate.py src/sentimentdemo/model.bin data/test.txt
+```
+
+This step outputs the evaluation fragment to `fragments/evaluate.spdx3.json`.
+
+### Merge and generate the final SBOM
+
+```shell
+pitloom project . --pretty --output bom-generated.spdx3.json
+```
+
+Pitloom collects all the generated fragments in the `fragments/` directory
+and merges them. The final, consolidated SBOM is saved to
+`bom-generated.spdx3.json` in your current working directory.
+
 ## Notes
 
 - Development is in the `main` branch.
@@ -136,7 +195,7 @@ related or neighboring rights worldwide to the extent allowed by law.
 | Component | Name | License | Notes |
 | --------- | ---- | ------- | ----- |
 | Training data | [Wisesight Sentiment Corpus](https://github.com/PyThaiNLP/wisesight-sentiment) | CC0-1.0 | Samples from the corpus are in `rawdata/`. Preprocessed data is in `data/`. See [data preparation](./techdocs/dataprepare.md) for details. |
-| Text preprocessor | [th-simple-preprocessor](https://pypi.org/project/th-simple-preprocessor/) |  Apache-2.0 | |
+| Text preprocessor | [th-simple-preprocessor](https://pypi.org/project/th-simple-preprocessor/) | Apache-2.0 | |
 | Word tokenizer | [newmm-tokenizer](https://pypi.org/project/newmm-tokenizer/) | Apache-2.0 | Inherited the license from [PyThaiNLP](https://pypi.org/project/pythainlp/). |
 | Text classifier | [fastText](https://fasttext.cc/) | MIT | Use [fasttext-community](https://pypi.org/project/fasttext-community/), which is a community-maintained fork. |
 | Array package | [NumPy](https://pypi.org/project/numpy/) | BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0 | |
