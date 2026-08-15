@@ -4,12 +4,12 @@
     {
       "@id": "_:CreationInfo0",
       "comment": "Generated via Pitloom loom SDK v0.15.0 (script/notebook capture)",
-      "created": "2026-08-15T19:40:51Z",
+      "created": "2026-08-15T20:24:22Z",
       "createdBy": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-19337948-9528-41be-b529-35debdea93dd#SoftwareAgent-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-d4d0f5f6-f427-4f1c-ba90-b83615f16fe6#SoftwareAgent-1"
       ],
       "createdUsing": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-19337948-9528-41be-b529-35debdea93dd#Tool-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-d4d0f5f6-f427-4f1c-ba90-b83615f16fe6#Tool-1"
       ],
       "specVersion": "3.0.1",
       "type": "CreationInfo"
@@ -17,7 +17,7 @@
     {
       "creationInfo": "_:CreationInfo0",
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-19337948-9528-41be-b529-35debdea93dd#SoftwareAgent-1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-d4d0f5f6-f427-4f1c-ba90-b83615f16fe6#SoftwareAgent-1",
       "type": "SoftwareAgent"
     },
     {
@@ -30,7 +30,7 @@
         }
       ],
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-19337948-9528-41be-b529-35debdea93dd#Tool-1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-d4d0f5f6-f427-4f1c-ba90-b83615f16fe6#Tool-1",
       "summary": "Pitloom 0.15.0",
       "type": "Tool"
     },
@@ -62,7 +62,7 @@
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-19337948-9528-41be-b529-35debdea93dd#Annotation-1",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-d4d0f5f6-f427-4f1c-ba90-b83615f16fe6#Annotation-1",
       "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: predict)\", \"source\": \"src/sentimentdemo/predict.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
       "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
       "type": "Annotation"
@@ -72,7 +72,7 @@
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-27",
       "relationshipType": "hasDataFile",
       "scope": "runtime",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/predict.py-hasDataFile-src/sentimentdemo/model.bin-19337948-9528-41be-b529-35debdea93dd#Relationship-1",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/predict.py-hasDataFile-src/sentimentdemo/model.bin-d4d0f5f6-f427-4f1c-ba90-b83615f16fe6#Relationship-1",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2"
       ],

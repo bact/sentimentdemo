@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 [build-system]
-requires = ["hatchling>=1.28.0", "pitloom>=0.15.0"]
+requires = ["hatchling>=1.29.0"]
 build-backend = "hatchling.build"
 
 [project]
@@ -43,13 +43,16 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["mypy>=2.2.0", "pylint==4.0.6", "pytest==9.1.1"]
+dev = ["mypy>=2.2.0", "pylint>=4.0.6", "pytest>=9.1.1"]
 eval = ["scikit-learn==1.6.1"]
 
 [project.urls]
-Documentation = "https://github.com/bact/sentimentdemo#readme"
-Issues = "https://github.com/bact/sentimentdemo/issues"
-Source = "https://github.com/bact/sentimentdemo"
+homepage = "https://github.com/bact/sentimentdemo"
+source = "https://github.com/bact/sentimentdemo.git"
+download = "https://github.com/bact/sentimentdemo/releases"
+releasenotes = "https://github.com/bact/sentimentdemo/releases"
+documentation = "https://github.com/bact/sentimentdemo#readme"
+issues = "https://github.com/bact/sentimentdemo/issues"
 
 [tool.coverage.paths]
 sentimentdemo = ["src/sentimentdemo", "*/sentimentdemo/src/sentimentdemo"]
@@ -119,3 +122,6 @@ files = [
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
+
+[tool.pitloom.content-type]
+enabled = true
