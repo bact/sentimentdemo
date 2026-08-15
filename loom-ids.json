@@ -71,8 +71,8 @@
       "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-12"
     },
     "src/sentimentdemo/__about__.py": {
-      "sha256": "144ef8cab93bcee8589ffb1fd8cad4e1c71812e691804a238f46d75bead8054d",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-24"
+      "sha256": "5d7a27488a75e634270b03ec382d6285035602af962dbce93afcda44ddfb8bf0",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-28"
     },
     "src/sentimentdemo/__init__.py": {
       "sha256": "8d3c2174cc102c28d3757eb54dbe8a9c526de9837a26e9ebd5558185eecdaacf",
@@ -83,8 +83,8 @@
       "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-26"
     },
     "src/sentimentdemo/model.bin": {
-      "sha256": "2f29d77d5337559904f4bd0d26131fd5e31f99eeb870cafa39ae80a10811040d",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-23"
+      "sha256": "c475d6cd2c168fc8195c424ca87410204c0fc0b443041b99322da9dfeab30ada",
+      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-29"
     },
     "src/sentimentdemo/predict.py": {
       "sha256": "7551ceff745c1a6be3623b5fc45736b84e6352443fb6060d23e0824af930a6bb",

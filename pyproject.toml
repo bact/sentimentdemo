@@ -109,7 +109,7 @@ ignore_missing_imports = true
 name = "Arthit Suriyawongkul"
 email = "suriyawa@tcd.ie"
 
-[tool.pitloom.fragments]
+[tool.pitloom.fragment]
 files = [
     "fragments/evaluate.spdx3.json",
     "fragments/predict.spdx3.json",
