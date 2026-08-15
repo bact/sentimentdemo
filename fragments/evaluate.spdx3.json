@@ -4,12 +4,12 @@
     {
       "@id": "_:CreationInfo0",
       "comment": "Generated via Pitloom loom SDK v0.15.0 (script/notebook capture)",
-      "created": "2026-08-15T19:27:16Z",
+      "created": "2026-08-15T19:41:05Z",
       "createdBy": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-c5da991b-1310-44e5-a68a-8fd2ffba5c7b#SoftwareAgent-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-3605b48e-f2fb-4dbc-94e4-9eb66a528ec6#SoftwareAgent-1"
       ],
       "createdUsing": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-c5da991b-1310-44e5-a68a-8fd2ffba5c7b#Tool-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-3605b48e-f2fb-4dbc-94e4-9eb66a528ec6#Tool-1"
       ],
       "specVersion": "3.0.1",
       "type": "CreationInfo"
@@ -18,7 +18,7 @@
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/data/test.txt-c5da991b-1310-44e5-a68a-8fd2ffba5c7b#Annotation-2",
+      "spdxId": "https://spdx.org/spdxdocs/data/test.txt-3605b48e-f2fb-4dbc-94e4-9eb66a528ec6#Annotation-2",
       "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/evaluate.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
       "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
       "type": "Annotation"
@@ -26,7 +26,7 @@
     {
       "creationInfo": "_:CreationInfo0",
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-c5da991b-1310-44e5-a68a-8fd2ffba5c7b#SoftwareAgent-1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-3605b48e-f2fb-4dbc-94e4-9eb66a528ec6#SoftwareAgent-1",
       "type": "SoftwareAgent"
     },
     {
@@ -39,7 +39,7 @@
         }
       ],
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-c5da991b-1310-44e5-a68a-8fd2ffba5c7b#Tool-1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-3605b48e-f2fb-4dbc-94e4-9eb66a528ec6#Tool-1",
       "summary": "Pitloom 0.15.0",
       "type": "Tool"
     },
@@ -89,7 +89,7 @@
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-26",
       "relationshipType": "hasDataFile",
       "scope": "runtime",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/evaluate.py-hasDataFile-src/sentimentdemo/model.bin-c5da991b-1310-44e5-a68a-8fd2ffba5c7b#Relationship-2",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/evaluate.py-hasDataFile-src/sentimentdemo/model.bin-3605b48e-f2fb-4dbc-94e4-9eb66a528ec6#Relationship-2",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2"
       ],
@@ -99,7 +99,7 @@
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-c5da991b-1310-44e5-a68a-8fd2ffba5c7b#Annotation-1",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-3605b48e-f2fb-4dbc-94e4-9eb66a528ec6#Annotation-1",
       "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/evaluate.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
       "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
       "type": "Annotation"
@@ -108,7 +108,7 @@
       "creationInfo": "_:CreationInfo0",
       "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
       "relationshipType": "testedOn",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-testedOn-data/test.txt-c5da991b-1310-44e5-a68a-8fd2ffba5c7b#Relationship-1",
+      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-testedOn-data/test.txt-3605b48e-f2fb-4dbc-94e4-9eb66a528ec6#Relationship-1",
       "to": [
         "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13"
       ],
