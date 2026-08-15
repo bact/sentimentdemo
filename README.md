@@ -170,16 +170,15 @@ and merges them. The final, consolidated SBOM is saved to
   It measures how much energy the computer uses during the training.
   This means the actual energy used for training the model might be a bit less
   than the reported amount.
-- The SPDX 3.0.1 SBOM is validated structurally against the JSON Schema at
+- Both handwritten SBOM and generated SBOM are validated by
+  [spdx3-validate](https://github.com/JPEWdev/spdx3-validate),
+  which use the JSON Schema from
   <https://spdx.org/schema/3.0.1/spdx-json-schema.json>
-  and semantically against the SHACL model at
+  and the SHACL from
   <https://spdx.org/rdf/3.0.1/spdx-model.ttl>.
 - Next steps:
   - Add external dependency relationships
     (e.g. `dependsOn`, `hasProvidedDependency`)
-  - Get tested with an SBOM quality check tool like
-    [sbomsq](https://github.com/interlynk-io/sbomqs) (once it supports SPDX
-    3.0).
   - Using information requirements and obligations in the EU AI Act as a
     target, labeling all relevant properties and relationships with
     corresponding difficulty levels and support levels, based on the
