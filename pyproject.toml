@@ -81,8 +81,6 @@ extra-dependencies = [
 [[tool.hatch.envs.test.matrix]]
 python = ["3.10", "3.11"]
 
-[tool.hatch.build.hooks.pitloom]
-enabled = true
 
 [tool.hatch.envs.test.scripts]
 # hatch run test:cov
