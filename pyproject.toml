@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 [build-system]
-requires = ["hatchling>=1.28.0", "pitloom>=0.13.3"]
+requires = ["hatchling>=1.28.0", "pitloom>=0.15.0"]
 build-backend = "hatchling.build"
 
 [project]
@@ -38,7 +38,7 @@ dependencies = [
     "fasttext-community==0.11.7",
     "newmm-tokenizer==0.2.2",
     "numpy==1.26.4",
-    "pitloom>=0.13.3",
+    "pitloom>=0.15.0",
     "th-simple-preprocessor==0.10.1",
 ]
 
