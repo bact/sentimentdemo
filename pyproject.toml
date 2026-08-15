@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 [build-system]
-requires = ["hatchling>=1.29.0"]
+requires = ["hatchling>=1.29.0", "pitloom>=0.15.0"]
 build-backend = "hatchling.build"
 
 [project]
@@ -123,3 +123,7 @@ pythonpath = ["src"]
 
 [tool.pitloom.content-type]
 enabled = true
+
+[tool.hatch.build.hooks.pitloom]
+enabled = true
+
