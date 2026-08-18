@@ -10,6 +10,10 @@ on:
     paths:
       - "*.spdx3.json"
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate-sbom:
     runs-on: ubuntu-latest
