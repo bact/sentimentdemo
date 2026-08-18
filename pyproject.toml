@@ -71,6 +71,9 @@ branch = true
 parallel = true
 omit = ["src/sentimentdemo/__about__.py"]
 
+[tool.hatch.build.hooks.pitloom]
+enabled = true
+
 [tool.hatch.envs.test]
 extra-dependencies = [
     "coverage[toml]==7.15.0",
@@ -80,7 +83,6 @@ extra-dependencies = [
 
 [[tool.hatch.envs.test.matrix]]
 python = ["3.10", "3.11"]
-
 
 [tool.hatch.envs.test.scripts]
 # hatch run test:cov
@@ -106,6 +108,9 @@ strict = true
 module = ["fasttext", "newmm_tokenizer.*", "th_preprocessor.*", "sklearn.*"]
 ignore_missing_imports = true
 
+[tool.pitloom.content-type]
+enabled = true
+
 [[tool.pitloom.creator]]
 name = "Arthit Suriyawongkul"
 email = "suriyawa@tcd.ie"
@@ -120,10 +125,3 @@ files = [
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
-
-[tool.pitloom.content-type]
-enabled = true
-
-[tool.hatch.build.hooks.pitloom]
-enabled = true
-
