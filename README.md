@@ -148,7 +148,7 @@ This step outputs the evaluation fragment to `fragments/evaluate.spdx3.json`.
 ### Merge and generate the final SBOM
 
 ```shell
-pitloom project . --pretty --output bom-generated.spdx3.json
+loom project . --pretty --output bom-generated.spdx3.json
 ```
 
 Pitloom collects all the generated fragments in the `fragments/` directory
