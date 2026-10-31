@@ -40,6 +40,7 @@ dependencies = [
     "fasttext-community>=0.11.8",
     "newmm-tokenizer==0.2.2",
     "numpy>=2.4.1",
+    "pitloom>=0.22.0",
     "th-simple-preprocessor==0.10.1",
 ]
 
