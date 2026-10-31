@@ -3,13 +3,13 @@
   "@graph": [
     {
       "@id": "_:CreationInfo0",
-      "comment": "Generated via Pitloom loom SDK v0.16.1 (script/notebook capture)",
-      "created": "2026-08-18T13:05:10Z",
+      "comment": "Generated via Pitloom loom SDK v0.22.0 (script/notebook capture)",
+      "created": "2026-10-31T00:58:05Z",
       "createdBy": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-30fd795d-94ad-4158-ad90-248257967106#SoftwareAgent-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-f14dc809-b75e-47dc-a4dc-05c1876407ca#SoftwareAgent-1"
       ],
       "createdUsing": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-30fd795d-94ad-4158-ad90-248257967106#Tool-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-f14dc809-b75e-47dc-a4dc-05c1876407ca#Tool-1"
       ],
       "specVersion": "3.0.1",
       "type": "CreationInfo"
@@ -18,36 +18,88 @@
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/data/test.txt-30fd795d-94ad-4158-ad90-248257967106#Annotation-2",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/evaluate.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftest.txt-f14dc809-b75e-47dc-a4dc-05c1876407ca#Annotation-2",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/evaluate.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/data%2Ftest.txt-f14dc809-b75e-47dc-a4dc-05c1876407ca#DatasetPackage-1",
       "type": "Annotation"
     },
     {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/evaluate.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
       "creationInfo": "_:CreationInfo0",
-      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
-      "relationshipType": "testedOn",
-      "spdxId": "https://spdx.org/spdxdocs/loom-30fd795d-94ad-4158-ad90-248257967106#Relationship-1",
+      "dataset_datasetSize": 9025,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/test.txt",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftest.txt-f14dc809-b75e-47dc-a4dc-05c1876407ca#DatasetPackage-1",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "6475fa086d9e14a605b1e5414cb45962cb5eb04b1237e0f2dadd225ef91a0955",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "9defa4fb45369184381e9dc27211d130b9ccfd3582676a42a6f258dafb4b2ad18e9af35ee82fab0cb2332a99dfa19d28e15f8360bb43567ec16b4f3d32174390",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "data/test.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftest.txt-f14dc809-b75e-47dc-a4dc-05c1876407ca#File-1",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "6475fa086d9e14a605b1e5414cb45962cb5eb04b1237e0f2dadd225ef91a0955",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "9defa4fb45369184381e9dc27211d130b9ccfd3582676a42a6f258dafb4b2ad18e9af35ee82fab0cb2332a99dfa19d28e15f8360bb43567ec16b4f3d32174390",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/data%2Ftest.txt-f14dc809-b75e-47dc-a4dc-05c1876407ca#DatasetPackage-1",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-f14dc809-b75e-47dc-a4dc-05c1876407ca#Relationship-1",
       "to": [
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13"
+        "https://spdx.org/spdxdocs/data%2Ftest.txt-f14dc809-b75e-47dc-a4dc-05c1876407ca#File-1"
       ],
       "type": "Relationship"
     },
     {
       "creationInfo": "_:CreationInfo0",
-      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-26",
+      "from": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-f14dc809-b75e-47dc-a4dc-05c1876407ca#AIPackage-1",
+      "relationshipType": "testedOn",
+      "spdxId": "https://spdx.org/spdxdocs/loom-f14dc809-b75e-47dc-a4dc-05c1876407ca#Relationship-2",
+      "to": [
+        "https://spdx.org/spdxdocs/data%2Ftest.txt-f14dc809-b75e-47dc-a4dc-05c1876407ca#DatasetPackage-1"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fevaluate.py-f14dc809-b75e-47dc-a4dc-05c1876407ca#File-2",
       "relationshipType": "hasDataFile",
       "scope": "runtime",
-      "spdxId": "https://spdx.org/spdxdocs/loom-30fd795d-94ad-4158-ad90-248257967106#Relationship-2",
+      "spdxId": "https://spdx.org/spdxdocs/loom-f14dc809-b75e-47dc-a4dc-05c1876407ca#Relationship-3",
       "to": [
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2"
+        "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-f14dc809-b75e-47dc-a4dc-05c1876407ca#AIPackage-1"
       ],
       "type": "LifecycleScopedRelationship"
     },
     {
       "creationInfo": "_:CreationInfo0",
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-30fd795d-94ad-4158-ad90-248257967106#SoftwareAgent-1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-f14dc809-b75e-47dc-a4dc-05c1876407ca#SoftwareAgent-1",
       "type": "SoftwareAgent"
     },
     {
@@ -55,14 +107,33 @@
       "externalIdentifier": [
         {
           "externalIdentifierType": "packageUrl",
-          "identifier": "pkg:pypi/pitloom@0.16.1",
+          "identifier": "pkg:pypi/pitloom@0.22.0",
           "type": "ExternalIdentifier"
         }
       ],
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-30fd795d-94ad-4158-ad90-248257967106#Tool-1",
-      "summary": "Pitloom 0.16.1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-f14dc809-b75e-47dc-a4dc-05c1876407ca#Tool-1",
+      "summary": "Pitloom 0.22.0",
       "type": "Tool"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "src/sentimentdemo/evaluate.py",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fevaluate.py-f14dc809-b75e-47dc-a4dc-05c1876407ca#File-2",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "c6b2e1b82a16956246930bcabe84a7248496fb50aaa74fcdda85b153b7bf5806",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "b58a2f2f6ba49bf7b129d630196d546518e8488c54650b236001a185b30283d48b6bb4030005abf5e0a5ac9be3e7ae9257bccaccccbc59627a2f4c90a632fc5c",
+          "type": "Hash"
+        }
+      ]
     },
     {
       "ai_typeOfModel": [
@@ -71,47 +142,16 @@
       "comment": "Metadata provenance: package: Source: src/sentimentdemo/evaluate.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
       "creationInfo": "_:CreationInfo0",
       "name": "src/sentimentdemo/model.bin",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
+      "spdxId": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-f14dc809-b75e-47dc-a4dc-05c1876407ca#AIPackage-1",
       "type": "ai_AIPackage"
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/evaluate.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "data/test.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "6475fa086d9e14a605b1e5414cb45962cb5eb04b1237e0f2dadd225ef91a0955",
-          "type": "Hash"
-        }
-      ]
-    },
-    {
-      "creationInfo": "_:CreationInfo0",
-      "name": "src/sentimentdemo/evaluate.py",
-      "software_fileKind": "file",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-26",
-      "type": "software_File",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "c6b2e1b82a16956246930bcabe84a7248496fb50aaa74fcdda85b153b7bf5806",
-          "type": "Hash"
-        }
-      ]
     },
     {
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-30fd795d-94ad-4158-ad90-248257967106#Annotation-1",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/evaluate.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
+      "spdxId": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-f14dc809-b75e-47dc-a4dc-05c1876407ca#Annotation-1",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/evaluate.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-f14dc809-b75e-47dc-a4dc-05c1876407ca#AIPackage-1",
       "type": "Annotation"
     }
   ]

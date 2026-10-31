@@ -3,9 +3,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 [build-system]
-# hatchling capped below 1.32.1: that release requires two generic type params on
-# BuildHookInterface, which pitloom's build hook (still at one) can't satisfy.
-requires = ["hatchling>=1.32.0,<1.32.1", "pitloom>=0.18.0"]
+requires = ["hatchling>=1.33.0", "pitloom[content-type,fasttext]>=0.22.0"]
 build-backend = "hatchling.build"
 
 [project]
@@ -13,7 +11,7 @@ name = "sentimentdemo"
 dynamic = ["version"]
 description = "A simple sentiment analysis application, published solely as an artifact for the purpose of demonstrating and testing a software bill of materials. Not recommended for any text classification tasks."
 readme = "README.md"
-requires-python = ">=3.11,<3.15"
+requires-python = ">=3.11"
 license = "CC0-1.0"
 keywords = [
     "sbom",
@@ -41,13 +39,12 @@ classifiers = [
 dependencies = [
     "fasttext-community>=0.11.8",
     "newmm-tokenizer==0.2.2",
-    "numpy>=2.3.3",
-    "pitloom>=0.18.0",
+    "numpy>=2.4.1",
     "th-simple-preprocessor==0.10.1",
 ]
 
 [project.optional-dependencies]
-dev = ["mypy>=2.3.1", "pylint>=4.0.8", "pytest>=9.1.1"]
+dev = ["mypy>=2.4.1", "pylint>=4.1.3", "pytest>=9.2.0"]
 eval = ["scikit-learn>=1.9.1"]
 
 [project.urls]
@@ -93,7 +90,7 @@ python = ["3.11", "3.12", "3.13", "3.14"]
 cov = 'pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=tests'
 
 [tool.hatch.envs.types]
-extra-dependencies = ["mypy>=2.3.1"]
+extra-dependencies = ["mypy>=2.4.1"]
 
 [[tool.hatch.envs.types.matrix]]
 python = ["3.11", "3.12", "3.13", "3.14"]
@@ -111,6 +108,10 @@ strict = true
 [[tool.mypy.overrides]]
 module = ["fasttext", "newmm_tokenizer.*", "th_preprocessor.*", "sklearn.*"]
 ignore_missing_imports = true
+
+[tool.pitloom]
+id-registry = "loom-id-registry.json"
+scan-model-usage = true
 
 [tool.pitloom.content-type]
 enabled = true

@@ -3,13 +3,13 @@
   "@graph": [
     {
       "@id": "_:CreationInfo0",
-      "comment": "Generated via Pitloom loom SDK v0.16.1 (script/notebook capture)",
-      "created": "2026-08-18T13:04:12Z",
+      "comment": "Generated via Pitloom loom SDK v0.22.0 (script/notebook capture)",
+      "created": "2026-10-31T00:57:07Z",
       "createdBy": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-cd0f6a46-4f73-4805-84a8-da3d9e30b866#SoftwareAgent-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-837f7fce-9097-4af4-8ec4-3d43ace5be45#SoftwareAgent-1"
       ],
       "createdUsing": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-cd0f6a46-4f73-4805-84a8-da3d9e30b866#Tool-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-837f7fce-9097-4af4-8ec4-3d43ace5be45#Tool-1"
       ],
       "specVersion": "3.0.1",
       "type": "CreationInfo"
@@ -18,55 +18,159 @@
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/data/train.txt-cd0f6a46-4f73-4805-84a8-da3d9e30b866#Annotation-2",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftrain.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#Annotation-2",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/data%2Ftrain.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#DatasetPackage-1",
       "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 93143,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/train.txt",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftrain.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#DatasetPackage-1",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "d5abf8167a1e435341ca70efaacf8afb097cd7bf5b58927e981f4ff216f95c70",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "345fe849354c40f02fc872ef222888c66bfc7cef1b632db287c11d8a55b5ab0c0248a51ea0bbf520486902a3dffcb089abf4bfd9eb03feb2a22b99c3d6513d3d",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "data/train.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftrain.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#File-1",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "d5abf8167a1e435341ca70efaacf8afb097cd7bf5b58927e981f4ff216f95c70",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "345fe849354c40f02fc872ef222888c66bfc7cef1b632db287c11d8a55b5ab0c0248a51ea0bbf520486902a3dffcb089abf4bfd9eb03feb2a22b99c3d6513d3d",
+          "type": "Hash"
+        }
+      ]
     },
     {
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/data/valid.txt-cd0f6a46-4f73-4805-84a8-da3d9e30b866#Annotation-3",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Fvalid.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#Annotation-3",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/data%2Fvalid.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#DatasetPackage-2",
       "type": "Annotation"
     },
     {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train)",
       "creationInfo": "_:CreationInfo0",
-      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
+      "dataset_datasetSize": 15385,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/valid.txt",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Fvalid.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#DatasetPackage-2",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "9a859785a91102edeb83b016da5e5ab2f8c2b3a13ed50003175cba661ef8aeae",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "aedcbc74f28eacb202e40ceb6cc241bff9ab0475efe71ae3e92e85914dbd4a789d62600349cb8089f7a24994851fb84deab52893f2d91bc3e961e98876a5cae8",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "data/valid.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Fvalid.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#File-2",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "9a859785a91102edeb83b016da5e5ab2f8c2b3a13ed50003175cba661ef8aeae",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "aedcbc74f28eacb202e40ceb6cc241bff9ab0475efe71ae3e92e85914dbd4a789d62600349cb8089f7a24994851fb84deab52893f2d91bc3e961e98876a5cae8",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/data%2Ftrain.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#DatasetPackage-1",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-837f7fce-9097-4af4-8ec4-3d43ace5be45#Relationship-1",
+      "to": [
+        "https://spdx.org/spdxdocs/data%2Ftrain.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#File-1"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/data%2Fvalid.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#DatasetPackage-2",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-837f7fce-9097-4af4-8ec4-3d43ace5be45#Relationship-2",
+      "to": [
+        "https://spdx.org/spdxdocs/data%2Fvalid.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#File-2"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-837f7fce-9097-4af4-8ec4-3d43ace5be45#AIPackage-1",
       "relationshipType": "trainedOn",
-      "spdxId": "https://spdx.org/spdxdocs/loom-cd0f6a46-4f73-4805-84a8-da3d9e30b866#Relationship-1",
+      "spdxId": "https://spdx.org/spdxdocs/loom-837f7fce-9097-4af4-8ec4-3d43ace5be45#Relationship-3",
       "to": [
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14"
+        "https://spdx.org/spdxdocs/data%2Ftrain.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#DatasetPackage-1"
       ],
       "type": "Relationship"
     },
     {
       "creationInfo": "_:CreationInfo0",
-      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
+      "from": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-837f7fce-9097-4af4-8ec4-3d43ace5be45#AIPackage-1",
       "relationshipType": "testedOn",
-      "spdxId": "https://spdx.org/spdxdocs/loom-cd0f6a46-4f73-4805-84a8-da3d9e30b866#Relationship-2",
+      "spdxId": "https://spdx.org/spdxdocs/loom-837f7fce-9097-4af4-8ec4-3d43ace5be45#Relationship-4",
       "to": [
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15"
+        "https://spdx.org/spdxdocs/data%2Fvalid.txt-837f7fce-9097-4af4-8ec4-3d43ace5be45#DatasetPackage-2"
       ],
       "type": "Relationship"
     },
     {
       "creationInfo": "_:CreationInfo0",
-      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-22",
+      "from": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Ftrain.py-837f7fce-9097-4af4-8ec4-3d43ace5be45#File-3",
       "relationshipType": "generates",
       "scope": "build",
-      "spdxId": "https://spdx.org/spdxdocs/loom-cd0f6a46-4f73-4805-84a8-da3d9e30b866#Relationship-3",
+      "spdxId": "https://spdx.org/spdxdocs/loom-837f7fce-9097-4af4-8ec4-3d43ace5be45#Relationship-5",
       "to": [
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2"
+        "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-837f7fce-9097-4af4-8ec4-3d43ace5be45#AIPackage-1"
       ],
       "type": "LifecycleScopedRelationship"
     },
     {
       "creationInfo": "_:CreationInfo0",
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-cd0f6a46-4f73-4805-84a8-da3d9e30b866#SoftwareAgent-1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-837f7fce-9097-4af4-8ec4-3d43ace5be45#SoftwareAgent-1",
       "type": "SoftwareAgent"
     },
     {
@@ -74,13 +178,13 @@
       "externalIdentifier": [
         {
           "externalIdentifierType": "packageUrl",
-          "identifier": "pkg:pypi/pitloom@0.16.1",
+          "identifier": "pkg:pypi/pitloom@0.22.0",
           "type": "ExternalIdentifier"
         }
       ],
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-cd0f6a46-4f73-4805-84a8-da3d9e30b866#Tool-1",
-      "summary": "Pitloom 0.16.1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-837f7fce-9097-4af4-8ec4-3d43ace5be45#Tool-1",
+      "summary": "Pitloom 0.22.0",
       "type": "Tool"
     },
     {
@@ -88,12 +192,12 @@
         {
           "key": "_pybind11_conduit_v1_",
           "type": "DictionaryEntry",
-          "value": "<bound method pybind11_detail_function_record_v1_system_libcpp_abi1._pybind11_conduit_v1_ of <fasttext_pybind.args object at 0x109be4870>>"
+          "value": "<bound method pybind11_detail_function_record_v1_system_libcpp_abi1._pybind11_conduit_v1_ of <fasttext_pybind.args object at 0x10d5b1cf0>>"
         },
         {
           "key": "autotuneDuration",
           "type": "DictionaryEntry",
-          "value": "5"
+          "value": "30"
         },
         {
           "key": "autotuneMetric",
@@ -118,17 +222,17 @@
         {
           "key": "bucket",
           "type": "DictionaryEntry",
-          "value": "8194636"
+          "value": "3295394"
         },
         {
           "key": "cutoff",
           "type": "DictionaryEntry",
-          "value": "327"
+          "value": "7362"
         },
         {
           "key": "dim",
           "type": "DictionaryEntry",
-          "value": "80"
+          "value": "4"
         },
         {
           "key": "dsub",
@@ -138,7 +242,7 @@
         {
           "key": "epoch",
           "type": "DictionaryEntry",
-          "value": "17"
+          "value": "100"
         },
         {
           "key": "input",
@@ -158,7 +262,7 @@
         {
           "key": "lr",
           "type": "DictionaryEntry",
-          "value": "0.07275411844674072"
+          "value": "0.026176909167422064"
         },
         {
           "key": "lrUpdateRate",
@@ -233,7 +337,7 @@
         {
           "key": "setManual",
           "type": "DictionaryEntry",
-          "value": "<bound method pybind11_detail_function_record_v1_system_libcpp_abi1.setManual of <fasttext_pybind.args object at 0x109be4870>>"
+          "value": "<bound method pybind11_detail_function_record_v1_system_libcpp_abi1.setManual of <fasttext_pybind.args object at 0x10d5b1cf0>>"
         },
         {
           "key": "t",
@@ -253,7 +357,7 @@
         {
           "key": "wordNgrams",
           "type": "DictionaryEntry",
-          "value": "2"
+          "value": "5"
         },
         {
           "key": "ws",
@@ -267,74 +371,45 @@
       "comment": "Metadata provenance: package: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train)\nMetadata provenance: hyperparameters._pybind11_conduit_v1_: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: _pybind11_conduit_v1_; hyperparameters.autotuneDuration: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: autotuneDuration; hyperparameters.autotuneMetric: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: autotuneMetric; hyperparameters.autotuneModelSize: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: autotuneModelSize; hyperparameters.autotunePredictions: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: autotunePredictions; hyperparameters.autotuneValidationFile: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: autotuneValidationFile; hyperparameters.bucket: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: bucket; hyperparameters.cutoff: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: cutoff; hyperparameters.dim: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: dim; hyperparameters.dsub: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: dsub; hyperparameters.epoch: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: epoch; hyperparameters.input: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: input; hyperparameters.label: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: label; hyperparameters.loss: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: loss; hyperparameters.lr: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: lr; hyperparameters.lrUpdateRate: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: lrUpdateRate; hyperparameters.maxn: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: maxn; hyperparameters.minCount: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: minCount; hyperparameters.minCountLabel: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: minCountLabel; hyperparameters.minn: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: minn; hyperparameters.model: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: model; hyperparameters.neg: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: neg; hyperparameters.output: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: output; hyperparameters.pretrainedVectors: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: pretrainedVectors; hyperparameters.qnorm: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: qnorm; hyperparameters.qout: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: qout; hyperparameters.retrain: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: retrain; hyperparameters.saveOutput: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: saveOutput; hyperparameters.seed: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: seed; hyperparameters.setManual: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: setManual; hyperparameters.t: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: t; hyperparameters.thread: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: thread; hyperparameters.verbose: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: verbose; hyperparameters.wordNgrams: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: wordNgrams; hyperparameters.ws: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train) | Field: ws",
       "creationInfo": "_:CreationInfo0",
       "name": "src/sentimentdemo/model.bin",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
+      "spdxId": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-837f7fce-9097-4af4-8ec4-3d43ace5be45#AIPackage-1",
       "type": "ai_AIPackage"
     },
     {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train)",
+      "annotationType": "other",
+      "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "data/train.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "d5abf8167a1e435341ca70efaacf8afb097cd7bf5b58927e981f4ff216f95c70",
-          "type": "Hash"
-        }
-      ]
+      "spdxId": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-837f7fce-9097-4af4-8ec4-3d43ace5be45#Annotation-1",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-837f7fce-9097-4af4-8ec4-3d43ace5be45#AIPackage-1",
+      "type": "Annotation"
     },
     {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/train.py | Method: inspect_caller (tool: pitloom.loom, function: train)",
+      "annotationType": "other",
+      "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "data/valid.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "9a859785a91102edeb83b016da5e5ab2f8c2b3a13ed50003175cba661ef8aeae",
-          "type": "Hash"
-        }
-      ]
+      "spdxId": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-837f7fce-9097-4af4-8ec4-3d43ace5be45#Annotation-4",
+      "statement": "{\"fields\":{\"hyperparameters._pybind11_conduit_v1_\":{\"location\":\"_pybind11_conduit_v1_\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.autotuneDuration\":{\"location\":\"autotuneDuration\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.autotuneMetric\":{\"location\":\"autotuneMetric\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.autotuneModelSize\":{\"location\":\"autotuneModelSize\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.autotunePredictions\":{\"location\":\"autotunePredictions\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.autotuneValidationFile\":{\"location\":\"autotuneValidationFile\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.bucket\":{\"location\":\"bucket\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.cutoff\":{\"location\":\"cutoff\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.dim\":{\"location\":\"dim\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.dsub\":{\"location\":\"dsub\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.epoch\":{\"location\":\"epoch\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.input\":{\"location\":\"input\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.label\":{\"location\":\"label\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.loss\":{\"location\":\"loss\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.lr\":{\"location\":\"lr\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.lrUpdateRate\":{\"location\":\"lrUpdateRate\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.maxn\":{\"location\":\"maxn\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.minCount\":{\"location\":\"minCount\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.minCountLabel\":{\"location\":\"minCountLabel\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.minn\":{\"location\":\"minn\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.model\":{\"location\":\"model\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.neg\":{\"location\":\"neg\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.output\":{\"location\":\"output\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.pretrainedVectors\":{\"location\":\"pretrainedVectors\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.qnorm\":{\"location\":\"qnorm\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.qout\":{\"location\":\"qout\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.retrain\":{\"location\":\"retrain\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.saveOutput\":{\"location\":\"saveOutput\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.seed\":{\"location\":\"seed\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.setManual\":{\"location\":\"setManual\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.t\":{\"location\":\"t\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.thread\":{\"location\":\"thread\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.verbose\":{\"location\":\"verbose\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.wordNgrams\":{\"location\":\"wordNgrams\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"},\"hyperparameters.ws\":{\"location\":\"ws\",\"method\":\"inspect_caller (tool: pitloom.loom, function: train)\",\"source\":\"src/sentimentdemo/train.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fmodel.bin-837f7fce-9097-4af4-8ec4-3d43ace5be45#AIPackage-1",
+      "type": "Annotation"
     },
     {
       "creationInfo": "_:CreationInfo0",
       "name": "src/sentimentdemo/train.py",
       "software_fileKind": "file",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-22",
+      "spdxId": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Ftrain.py-837f7fce-9097-4af4-8ec4-3d43ace5be45#File-3",
       "type": "software_File",
       "verifiedUsing": [
         {
           "algorithm": "sha256",
           "hashValue": "6facabe98f926a80539ee5c5f7a289f31d8426640541015f5bade26c85b13116",
           "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "cc5e474e5f671b0ca01daa095b226fec14c39aa22d3e44b5d25cba6c955ae5c82f39acbd6f4525f59f0cd87e58daaea50117de6d09eb3d1af564d68e9fa928f7",
+          "type": "Hash"
         }
       ]
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-cd0f6a46-4f73-4805-84a8-da3d9e30b866#Annotation-1",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/src/sentimentdemo/model.bin-cd0f6a46-4f73-4805-84a8-da3d9e30b866#Annotation-4",
-      "statement": "{\"fields\": {\"hyperparameters._pybind11_conduit_v1_\": {\"location\": \"_pybind11_conduit_v1_\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.autotuneDuration\": {\"location\": \"autotuneDuration\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.autotuneMetric\": {\"location\": \"autotuneMetric\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.autotuneModelSize\": {\"location\": \"autotuneModelSize\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.autotunePredictions\": {\"location\": \"autotunePredictions\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.autotuneValidationFile\": {\"location\": \"autotuneValidationFile\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.bucket\": {\"location\": \"bucket\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.cutoff\": {\"location\": \"cutoff\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.dim\": {\"location\": \"dim\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.dsub\": {\"location\": \"dsub\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.epoch\": {\"location\": \"epoch\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.input\": {\"location\": \"input\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.label\": {\"location\": \"label\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.loss\": {\"location\": \"loss\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.lr\": {\"location\": \"lr\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.lrUpdateRate\": {\"location\": \"lrUpdateRate\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.maxn\": {\"location\": \"maxn\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.minCount\": {\"location\": \"minCount\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.minCountLabel\": {\"location\": \"minCountLabel\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.minn\": {\"location\": \"minn\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.model\": {\"location\": \"model\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.neg\": {\"location\": \"neg\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.output\": {\"location\": \"output\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.pretrainedVectors\": {\"location\": \"pretrainedVectors\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.qnorm\": {\"location\": \"qnorm\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.qout\": {\"location\": \"qout\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.retrain\": {\"location\": \"retrain\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.saveOutput\": {\"location\": \"saveOutput\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.seed\": {\"location\": \"seed\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.setManual\": {\"location\": \"setManual\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.t\": {\"location\": \"t\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.thread\": {\"location\": \"thread\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.verbose\": {\"location\": \"verbose\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.wordNgrams\": {\"location\": \"wordNgrams\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}, \"hyperparameters.ws\": {\"location\": \"ws\", \"method\": \"inspect_caller (tool: pitloom.loom, function: train)\", \"source\": \"src/sentimentdemo/train.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#AIPackage-2",
-      "type": "Annotation"
     }
   ]
 }

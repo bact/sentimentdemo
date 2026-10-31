@@ -3,13 +3,13 @@
   "@graph": [
     {
       "@id": "_:CreationInfo0",
-      "comment": "Generated via Pitloom loom SDK v0.16.1 (script/notebook capture)",
-      "created": "2026-08-18T13:04:03Z",
+      "comment": "Generated via Pitloom loom SDK v0.22.0 (script/notebook capture)",
+      "created": "2026-10-31T00:56:55Z",
       "createdBy": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#SoftwareAgent-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#SoftwareAgent-1"
       ],
       "createdUsing": [
-        "https://spdx.org/spdxdocs/pitloom-sdk-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Tool-1"
+        "https://spdx.org/spdxdocs/pitloom-sdk-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Tool-1"
       ],
       "specVersion": "3.0.1",
       "type": "CreationInfo"
@@ -18,85 +18,376 @@
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/data/test.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-15",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftest.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-15",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/data%2Ftest.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-15",
       "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_dataPreprocessing": [
+        "thai-text-normalization",
+        "newmm-word-tokenization",
+        "fasttext-label-format"
+      ],
+      "dataset_datasetSize": 9025,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/test.txt",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftest.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-15",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "6475fa086d9e14a605b1e5414cb45962cb5eb04b1237e0f2dadd225ef91a0955",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "9defa4fb45369184381e9dc27211d130b9ccfd3582676a42a6f258dafb4b2ad18e9af35ee82fab0cb2332a99dfa19d28e15f8360bb43567ec16b4f3d32174390",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "data/test.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftest.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-15",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "6475fa086d9e14a605b1e5414cb45962cb5eb04b1237e0f2dadd225ef91a0955",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "9defa4fb45369184381e9dc27211d130b9ccfd3582676a42a6f258dafb4b2ad18e9af35ee82fab0cb2332a99dfa19d28e15f8360bb43567ec16b4f3d32174390",
+          "type": "Hash"
+        }
+      ]
     },
     {
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/data/train.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-5",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftrain.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-5",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/data%2Ftrain.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-5",
       "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_dataPreprocessing": [
+        "thai-text-normalization",
+        "newmm-word-tokenization",
+        "fasttext-label-format"
+      ],
+      "dataset_datasetSize": 93143,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/train.txt",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftrain.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-5",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "d5abf8167a1e435341ca70efaacf8afb097cd7bf5b58927e981f4ff216f95c70",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "345fe849354c40f02fc872ef222888c66bfc7cef1b632db287c11d8a55b5ab0c0248a51ea0bbf520486902a3dffcb089abf4bfd9eb03feb2a22b99c3d6513d3d",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "data/train.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Ftrain.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-5",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "d5abf8167a1e435341ca70efaacf8afb097cd7bf5b58927e981f4ff216f95c70",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "345fe849354c40f02fc872ef222888c66bfc7cef1b632db287c11d8a55b5ab0c0248a51ea0bbf520486902a3dffcb089abf4bfd9eb03feb2a22b99c3d6513d3d",
+          "type": "Hash"
+        }
+      ]
     },
     {
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/data/valid.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-10",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Fvalid.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-10",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/data%2Fvalid.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-10",
       "type": "Annotation"
     },
     {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
       "creationInfo": "_:CreationInfo0",
-      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
-      "relationshipType": "hasInput",
-      "spdxId": "https://spdx.org/spdxdocs/loom-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Relationship-1",
+      "dataset_dataPreprocessing": [
+        "thai-text-normalization",
+        "newmm-word-tokenization",
+        "fasttext-label-format"
+      ],
+      "dataset_datasetSize": 15385,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "data/valid.txt",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Fvalid.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-10",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "9a859785a91102edeb83b016da5e5ab2f8c2b3a13ed50003175cba661ef8aeae",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "aedcbc74f28eacb202e40ceb6cc241bff9ab0475efe71ae3e92e85914dbd4a789d62600349cb8089f7a24994851fb84deab52893f2d91bc3e961e98876a5cae8",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "data/valid.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/data%2Fvalid.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-10",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "9a859785a91102edeb83b016da5e5ab2f8c2b3a13ed50003175cba661ef8aeae",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "aedcbc74f28eacb202e40ceb6cc241bff9ab0475efe71ae3e92e85914dbd4a789d62600349cb8089f7a24994851fb84deab52893f2d91bc3e961e98876a5cae8",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-1",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-1",
       "to": [
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-5",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-6",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-7",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-8"
+        "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-1"
       ],
       "type": "Relationship"
     },
     {
       "creationInfo": "_:CreationInfo0",
-      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15",
-      "relationshipType": "hasInput",
-      "spdxId": "https://spdx.org/spdxdocs/loom-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Relationship-2",
+      "from": "https://spdx.org/spdxdocs/data%2Fvalid.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-10",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-10",
       "to": [
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-9",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-10",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-11",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-12"
+        "https://spdx.org/spdxdocs/data%2Fvalid.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-10"
       ],
       "type": "Relationship"
     },
     {
       "creationInfo": "_:CreationInfo0",
-      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
-      "relationshipType": "hasInput",
-      "spdxId": "https://spdx.org/spdxdocs/loom-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Relationship-3",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-11",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-11",
       "to": [
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-1",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-2",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-3",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-4"
+        "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-11"
       ],
       "type": "Relationship"
     },
     {
       "creationInfo": "_:CreationInfo0",
-      "from": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-21",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-12",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-12",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-12"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-13",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-13",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-13"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-14",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-14",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-14"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/data%2Ftest.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-15",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-15",
+      "to": [
+        "https://spdx.org/spdxdocs/data%2Ftest.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-15"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/data%2Ftrain.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-5",
+      "relationshipType": "hasInput",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-16",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-1",
+        "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-2",
+        "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-3",
+        "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-4"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/data%2Fvalid.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-10",
+      "relationshipType": "hasInput",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-17",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-6",
+        "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-7",
+        "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-8",
+        "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-9"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/data%2Ftest.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-15",
+      "relationshipType": "hasInput",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-18",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-11",
+        "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-12",
+        "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-13",
+        "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-14"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fpreprocess.py-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-16",
       "relationshipType": "generates",
       "scope": "build",
-      "spdxId": "https://spdx.org/spdxdocs/loom-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Relationship-4",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-19",
       "to": [
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
-        "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15"
+        "https://spdx.org/spdxdocs/data%2Ftest.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-15",
+        "https://spdx.org/spdxdocs/data%2Ftrain.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-5",
+        "https://spdx.org/spdxdocs/data%2Fvalid.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-10"
       ],
       "type": "LifecycleScopedRelationship"
     },
     {
       "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-2",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-2",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-2"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-3",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-3",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-3"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-4",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-4",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-4"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/data%2Ftrain.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-5",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-5",
+      "to": [
+        "https://spdx.org/spdxdocs/data%2Ftrain.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-5"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-6",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-6",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-6"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-7",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-7",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-7"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-8",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-8",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-8"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "from": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-9",
+      "relationshipType": "contains",
+      "spdxId": "https://spdx.org/spdxdocs/loom-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Relationship-9",
+      "to": [
+        "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-9"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#SoftwareAgent-1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#SoftwareAgent-1",
       "type": "SoftwareAgent"
     },
     {
@@ -104,270 +395,623 @@
       "externalIdentifier": [
         {
           "externalIdentifierType": "packageUrl",
-          "identifier": "pkg:pypi/pitloom@0.16.1",
+          "identifier": "pkg:pypi/pitloom@0.22.0",
           "type": "ExternalIdentifier"
         }
       ],
       "name": "Pitloom",
-      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Tool-1",
-      "summary": "Pitloom 0.16.1",
+      "spdxId": "https://spdx.org/spdxdocs/pitloom-sdk-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Tool-1",
+      "summary": "Pitloom 0.22.0",
       "type": "Tool"
     },
     {
       "annotationType": "other",
       "contentType": "application/json",
       "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/test/neg.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-11",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-1",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/test/neu.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-12",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-2",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/test/pos.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-13",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-3",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/test/q.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-14",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-4",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/train/neg.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-1",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-5",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/train/neu.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-2",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-6",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/train/pos.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-3",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-7",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/train/q.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-4",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-8",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/valid/neg.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-6",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-9",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/valid/neu.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-7",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-10",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/valid/pos.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-8",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-11",
-      "type": "Annotation"
-    },
-    {
-      "annotationType": "other",
-      "contentType": "application/json",
-      "creationInfo": "_:CreationInfo0",
-      "spdxId": "https://spdx.org/spdxdocs/rawdata/valid/q.txt-96a0d1a5-f985-4e5d-ade8-b2f27ca78d76#Annotation-9",
-      "statement": "{\"fields\": {\"package\": {\"method\": \"inspect_caller (tool: pitloom.loom, function: main)\", \"source\": \"src/sentimentdemo/preprocess.py\"}}, \"kind\": \"fields\", \"schema\": \"https://pitloom.dev/provenance/fields/1\"}",
-      "subject": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-12",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-11",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-11",
       "type": "Annotation"
     },
     {
       "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
       "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 3000,
       "dataset_datasetType": [
         "text"
       ],
       "name": "rawdata/test/neg.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-1",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-11",
       "type": "dataset_DatasetPackage",
       "verifiedUsing": [
         {
           "algorithm": "sha256",
           "hashValue": "a904d1f9c1e3f1a722b3d2f9f4cdcc105bcb823d899504a3085918e1f4302c8e",
           "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "2f55b99b018ce7dbf25d965cfdb67f4e32d636a3f88741905c94c664d68975ae2b55febe3ede29a731f4c28566979bafe154a21c329adef9da6b5c7c43b4ac0f",
+          "type": "Hash"
         }
       ]
     },
     {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/test/neg.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-11",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "a904d1f9c1e3f1a722b3d2f9f4cdcc105bcb823d899504a3085918e1f4302c8e",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "2f55b99b018ce7dbf25d965cfdb67f4e32d636a3f88741905c94c664d68975ae2b55febe3ede29a731f4c28566979bafe154a21c329adef9da6b5c7c43b4ac0f",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-12",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-12",
+      "type": "Annotation"
+    },
+    {
       "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
       "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 2312,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/test/neu.txt",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-12",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "4d94f2938ea0df40054071d1acfe3b0ae581d5c61fdc4201f6134bd8c32ee20f",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "7d2dbda59f5a6713b375dc5fcee7556c9d426da659e2e4318b3d033ec0dd88815c15ef1779b847cf28121555e11e08b0b41e616e5b9d7fb1acabb720c703ad9a",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/test/neu.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-12",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "4d94f2938ea0df40054071d1acfe3b0ae581d5c61fdc4201f6134bd8c32ee20f",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "7d2dbda59f5a6713b375dc5fcee7556c9d426da659e2e4318b3d033ec0dd88815c15ef1779b847cf28121555e11e08b0b41e616e5b9d7fb1acabb720c703ad9a",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-13",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-13",
+      "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 1460,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/test/pos.txt",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-13",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "4783404f4d1c45ba2d11a9e848aafbd98a7cc36b87a77eafba82831da2942a5d",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "e979f2cd37dd8d36b93dd3ec89cf0af111221eabcb1d4212c573686c2875560c96dcb484cfe954eb26d5d8c02e9bd59f671a472a0f0653b1eff61447f1940297",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/test/pos.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-13",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "4783404f4d1c45ba2d11a9e848aafbd98a7cc36b87a77eafba82831da2942a5d",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "e979f2cd37dd8d36b93dd3ec89cf0af111221eabcb1d4212c573686c2875560c96dcb484cfe954eb26d5d8c02e9bd59f671a472a0f0653b1eff61447f1940297",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-14",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-14",
+      "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 1172,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/test/q.txt",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-14",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "9ac63d298ab88ed4b9fbe1f8e363b346e20dc600b83cca2d2c95db8aa986083c",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "62ff43f620f2afb820d69649366218fc9db22cafe9aad9faaeb46deccae9b423f8131113427739de14ec3c1dc090f889bdce89b4deec2dc61e3e90cec9173f28",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/test/q.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftest%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-14",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "9ac63d298ab88ed4b9fbe1f8e363b346e20dc600b83cca2d2c95db8aa986083c",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "62ff43f620f2afb820d69649366218fc9db22cafe9aad9faaeb46deccae9b423f8131113427739de14ec3c1dc090f889bdce89b4deec2dc61e3e90cec9173f28",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-1",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-1",
+      "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 24465,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/train/neg.txt",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-1",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "2ce080d13b6f071dbee8f6bd62c40c5a7d11713aa14989fe2d8cb3859838c857",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "29fb1b5d4c4039075a8dc6e345bce2df1ffccd7e21f66a13acc91d1038f6598d77776db58455ab0904b73d9ea9cf49b47ed2bfd1500e8a566c2818265d4b6ebe",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/train/neg.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-1",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "2ce080d13b6f071dbee8f6bd62c40c5a7d11713aa14989fe2d8cb3859838c857",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "29fb1b5d4c4039075a8dc6e345bce2df1ffccd7e21f66a13acc91d1038f6598d77776db58455ab0904b73d9ea9cf49b47ed2bfd1500e8a566c2818265d4b6ebe",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-2",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-2",
+      "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 29168,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/train/neu.txt",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-2",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "dd8e060de260bd8e09d8dac2b05c8c1f0644db5d218df6bb296008ea694555ba",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "70f61ed35d1995ef14e6f85452a2bf81b6feb30a65955d5b0aba994b487a9a751c1411b73c30ba8267f1547ee089a6f940b15113cb14fd509d430a8c84e68f96",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/train/neu.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-2",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "dd8e060de260bd8e09d8dac2b05c8c1f0644db5d218df6bb296008ea694555ba",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "70f61ed35d1995ef14e6f85452a2bf81b6feb30a65955d5b0aba994b487a9a751c1411b73c30ba8267f1547ee089a6f940b15113cb14fd509d430a8c84e68f96",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-3",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-3",
+      "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 15237,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/train/pos.txt",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-3",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "3a56201b2c5c25076e93d909ae120e41d7c8502bd0aa7ec1494614f0149bce33",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "a1cbd6987035e017a49657a3c1018330dfd5f9637827ea1640743f3f3196a7c0ad7a35229bea8dd7e5e6155ebe882054fe9fe4c1d64106f2d4d439bac30bd50e",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/train/pos.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-3",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "3a56201b2c5c25076e93d909ae120e41d7c8502bd0aa7ec1494614f0149bce33",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "a1cbd6987035e017a49657a3c1018330dfd5f9637827ea1640743f3f3196a7c0ad7a35229bea8dd7e5e6155ebe882054fe9fe4c1d64106f2d4d439bac30bd50e",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-4",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-4",
+      "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 13361,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/train/q.txt",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-4",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "c79865bc8becc030501677284619a4562d0eb3c19f7f9e7b72af49529230518b",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "34ef9ec89b01e346c607380b570f243685433adb80f099eb95030dd9ad03ec9f54718e8e0e6a8f43369250752b47284d4962ac607054c6e8e03e10d94cfab42c",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/train/q.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Ftrain%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-4",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "c79865bc8becc030501677284619a4562d0eb3c19f7f9e7b72af49529230518b",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "34ef9ec89b01e346c607380b570f243685433adb80f099eb95030dd9ad03ec9f54718e8e0e6a8f43369250752b47284d4962ac607054c6e8e03e10d94cfab42c",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-6",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-6",
+      "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 6570,
+      "dataset_datasetType": [
+        "text"
+      ],
+      "name": "rawdata/valid/neg.txt",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-6",
+      "type": "dataset_DatasetPackage",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "64bf2d2e5b7b9d7a71d59fde1292b94169626d4e1d468d13232b7010bc7110ed",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "74602face2607346ad5113e11879c55110643928ffbf0dada8223344e94c374b45ba9f01b460149e7daef1e6704d9a3e91a04810e999233d10d8e5d41db019e4",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/valid/neg.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneg.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-6",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "64bf2d2e5b7b9d7a71d59fde1292b94169626d4e1d468d13232b7010bc7110ed",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "74602face2607346ad5113e11879c55110643928ffbf0dada8223344e94c374b45ba9f01b460149e7daef1e6704d9a3e91a04810e999233d10d8e5d41db019e4",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-7",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-7",
+      "type": "Annotation"
+    },
+    {
+      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
+      "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 1698,
       "dataset_datasetType": [
         "text"
       ],
       "name": "rawdata/valid/neu.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-10",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-7",
       "type": "dataset_DatasetPackage",
       "verifiedUsing": [
         {
           "algorithm": "sha256",
           "hashValue": "49a31b2b7bb02fd4efd22e13afafa484198813cdad6499258c687e6529b5c4f4",
           "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "833e0bfba89b36e9ad980ec4aee64187b696a0704b3684b88c11c0226b4c07900ebfbece49061f83f5bf08ce5c580175d0296ad4de392bc4fdc375ae7180e1c0",
+          "type": "Hash"
         }
       ]
     },
     {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/valid/neu.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fneu.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-7",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "49a31b2b7bb02fd4efd22e13afafa484198813cdad6499258c687e6529b5c4f4",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "833e0bfba89b36e9ad980ec4aee64187b696a0704b3684b88c11c0226b4c07900ebfbece49061f83f5bf08ce5c580175d0296ad4de392bc4fdc375ae7180e1c0",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-8",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-8",
+      "type": "Annotation"
+    },
+    {
       "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
       "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 3031,
       "dataset_datasetType": [
         "text"
       ],
       "name": "rawdata/valid/pos.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-11",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-8",
       "type": "dataset_DatasetPackage",
       "verifiedUsing": [
         {
           "algorithm": "sha256",
           "hashValue": "c4c371575338e827208b45560a1f9ea4d045297d9a8b446c0aca3960b0d72878",
           "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "fe3f036bbac1665e3784eb09fda1fbfd5a1fd3455d8a13784790823087e651a67a4984e9d07236adcf0f53241ec4c670739009630e24da0aca2a11b3c71b96ed",
+          "type": "Hash"
         }
       ]
     },
     {
+      "creationInfo": "_:CreationInfo0",
+      "name": "rawdata/valid/pos.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fpos.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-8",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha256",
+          "hashValue": "c4c371575338e827208b45560a1f9ea4d045297d9a8b446c0aca3960b0d72878",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "fe3f036bbac1665e3784eb09fda1fbfd5a1fd3455d8a13784790823087e651a67a4984e9d07236adcf0f53241ec4c670739009630e24da0aca2a11b3c71b96ed",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "annotationType": "other",
+      "contentType": "application/json",
+      "creationInfo": "_:CreationInfo0",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#Annotation-9",
+      "statement": "{\"fields\":{\"package\":{\"method\":\"inspect_caller (tool: pitloom.loom, function: main)\",\"source\":\"src/sentimentdemo/preprocess.py\"}},\"kind\":\"fields\",\"schema\":\"https://pitloom.dev/provenance/fields/1\"}",
+      "subject": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-9",
+      "type": "Annotation"
+    },
+    {
       "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
       "creationInfo": "_:CreationInfo0",
+      "dataset_datasetSize": 2070,
       "dataset_datasetType": [
         "text"
       ],
       "name": "rawdata/valid/q.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-12",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#DatasetPackage-9",
       "type": "dataset_DatasetPackage",
       "verifiedUsing": [
         {
           "algorithm": "sha256",
           "hashValue": "f059001b81cadabca062c999a71166eb5bd004b5be2e7d10dcc5010eccaa1115",
           "type": "Hash"
-        }
-      ]
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_dataPreprocessing": [
-        "thai-text-normalization",
-        "newmm-word-tokenization",
-        "fasttext-label-format"
-      ],
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "data/test.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-13",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
+        },
         {
-          "algorithm": "sha256",
-          "hashValue": "6475fa086d9e14a605b1e5414cb45962cb5eb04b1237e0f2dadd225ef91a0955",
+          "algorithm": "sha512",
+          "hashValue": "7167fa403fd4ad68407969fc4f7c80a7ede28fe19a78c04f0ca77f37aa88479f9e2c97234abc68ab6a21b7bd154072d253ae78b68075533ee54cb6c5d1f40048",
           "type": "Hash"
         }
       ]
     },
     {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
       "creationInfo": "_:CreationInfo0",
-      "dataset_dataPreprocessing": [
-        "thai-text-normalization",
-        "newmm-word-tokenization",
-        "fasttext-label-format"
-      ],
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "data/train.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-14",
-      "type": "dataset_DatasetPackage",
+      "name": "rawdata/valid/q.txt",
+      "software_fileKind": "file",
+      "spdxId": "https://spdx.org/spdxdocs/rawdata%2Fvalid%2Fq.txt-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-9",
+      "type": "software_File",
       "verifiedUsing": [
         {
           "algorithm": "sha256",
-          "hashValue": "d5abf8167a1e435341ca70efaacf8afb097cd7bf5b58927e981f4ff216f95c70",
+          "hashValue": "f059001b81cadabca062c999a71166eb5bd004b5be2e7d10dcc5010eccaa1115",
           "type": "Hash"
-        }
-      ]
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_dataPreprocessing": [
-        "thai-text-normalization",
-        "newmm-word-tokenization",
-        "fasttext-label-format"
-      ],
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "data/valid.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-15",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
+        },
         {
-          "algorithm": "sha256",
-          "hashValue": "9a859785a91102edeb83b016da5e5ab2f8c2b3a13ed50003175cba661ef8aeae",
-          "type": "Hash"
-        }
-      ]
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "rawdata/test/neu.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-2",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "4d94f2938ea0df40054071d1acfe3b0ae581d5c61fdc4201f6134bd8c32ee20f",
+          "algorithm": "sha512",
+          "hashValue": "7167fa403fd4ad68407969fc4f7c80a7ede28fe19a78c04f0ca77f37aa88479f9e2c97234abc68ab6a21b7bd154072d253ae78b68075533ee54cb6c5d1f40048",
           "type": "Hash"
         }
       ]
@@ -376,131 +1020,17 @@
       "creationInfo": "_:CreationInfo0",
       "name": "src/sentimentdemo/preprocess.py",
       "software_fileKind": "file",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-21",
+      "spdxId": "https://spdx.org/spdxdocs/src%2Fsentimentdemo%2Fpreprocess.py-3b856c2f-4ce5-45e7-8d5d-ac58044c4f98#File-16",
       "type": "software_File",
       "verifiedUsing": [
         {
           "algorithm": "sha256",
           "hashValue": "e1f5571ab19416f46c3a3dd409900bdff79664a414fd084a58934137d8f31892",
           "type": "Hash"
-        }
-      ]
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "rawdata/test/pos.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-3",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
+        },
         {
-          "algorithm": "sha256",
-          "hashValue": "4783404f4d1c45ba2d11a9e848aafbd98a7cc36b87a77eafba82831da2942a5d",
-          "type": "Hash"
-        }
-      ]
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "rawdata/test/q.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-4",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "9ac63d298ab88ed4b9fbe1f8e363b346e20dc600b83cca2d2c95db8aa986083c",
-          "type": "Hash"
-        }
-      ]
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "rawdata/train/neg.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-5",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "2ce080d13b6f071dbee8f6bd62c40c5a7d11713aa14989fe2d8cb3859838c857",
-          "type": "Hash"
-        }
-      ]
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "rawdata/train/neu.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-6",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "dd8e060de260bd8e09d8dac2b05c8c1f0644db5d218df6bb296008ea694555ba",
-          "type": "Hash"
-        }
-      ]
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "rawdata/train/pos.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-7",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "3a56201b2c5c25076e93d909ae120e41d7c8502bd0aa7ec1494614f0149bce33",
-          "type": "Hash"
-        }
-      ]
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "rawdata/train/q.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-8",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "c79865bc8becc030501677284619a4562d0eb3c19f7f9e7b72af49529230518b",
-          "type": "Hash"
-        }
-      ]
-    },
-    {
-      "comment": "Metadata provenance: package: Source: src/sentimentdemo/preprocess.py | Method: inspect_caller (tool: pitloom.loom, function: main)",
-      "creationInfo": "_:CreationInfo0",
-      "dataset_datasetType": [
-        "text"
-      ],
-      "name": "rawdata/valid/neg.txt",
-      "spdxId": "https://spdx.org/spdxdocs/sentimentdemo-dbeddc29-cb45-4ba1-aed6-4d78cde6a376#File-9",
-      "type": "dataset_DatasetPackage",
-      "verifiedUsing": [
-        {
-          "algorithm": "sha256",
-          "hashValue": "64bf2d2e5b7b9d7a71d59fde1292b94169626d4e1d468d13232b7010bc7110ed",
+          "algorithm": "sha512",
+          "hashValue": "e4a75c831076f7835c110b9e1067d8e48f5684f8490bdd67c6b1df1eb1b1c952cece364ee7e97bd8bda85d341d2720990d867a48cc9d2f75816bd4c20305b962",
           "type": "Hash"
         }
       ]
